@@ -1,0 +1,36 @@
+/* lato-100 - latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 100;
+  src: local('Lato Hairline'), local('Lato-Hairline'), url('../../assets/fonts/lato-v14-latin-100.woff2') format('woff2'),
+    url('../../assets/fonts/lato-v14-latin-100.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* lato-100italic - latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 100;
+  src: local('Lato Hairline Italic'), local('Lato-HairlineItalic'),
+    url('../../assets/fonts/lato-v14-latin-100italic.woff2') format('woff2'),
+    url('../../assets/fonts/lato-v14-latin-100italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* lato-regular - latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url('../../assets/fonts/lato-v14-latin-regular.woff2') format('woff2'),
+    url('../../assets/fonts/lato-v14-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* lato-700 - latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Lato Bold'), local('Lato-Bold'), url('../../assets/fonts/lato-v14-latin-700.woff2') format('woff2'),
+    url('../../assets/fonts/lato-v14-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
