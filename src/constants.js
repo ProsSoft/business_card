@@ -19,7 +19,7 @@ const landing = {
         'Landing pages, e-shops, blogs - bring your ideas of the website to reality. Explore, how Relevant Software team makes it possible.'
     }
   ],
-  solution: [
+  solutions: [
     {
       title: 'Database optimization',
       description: 'In order to store big amount of data and display it quickly to the service we used NoSQL database.'
