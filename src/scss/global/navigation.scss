@@ -1,2 +1,29 @@
 .nav {
+  &__header {
+    align-items: end;
+    color: $color-purple-brown;
+    display: flex;
+    font-weight: 500;
+    letter-spacing: 0.8px;
+  }
+
+  &__header-link {
+    border-bottom: 4px solid #fff;
+    color: $color-purple-brown;
+    margin-right: 16px;
+    padding-bottom: 8px;
+    transition: 0.4s;
+  }
+
+  &__header-link:hover {
+    border-bottom-color: $color-dark-sky-blue;
+  }
+
+  &__header-link--active {
+    border-bottom-color: #010101;
+  }
+
+  &__header-link:last-child {
+    margin-right: 0;
+  }
 }

@@ -18,11 +18,17 @@ const Footer = () => (
         </div>
         <div className="footer__nav">
           <span className="footer__nav-title">prossoft</span>
-          <Navigation />
+          <Navigation type="footer"/>
         </div>
         <div className="footer__contacts">
           <span className="footer__contacts-title">contact us</span>
-          {footer.contact.map(elem => <span className="footer__address">{elem}</span>)}
+          <address className="footer__contacts-address">
+            {footer.contact.map(elem => (
+              <span className="footer__contacts-address-element" key={elem}>
+                {elem}
+              </span>
+            ))}
+          </address>
         </div>
       </div>
       <div className="footer__bottom">
