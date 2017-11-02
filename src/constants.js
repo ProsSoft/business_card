@@ -1,3 +1,11 @@
+const nav = [
+  { title: 'Company', path: '#company' },
+  { title: 'Services', path: '#services' },
+  { title: 'Portfolio', path: '#portfolio' },
+  { title: 'Careers', path: '#careers' },
+  { title: 'Contacts us', path: '#contact' }
+];
+
 const landing = {
   services: [
     {
@@ -45,4 +53,4 @@ const footer = {
   contact: ['country', '5 Mitchell Street, Edinburgh, Scotland, EH6 7DB Ukraine', '7 Zaliznychna, Lviv, Ukraine, 79039']
 };
 
-export { landing, footer };
+export { landing, footer, nav };

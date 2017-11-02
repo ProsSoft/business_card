@@ -6,11 +6,11 @@ import Navigation from './Navigation';
 const Header = () => (
   <header className="header">
     <div className="container">
-      <div className="logo">
+      <div className="header__logo">
         <Link to="/">
-          <img className="logo__picture" src="../assets/images/logo.png" alt="logo" />
+          <img className="header__logo-picture" src="/dist/assets/images/logo.png" alt="logo" />
         </Link>
-        <button type="button"   className="nav__bar-button">
+        <button type="button"   className="header__bar-button">
           <FaBars size="28" />
         </button>
       </div>

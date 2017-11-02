@@ -12,7 +12,7 @@ const LandingContact = () => (
       }}
       validate={values => {
         // same as above, but feel free to move this into a class method now.
-        let errors = {};
+        const errors = {};
         if (!values.email) {
           errors.email = 'Required';
         } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(values.email)) {
@@ -20,7 +20,8 @@ const LandingContact = () => (
         }
         return errors;
       }}
-      onSubmit={(values, { setSubmitting, setErrors /* setValues and other goodies */ }) => {
+      onSubmit={(values) => {
+        // eslint-disable-next-line no-console
         console.log(values);
       }}
       render={({ values, errors, touched, handleChange, handleBlur, handleSubmit, isSubmitting }) => (

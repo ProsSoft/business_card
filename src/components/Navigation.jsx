@@ -1,13 +1,15 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom'
+import { NavLink } from 'react-router-dom';
+
+import { nav } from '../constants';
 
 const Navigation = () => (
   <nav className="nav">
-    <NavLink className="nav__link" to="#company">Company</NavLink>
-    <NavLink className="nav__link" to="#services">Services</NavLink>
-    <NavLink className="nav__link" to="#portfolio">Portfolio</NavLink>
-    <NavLink className="nav__link" to="#careers">Careers</NavLink>
-    <NavLink className="nav__link" to="#contact">Contacts us</NavLink>
+    {nav.map(elem => (
+      <NavLink activeClassName="nav__active" className="nav__link" to={elem.path}>
+        {elem.title}
+      </NavLink>
+    ))}
   </nav>
 );
 
