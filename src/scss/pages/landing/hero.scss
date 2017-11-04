@@ -1,0 +1,20 @@
+.hero {
+  background: #ccc url('/dist/assets/images/backgroundHero.jpg') center/cover no-repeat;
+
+  &__wrapper {
+    margin-left: 8%;
+    max-width: 570px;
+    padding: 305px 0 280px;
+  }
+
+  &__title {
+    color: #fff;
+    font-size: 3.75rem;
+    font-style: italic;
+    font-weight: 100;
+    letter-spacing: -1.2px;
+    margin-bottom: 50px;
+  }
+
+
+}

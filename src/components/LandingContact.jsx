@@ -3,7 +3,7 @@ import { Formik } from 'formik';
 
 const LandingContact = () => (
   <section className="contact">
-    <h3 className="contact-title">Contact us</h3>
+    <h3 className="contact__title">Contact us</h3>
     <Formik
       initialValues={{
         email: '',
@@ -20,7 +20,7 @@ const LandingContact = () => (
         }
         return errors;
       }}
-      onSubmit={(values) => {
+      onSubmit={values => {
         // eslint-disable-next-line no-console
         console.log(values);
       }}
@@ -47,7 +47,7 @@ const LandingContact = () => (
           />
           {touched.phone && errors.phone && <div>{errors.phone}</div>}
           <textarea
-            rows="10"
+            rows="3"
             cols="50"
             name="message"
             className="contact__form-input"
@@ -56,7 +56,7 @@ const LandingContact = () => (
             placeholder="Your Message"
             value={values.message}
           />
-          <button type="submit" disabled={isSubmitting}>
+          <button type="submit" className="landing-green-btn" disabled={isSubmitting}>
             Send
           </button>
         </form>

@@ -5,17 +5,20 @@ const LandingSolutions = () => {
   const { solutions } = landing;
   return (
     <section className="solutions">
-      <h3 className="solutions__title">Our Solution</h3>
-
-      <div className="colutions__icon" />
-      <ul className="solutions__list">
-        {solutions.map(elem => (
-          <li key={elem.title}>
-            <span className="solutions__list-title">{elem.title}</span>
-            <span className="solutions__list-description">{elem.description}</span>
-          </li>
-        ))}
-      </ul>
+      <div className="container">
+        <h3 className="solutions__title">Our Solution</h3>
+        <div className="solutions__wrapper">
+          <span className="solutions__icon" />
+          <ul className="solutions__list">
+            {solutions.map(elem => (
+              <li className="solutions__list-item" key={elem.title}>
+                <span className="solutions__list-title">{elem.title}</span>
+                <span className="solutions__list-description">{elem.description}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
     </section>
   );
 };

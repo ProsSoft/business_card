@@ -16,13 +16,13 @@ const landing = {
     },
     {
       title: 'Mobile application development',
-      imgSrc: 'landingIcon1.svg',
+      imgSrc: 'landingIcon2.svg',
       description:
         'As the whole World goes mobile take the advantages of your business to make it mobile or develop your own mobile app as a standalone application for users.'
     },
     {
       title: 'Websites development',
-      imgSrc: 'landingIcon1.svg',
+      imgSrc: 'landingIcon3.svg',
       description:
         'Landing pages, e-shops, blogs - bring your ideas of the website to reality. Explore, how Relevant Software team makes it possible.'
     }
@@ -50,7 +50,8 @@ const landing = {
 };
 
 const footer = {
-  contact: ['country', '5 Mitchell Street, Edinburgh, Scotland, EH6 7DB Ukraine', '7 Zaliznychna, Lviv, Ukraine, 79039']
+  contact: ['United Kingdom','5 Mitchell Street, Edinburgh, Scotland, EH6 7DB Ukraine', '7 Zaliznychna,' +
+  ' Lviv, Ukraine, 79039']
 };
 
 export { landing, footer, nav };

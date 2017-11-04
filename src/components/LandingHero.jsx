@@ -3,8 +3,14 @@ import { Link } from 'react-router-dom';
 
 const LandingHero = () => (
   <section className="hero">
-    <h1 className="hero__title">Developing software for business</h1>
-    <Link to="#consult">Get a free consultation</Link>
+    <div className="container">
+      <div className="hero__wrapper">
+        <h1 className="hero__title">Developing software for business</h1>
+        <Link to="#consult" className="landing-green-btn">
+          Get a free consultation
+        </Link>
+      </div>
+    </div>
   </section>
 );
 

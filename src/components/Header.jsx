@@ -12,10 +12,10 @@ const Header = () => (
             <Link to="/">
               <img className="header__logo-picture" src="/dist/assets/images/logo.png" alt="logo" />
             </Link>
-            <button type="button" className="header__bar-button">
-              <FaBars size="28" />
-            </button>
           </div>
+          <button type="button" className="header__bar-button">
+            <FaBars size="28" />
+          </button>
           <Navigation type="header" />
         </div>
       </header>

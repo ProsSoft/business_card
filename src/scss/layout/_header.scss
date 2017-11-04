@@ -23,4 +23,23 @@
   &__bar-button {
     display: none;
   }
+
+  @media only screen and (max-width: 1024px) {
+    &__wrapper {
+      justify-content: space-between;
+      padding: 0 20px;
+    }
+
+    &__wrapper::after {
+      display: none;
+    }
+
+    &__logo {
+     padding: 0;
+    }
+
+    &__bar-button {
+      display: inline-block;
+    }
+  }
 }

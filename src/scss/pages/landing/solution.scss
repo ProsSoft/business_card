@@ -1,0 +1,45 @@
+.solutions {
+  &__title {
+    color: $color-black;
+    font-size: 71.8px;
+    font-weight: 100;
+    letter-spacing: -1.4px;
+    text-align: center;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+
+  }
+
+  &__icon {
+    background: url('/dist/assets/images/imacLanding.jpg') center/contain no-repeat;
+    flex: 1;
+  }
+
+  &__list {
+    flex: 1;
+    margin: 0;
+    padding: 100px 265px 100px 120px;
+  }
+
+  &__list-item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__list-title {
+    font-size: 1.25rem;
+    font-weight: 400;
+    letter-spacing: -0.4px;
+    line-height: 3.2;
+  }
+
+  &__list-description {
+    color: #000;
+    font-weight: 100;
+    letter-spacing: -0.3px;
+    line-height: 1.36rem;
+  }
+}

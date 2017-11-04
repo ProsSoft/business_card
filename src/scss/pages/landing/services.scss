@@ -1,0 +1,45 @@
+.services {
+  &__title {
+    color: $color-denim;
+    font-size: 4.4rem;
+    font-weight: 100;
+    letter-spacing: -1.4px;
+    margin: 36px 0 67px;
+    text-align: center;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__item {
+    background-color: $color-white-three;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 55px;
+    text-align: center;
+    width: 374px;
+  }
+
+  &__item-title {
+    color: $color-dusk;
+    font-size: 1.5rem;
+    font-weight: 100;
+    text-transform: uppercase;
+  }
+
+  &__item-icon {
+    border-radius: 50%;
+    height: 243px;
+    padding-bottom: calc(100% * 0.3);
+  }
+
+  &__item-description {
+    color: $color-denim;
+    font-size: 1.125rem;
+    font-weight: 100;
+  }
+}

@@ -13,8 +13,8 @@ html {
 }
 
 *,
-*:before,
-*:after {
+*::before,
+*::after {
   box-sizing: inherit;
 }
 
@@ -24,7 +24,7 @@ ol {
 }
 
 .clearfix {
-  &:after {
+  &::after {
     clear: both;
     content: '';
     display: table;

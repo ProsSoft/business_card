@@ -11,17 +11,15 @@ const Footer = () => (
   <footer className="footer">
     <div className="container">
       <div className="footer__top">
-        <div className="footer__logo">
-          <Link to="/">
-            <img className="footer__logo-picture" src="/dist/assets/images/logo.png" alt="logo" />
-          </Link>
-        </div>
+        <Link to="/" className="footer__logo">
+          <img className="footer__logo-picture" src="/dist/assets/images/logo.png" alt="logo" />
+        </Link>
         <div className="footer__nav">
-          <span className="footer__nav-title">prossoft</span>
-          <Navigation type="footer"/>
+          <span className="footer__title">prossoft</span>
+          <Navigation type="footer" />
         </div>
         <div className="footer__contacts">
-          <span className="footer__contacts-title">contact us</span>
+          <span className="footer__title">contact us</span>
           <address className="footer__contacts-address">
             {footer.contact.map(elem => (
               <span className="footer__contacts-address-element" key={elem}>
