@@ -31,17 +31,17 @@ const Footer = () => (
       </div>
       <div className="footer__bottom">
         <span className="footer__rights">© 2017. All Rights Reserved.</span>
-        <span className="footer__social">
+        <div className="footer__social">
           <a className="footer__social-link" href="#facebok">
-            <FaFacebook size="24" color="#818181" />
+            <FaFacebook size="24" />
           </a>
           <a className="footer__social-link" href="#twitter">
-            <FaTwitter size="28" color="#818181" />
+            <FaTwitter size="28" />
           </a>
           <a className="footer__social-link" href="#googlePlus">
-            <FaGooglePlus size="32" color="#818181" />
+            <FaGooglePlus size="32" />
           </a>
-        </span>
+        </div>
       </div>
     </div>
   </footer>

@@ -1,27 +1,28 @@
 .solutions {
   &__title {
     color: $color-black;
-    font-size: 71.8px;
+    font-size: 4.5rem;
     font-weight: 100;
     letter-spacing: -1.4px;
+    margin: 100px 0 0;
     text-align: center;
   }
 
   &__wrapper {
     display: flex;
-    flex-wrap: wrap;
-
+    margin-bottom: 80px;
+    padding-top: 30px;
   }
 
   &__icon {
-    background: url('/dist/assets/images/imacLanding.jpg') center/contain no-repeat;
-    flex: 1;
+    background: url('/dist/assets/images/imacLanding.jpg') right/100% auto no-repeat;
+    width: 50%;
   }
 
   &__list {
-    flex: 1;
-    margin: 0;
-    padding: 100px 265px 100px 120px;
+    margin-left: 11%;
+    max-width: 37%;
+    padding: 9% 0 0;
   }
 
   &__list-item {
@@ -38,8 +39,45 @@
 
   &__list-description {
     color: #000;
-    font-weight: 100;
+    font-weight: 300;
     letter-spacing: -0.3px;
     line-height: 1.36rem;
+  }
+
+  @media only screen and (max-width: 1024px) {
+    &__list {
+      margin: 3% auto;
+      max-width: 35%;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    &__title {
+      margin: 80px 0 20px;
+    }
+
+    &__wrapper {
+      align-items: center;
+      flex-direction: column;
+    }
+
+    &__icon {
+      background-position: center;
+      background-size: 100%;
+      padding-bottom: 80%;
+      width: 80%;
+    }
+
+    &__list {
+      margin: 3% auto;
+      max-width: 75%;
+    }
+  }
+
+  @media only screen and (max-width: 425px) {
+    &__title {
+      font-size: 3rem;
+      margin: 60px 0 20px;
+    }
   }
 }

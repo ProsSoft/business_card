@@ -1,6 +1,8 @@
 .nav {
+  //Header
+
   &__header {
-    align-items: end;
+    align-items: flex-end;
     color: $color-purple-brown;
     display: flex;
     font-weight: 500;
@@ -20,27 +22,54 @@
   }
 
   &__header-link--active {
-    border-bottom-color: #010101;
+    border-bottom-color: $color-pea-green;
   }
 
   &__header-link:last-child {
     margin-right: 0;
   }
 
+  //Footer
+
   &__footer {
     color: $color-denim;
     display: flex;
     flex-direction: column;
     font-size: 0.8125rem;
-    font-weight: 400;
+    font-weight: 300;
   }
 
   &__footer-link {
     line-height: 1.3;
+    transition: 0.4s;
   }
 
   &__footer-link:link {
     color: inherit;
+  }
+
+  &__footer-link:hover {
+    background-color: $color-light-blue-grey;
+    border-radius: 3px;
+    color: #391c1d;
+  }
+
+  //Aside navigation panel
+
+  &__aside {
+    display: flex;
+    flex-direction: column;
+    padding-left: 15%;
+  }
+
+  &__aside-link {
+    color: $color-purple-brown;
+    margin-bottom: 10px;
+    margin-right: auto;
+  }
+
+  &__aside-link:hover {
+    color: $color-denim-blue;
   }
 
   @media only screen and (max-width: 1024px) {

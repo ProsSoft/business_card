@@ -2,7 +2,7 @@ import React from 'react';
 import { Formik } from 'formik';
 
 const LandingContact = () => (
-  <section className="contact">
+  <section className="contact" id="contact-part">
     <h3 className="contact__title">Contact us</h3>
     <Formik
       initialValues={{
@@ -35,7 +35,7 @@ const LandingContact = () => (
             placeholder="Email"
             value={values.email}
           />
-          {touched.email && errors.email && <div>{errors.email}</div>}
+          {touched.email && errors.email && <div className="contact__form-error">{errors.email}</div>}
           <input
             type="phone"
             className="contact__form-input"
@@ -45,7 +45,7 @@ const LandingContact = () => (
             placeholder="Phone"
             value={values.phone}
           />
-          {touched.phone && errors.phone && <div>{errors.phone}</div>}
+          {touched.phone && errors.phone && <div className="contact__form-error">{errors.phone}</div>}
           <textarea
             rows="3"
             cols="50"
@@ -56,7 +56,7 @@ const LandingContact = () => (
             placeholder="Your Message"
             value={values.message}
           />
-          <button type="submit" className="landing-green-btn" disabled={isSubmitting}>
+          <button type="submit" className="landing-green-btn landing-green-btn--center" disabled={isSubmitting}>
             Send
           </button>
         </form>

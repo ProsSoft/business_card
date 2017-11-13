@@ -1,0 +1,27 @@
+.aside-nav {
+
+  &__header {
+    align-items: center;
+    display: flex;
+    height: 142px;
+    justify-content: flex-end;
+    padding: 20px;
+  }
+
+  &__header-button {
+    background-color: #fff;
+    border: 1px solid #bdbdbd;
+    border-radius: 3px;
+    display: inline-block;
+    font-size: 1.5rem;
+    font-weight: 700;
+    height: 50px;
+    outline: none;
+    text-transform: uppercase;
+    width: 42px;
+  }
+
+  &__header-button:hover {
+    background-color: $color-greyish;
+  }
+}

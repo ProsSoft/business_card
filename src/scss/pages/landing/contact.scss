@@ -1,7 +1,7 @@
 .contact {
   background-color: $color-light-blue-grey;
   opacity: 0.9;
-  padding-top: 15px;
+  padding: 15px 0 20px;
 
   &__title {
     color: #000;
@@ -20,12 +20,40 @@
   }
 
   &__form-input {
+    border-radius: 4px;
+    border-width: 0;
     color: $color-dark-grey;
     font-size: 1.125rem;
-    font-weight: 100;
+    font-weight: 300;
     line-height: 2.4rem;
     margin-bottom: 20px;
     text-indent: 10px;
   }
-}
 
+  &__form-input:last-of-type {
+    resize: none;
+  }
+
+  &__form-error {
+    color: #ff4d4d;
+    font-size: 1.125rem;
+    margin-bottom: 15px;
+    text-indent: 20px;
+  }
+
+  @media only screen and (max-width: 768px) {
+    &__form {
+      width: 75%;
+    }
+  }
+
+  @media only screen and (max-width: 500px) {
+    &__form {
+      width: 80%;
+    }
+
+    &__title {
+      font-size: 3rem;
+    }
+  }
+}

@@ -6,9 +6,27 @@
   display: inline-block;
   font-weight: bold;
   letter-spacing: -0.3px;
-  margin: 13px auto 40px;
   padding: 12px 0;
   text-align: center;
   text-transform: uppercase;
+  transition: 0.4s;
   width: 260px;
+
+  &--center {
+    margin: 0 auto;
+  }
+
+  @media only screen and (max-width: 500px) {
+    padding: 9px 0;
+    width: 250px;
+  }
+
+  @media only screen and (max-width: 425px) {
+    padding: 7px 0;
+    width: 235px;
+  }
+}
+
+.landing-green-btn:hover {
+  background: darken($color-pea-green, 7%);
 }

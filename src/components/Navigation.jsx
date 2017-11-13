@@ -5,11 +5,17 @@ import { nav } from '../constants';
 
 const Navigation = ({ type }) => (
   <nav className={`nav nav__${type}`}>
+    {type === 'aside' && (
+      <NavLink className={`nav__${type}-link`} to="/#top">
+        Main
+      </NavLink>
+    )}
     {nav.map(elem => (
       <NavLink
         className={`nav__${type}-link`}
+        exact
         activeClassName={`nav__${type}-link--active`}
-        key={elem.path}
+        key={elem.title}
         to={elem.path}
       >
         {elem.title}
