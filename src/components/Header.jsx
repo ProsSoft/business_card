@@ -11,18 +11,23 @@ class Header extends Component {
     asideOpen: false
   };
 
-  componentWillReceiveProps(nextProps) {
-    if (
-      this.state.asideOpen &&
-      (this.props.location.pathname !== nextProps.location.pathname ||
-        this.props.location.hash !== nextProps.location.hash)
-    ) {
+   componentWillReceiveProps(nextProps) {
+    const { pathname, hash } = this.props.location;
+    const { pathname: nextPathName, hash: nextHash } = nextProps.location;
+
+    if (this.state.asideOpen && (pathname !== nextPathName || hash !== nextHash)) {
       this.handleAsideNav();
     }
   }
 
   handleAsideNav = () => {
-    this.setState(prevState => ({ asideOpen: !prevState.asideOpen }));
+    this.setState(prevState => ({ asideOpen: !prevState.asideOpen }), this.handleFocusNav);
+  };
+
+  handleFocusNav = () => {
+    if (this.state.asideOpen) {
+      this.asideBar.focus();
+    }
   };
 
   handleClickOutside = evt => {
@@ -41,7 +46,7 @@ class Header extends Component {
           <header className="header">
             <div className="container header__wrapper">
               <div className="header__logo">
-                <Link to="/#top">
+                <Link to="/">
                   <img className="header__logo-picture" src="/dist/assets/images/logo.png" alt="logo" />
                 </Link>
               </div>
@@ -56,6 +61,10 @@ class Header extends Component {
         <div
           className={['header__aside', this.state.asideOpen && 'header__aside--open'].join(' ')}
           onBlur={this.handleClickOutside}
+          tabIndex={-1}
+          ref={elem => {
+            this.asideBar = elem;
+          }}
         >
           <AsideNav handleAsideNav={this.handleAsideNav} />
         </div>

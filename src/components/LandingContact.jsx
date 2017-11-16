@@ -1,8 +1,10 @@
+/* eslint-disable react/prop-types */
 import React from 'react';
 import { Formik } from 'formik';
+import {formRegex} from '../constants'
 
-const LandingContact = () => (
-  <section className="contact" id="contact-part">
+const LandingContact = (props) => (
+  <section className="contact" id="contacts" ref={props.scrollElem}>
     <h3 className="contact__title">Contact us</h3>
     <Formik
       initialValues={{
@@ -12,11 +14,15 @@ const LandingContact = () => (
       }}
       validate={values => {
         // same as above, but feel free to move this into a class method now.
+        const {emailValid} = formRegex;
         const errors = {};
         if (!values.email) {
           errors.email = 'Required';
-        } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(values.email)) {
+        } else if (!emailValid.test(values.email)) {
           errors.email = 'Invalid email address';
+        }
+        if (!values.phone) {
+          errors.phone = 'Required';
         }
         return errors;
       }}

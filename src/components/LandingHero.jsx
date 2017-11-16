@@ -1,9 +1,10 @@
+/* eslint-disable react/prop-types */
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Carousel } from 'react-responsive-carousel';
 
-const LandingHero = () => (
-  <section className="hero" id="top">
+const LandingHero = (props) => (
+  <section className="hero" id="top" ref={props.scrollElem}>
     <Carousel
       showIndicators={false}
       transitionTime={1000}

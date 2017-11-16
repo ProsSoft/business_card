@@ -1,9 +1,14 @@
+const formRegex = {
+  emailValid: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\\.[A-Z]{2,4}$/i
+}
+
+
 const nav = [
-  {title: 'Company', path: '#company'},
-  {title: 'Services', path: '/#services-part'},
+  {title: 'Company', path: '/#company'},
+  {title: 'Services', path: '/#services'},
   {title: 'Portfolio', path: '#portfolio'},
-  {title: 'Careers', path: '#careers'},
-  {title: 'Contacts us', path: '/#contact-part'},
+  {title: 'Careers', path: '/#careers'},
+  {title: 'Contacts us', path: '/#contacts'},
 ]
 
 const landing = {
@@ -57,4 +62,4 @@ const footer = {
   ],
 }
 
-export { landing, footer, nav }
+export { formRegex, landing, footer, nav }

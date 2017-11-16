@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import React from 'react';
 
 import LandingServicesIcon1 from './LandingServicesIcon1';
@@ -5,7 +6,7 @@ import LandingServicesIcon2 from './LandingServicesIcon2';
 import LandingServicesIcon3 from './LandingServicesIcon3';
 import { landing } from '../constants';
 
-const LandingServices = () => {
+const LandingServices = (props) => {
   const svgIcon = index => {
     switch (index) {
       case 0:
@@ -19,7 +20,7 @@ const LandingServices = () => {
     }
   };
   return (
-    <section className="services" id="services-part">
+    <section className="services" id="services" ref={props.scrollElem}>
       <div className="container">
         <h3 className="services__title">Services</h3>
         <div className="services__list">

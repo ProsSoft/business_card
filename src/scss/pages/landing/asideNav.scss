@@ -1,5 +1,4 @@
 .aside-nav {
-
   &__header {
     align-items: center;
     display: flex;
@@ -10,8 +9,9 @@
 
   &__header-button {
     background-color: #fff;
-    border: 1px solid #bdbdbd;
+    border: 0;
     border-radius: 3px;
+    color: $color-water-blue;
     display: inline-block;
     font-size: 1.5rem;
     font-weight: 700;
@@ -22,6 +22,6 @@
   }
 
   &__header-button:hover {
-    background-color: $color-greyish;
+    background-color: $color-white-two;
   }
 }
