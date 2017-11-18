@@ -1,6 +1,40 @@
 .hero {
   position: relative;
 
+
+  &__background1 {
+    height: auto;
+    max-width: 100%;
+    animation: changeImage1 12s infinite;
+    @keyframes changeImage1 {
+      0%,
+      100% {
+        opacity: 1;
+      }
+      50% {
+        opacity: 0;
+      }
+    }
+  }
+
+  &__background2 {
+    height: auto;
+    max-width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: changeImage2 12s infinite;
+    @keyframes changeImage2 {
+      0%,
+      100% {
+        opacity: 0;
+      }
+      50% {
+        opacity: 1;
+      }
+    }
+  }
+
   &__wrapper {
     background: url('/dist/assets/images/sliderFilter.png') center/cover no-repeat;
     display: flex;
