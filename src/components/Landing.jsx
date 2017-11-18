@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
 
+import scrollIt from '../utils';
 import LandingHero from './LandingHero';
 import LandingServices from './LandingServices';
 import LandingSolutions from './LandingSolutions';
@@ -13,13 +14,13 @@ class Landing extends React.Component {
     if (hash !== nextHash) {
       switch (nextHash) {
         case '':
-          this.scrollTop.scrollIntoView();
+          scrollIt(this.scrollTop, 300, 'easeOutQuad', 142);
           break;
         case '#services':
-          this.scrollServices.scrollIntoView();
+          scrollIt(this.scrollServices, 300, 'easeOutQuad', 142);
           break;
         case '#contacts':
-          this.scrollContact.scrollIntoView();
+          scrollIt(this.scrollContact, 300, 'easeOutQuad', 142);
           break;
         default:
           break;
@@ -30,10 +31,22 @@ class Landing extends React.Component {
   render() {
     return (
       <div className="landing">
-        <LandingHero scrollElem={el => {this.scrollTop = el}} />
-        <LandingServices scrollElem={el => {this.scrollServices = el}} />
+        <LandingHero
+          scrollElem={el => {
+            this.scrollTop = el;
+          }}
+        />
+        <LandingServices
+          scrollElem={el => {
+            this.scrollServices = el;
+          }}
+        />
         <LandingSolutions />
-        <LandingContact scrollElem={elem => {this.scrollContact = elem}} />
+        <LandingContact
+          scrollElem={elem => {
+            this.scrollContact = elem;
+          }}
+        />
       </div>
     );
   }
