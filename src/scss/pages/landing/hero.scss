@@ -3,8 +3,10 @@
 
 
   &__background1 {
+    /*
     height: auto;
-    max-width: 100%;
+    */
+    width: 100%;
     animation: changeImage1 12s infinite;
     @keyframes changeImage1 {
       0%,
@@ -18,8 +20,10 @@
   }
 
   &__background2 {
+    /*
     height: auto;
-    max-width: 100%;
+    */
+    width: 100%;
     position: absolute;
     top: 0;
     left: 0;
