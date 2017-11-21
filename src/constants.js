@@ -2,6 +2,8 @@ const formRegex = {
   emailValid: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\\.[A-Z]{2,4}$/i
 }
 
+const fixedHeaderHeight = 101;
+
 
 const nav = [
   {title: 'Company', path: '/#company'},
@@ -62,4 +64,4 @@ const footer = {
   ],
 }
 
-export { formRegex, landing, footer, nav }
+export { formRegex, fixedHeaderHeight, landing, footer, nav }

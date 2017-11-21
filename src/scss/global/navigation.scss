@@ -15,6 +15,7 @@
     margin-right: 16px;
     padding-bottom: 8px;
     transition: 0.4s;
+    white-space: nowrap;
   }
 
   &__header-link:hover {
@@ -72,7 +73,7 @@
     color: $color-denim-blue;
   }
 
-  @media only screen and (max-width: 1024px) {
+  @media only screen and (max-width: 768px) {
     &__header {
       display: none;
     }

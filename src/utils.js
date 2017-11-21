@@ -1,5 +1,6 @@
 /* eslint-disable no-param-reassign,no-plusplus */
-export default function scrollIt(destination, duration = 200, easing = 'linear', fixedHeaderOffSet = 0, callback) {
+
+export default function scrollIt(destination, duration = 200, easing = 'linear', fixedHeaderHeight = 0, callback) {
   const easings = {
     linear(t) {
       return t;
@@ -73,9 +74,9 @@ export default function scrollIt(destination, duration = 200, easing = 'linear',
     const now = 'now' in window.performance ? performance.now() : new Date().getTime();
     const time = Math.min(1, (now - startTime) / duration);
     const timeFunction = easings[easing](time);
-    window.scroll(0, Math.ceil(timeFunction * (destinationOffsetToScroll - fixedHeaderOffSet - start) + start));
+    window.scroll(0, Math.ceil(timeFunction * (destinationOffsetToScroll - fixedHeaderHeight - start) + start));
 
-    if (window.pageYOffset === destinationOffsetToScroll - fixedHeaderOffSet) {
+    if (window.pageYOffset === destinationOffsetToScroll - fixedHeaderHeight) {
       if (callback) {
         callback();
       }

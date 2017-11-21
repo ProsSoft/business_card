@@ -2,6 +2,7 @@
 import React from 'react';
 
 import scrollIt from '../utils';
+import {fixedHeaderHeight} from '../constants'
 import LandingHero from './LandingHero';
 import LandingServices from './LandingServices';
 import LandingSolutions from './LandingSolutions';
@@ -14,13 +15,13 @@ class Landing extends React.Component {
     if (hash !== nextHash) {
       switch (nextHash) {
         case '':
-          scrollIt(this.scrollTop, 300, 'easeOutQuad', 142);
+          scrollIt(this.scrollTop, 300, 'easeOutQuad', fixedHeaderHeight);
           break;
         case '#services':
-          scrollIt(this.scrollServices, 300, 'easeOutQuad', 142);
+          scrollIt(this.scrollServices, 300, 'easeOutQuad', fixedHeaderHeight);
           break;
         case '#contacts':
-          scrollIt(this.scrollContact, 300, 'easeOutQuad', 142);
+          scrollIt(this.scrollContact, 300, 'easeOutQuad', fixedHeaderHeight);
           break;
         default:
           break;

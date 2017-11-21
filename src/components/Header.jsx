@@ -1,6 +1,6 @@
-/* eslint-disable no-console,react/prop-types */
 import React, { Component } from 'react';
 import { Link, withRouter } from 'react-router-dom';
+import { shape, string } from 'prop-types';
 import FaBars from 'react-icons/lib/fa/bars';
 
 import Navigation from './Navigation';
@@ -11,12 +11,22 @@ class Header extends Component {
     asideOpen: false
   };
 
-   componentWillReceiveProps(nextProps) {
+  componentWillReceiveProps(nextProps) {
     const { pathname, hash } = this.props.location;
     const { pathname: nextPathName, hash: nextHash } = nextProps.location;
 
     if (this.state.asideOpen && (pathname !== nextPathName || hash !== nextHash)) {
-      this.handleAsideNav();
+      if (this.asideBarTimeoutId) {
+        clearTimeout(this.asideBarTimeoutId);
+        this.asideBarTimeoutId = null;
+      }
+      this.asideBarTimeoutId = setTimeout(() => this.setState({ asideOpen: false }), 3000);
+    }
+  }
+
+  componentWillUnmount() {
+    if (this.asideBarTimeoutId) {
+      clearTimeout(this.asideBarTimeoutId);
     }
   }
 
@@ -31,7 +41,6 @@ class Header extends Component {
   };
 
   handleClickOutside = evt => {
-    console.log('blur');
     if (!evt.currentTarget.contains(evt.relatedTarget)) {
       this.setState({
         asideOpen: false
@@ -72,5 +81,12 @@ class Header extends Component {
     );
   }
 }
+
+Header.propTypes = {
+  location: shape({
+    pathname: string.isRequired,
+    hash: string.isRequired
+  }).isRequired
+};
 
 export default withRouter(Header);

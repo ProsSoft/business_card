@@ -32,6 +32,7 @@ const LandingContact = (props) => (
       }}
       render={({ values, errors, touched, handleChange, handleBlur, handleSubmit, isSubmitting }) => (
         <form onSubmit={handleSubmit} className="contact__form">
+          {touched.email && errors.email && <div className="contact__form-error">{errors.email}</div>}
           <input
             type="email"
             className="contact__form-input"
@@ -41,7 +42,7 @@ const LandingContact = (props) => (
             placeholder="Email"
             value={values.email}
           />
-          {touched.email && errors.email && <div className="contact__form-error">{errors.email}</div>}
+          {touched.phone && errors.phone && <div className="contact__form-error">{errors.phone}</div>}
           <input
             type="phone"
             className="contact__form-input"
@@ -51,7 +52,6 @@ const LandingContact = (props) => (
             placeholder="Phone"
             value={values.phone}
           />
-          {touched.phone && errors.phone && <div className="contact__form-error">{errors.phone}</div>}
           <textarea
             rows="3"
             cols="50"
@@ -61,6 +61,7 @@ const LandingContact = (props) => (
             onBlur={handleBlur}
             placeholder="Your Message"
             value={values.message}
+            required
           />
           <button type="submit" className="landing-green-btn landing-green-btn--center" disabled={isSubmitting}>
             Send

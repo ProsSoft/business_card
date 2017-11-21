@@ -7,7 +7,7 @@ const Navigation = ({ type }) => (
   <nav className={`nav nav__${type}`}>
     {type === 'aside' && (
       <NavLink className={`nav__${type}-link`} to="/">
-        Main
+        Home
       </NavLink>
     )}
     {nav.map(elem => (
