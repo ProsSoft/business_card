@@ -5,10 +5,20 @@
 
 .wrapper-fixed {
   background-color: #fff;
+  box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 1;
 }
 
+div:focus {
+  outline: none !important;
+}
 
+input:focus,
+textarea:focus {
+  border: 1px solid darken($color-light-blue-grey, 10%) !important;
+  box-shadow: 0 0 6px darken($color-light-blue-grey, 20%);
+  outline: none !important;
+}

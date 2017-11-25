@@ -19,6 +19,8 @@ const LandingContact = (props) => (
         if (!values.email) {
           errors.email = 'Required';
         } else if (!emailValid.test(values.email)) {
+          console.log({emailValid});
+          console.log('email', values.email);
           errors.email = 'Invalid email address';
         }
         if (!values.phone) {

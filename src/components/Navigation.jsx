@@ -1,16 +1,24 @@
+/* eslint-disable no-console, no-nested-ternary */
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { nav } from '../constants';
 
 const Navigation = ({ type }) => {
-  const hashCheck = (match) => {
-
-    if (!match) {
-      return false;
+  const hashCheckContacts = (match, location) => {
+    if (match === null && location.pathname === '/' && location.hash === '#contacts') {
+      return true;
     }
-    return true;
+    return false;
   };
+
+  const hashCheckServices = (match, location) => {
+    if (match === null && location.pathname === '/' && location.hash === '#services') {
+      return true;
+    }
+    return false;
+  };
+
   return (
     <nav className={`nav nav__${type}`}>
       {type === 'aside' && (
@@ -18,11 +26,12 @@ const Navigation = ({ type }) => {
           Home
         </NavLink>
       )}
+
       {nav.map(elem => (
         <NavLink
           className={`nav__${type}-link`}
           activeClassName={`nav__${type}-link--active`}
-          isActive={hashCheck}
+          isActive={elem.activeHash ? (elem.activeHash === 'services' ? hashCheckServices : hashCheckContacts) : null}
           key={elem.title}
           to={elem.path}
         >

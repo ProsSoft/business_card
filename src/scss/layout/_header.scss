@@ -1,4 +1,5 @@
 .header {
+
   &__block {
     height: 101px;
   }
@@ -26,12 +27,12 @@
 
   &__aside {
     background-color: #fff;
-    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+    box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
     font-size: 1.2rem;
     height: 100%;
     opacity: 0.9;
     position: fixed;
-    right: -30%;
+    right: -31%;
     top: 0;
     transition: right 0.5s ease-out;
     width: 30%;
