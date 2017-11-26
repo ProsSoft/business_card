@@ -64,13 +64,23 @@
   }
 
   &__aside-link {
+    border-bottom: 4px solid #fff;
     color: $color-purple-brown;
     margin-bottom: 10px;
     margin-right: auto;
+    transition: 0.4s;
   }
 
   &__aside-link:hover {
     color: $color-denim-blue;
+  }
+
+  &__aside-link:active {
+    border-bottom-color: $color-dark-sky-blue;
+  }
+
+  &__aside-link--active {
+    border-bottom-color: $color-pea-green;
   }
 
   @media only screen and (max-width: 768px) {

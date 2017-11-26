@@ -25,6 +25,7 @@
     "react-router-hash-link": "^1.1.1",
     "react-router-scroll-4": "^1.0.0-beta.1",
     "react-router-transition": "^1.1.2",
+    "react-visibility-sensor": "^3.11.0",
     "rrc": "^0.10.1",
     "webpack": "2.7.0",
     "webpack-dev-middleware": "^1.12.0",

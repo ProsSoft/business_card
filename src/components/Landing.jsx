@@ -1,8 +1,9 @@
-/* eslint-disable react/prop-types */
+/* eslint-disable react/prop-types,react/jsx-no-bind,no-return-assign,no-param-reassign,prefer-destructuring,consistent-return */
 import React from 'react';
+import VisibilitySensor from 'react-visibility-sensor';
 
 import scrollIt from '../utils';
-import {fixedHeaderHeight} from '../constants'
+import { fixedHeaderHeight } from '../constants';
 import LandingHero from './LandingHero';
 import LandingServices from './LandingServices';
 import LandingSolutions from './LandingSolutions';
@@ -29,25 +30,42 @@ class Landing extends React.Component {
     }
   }
 
+  onChange = (elem, isVisible) => {
+    if (isVisible) {
+      document.querySelectorAll(`[href="/#${elem}"]`).forEach(item => {
+        item.className = `${item.className} ${item.className}--active`;
+      });
+    } else {
+      document.querySelectorAll(`[href="/#${elem}"]`).forEach(item => {
+        item.className = item.className.split(' ')[0];
+      });
+    }
+  };
   render() {
     return (
       <div className="landing">
-        <LandingHero
-          scrollElem={el => {
-            this.scrollTop = el;
-          }}
-        />
-        <LandingServices
-          scrollElem={el => {
-            this.scrollServices = el;
-          }}
-        />
+        <VisibilitySensor partialVisibility>
+          <LandingHero
+            scrollElem={el => {
+              this.scrollTop = el;
+            }}
+          />
+        </VisibilitySensor>
+        <VisibilitySensor partialVisibility onChange={this.onChange.bind(null, 'services')}>
+          <LandingServices
+            scrollElem={el => {
+              this.scrollServices = el;
+            }}
+          />
+        </VisibilitySensor>
         <LandingSolutions />
-        <LandingContact
-          scrollElem={elem => {
-            this.scrollContact = elem;
-          }}
-        />
+        <VisibilitySensor partialVisibility onChange={this.onChange.bind(null, 'contacts')}>
+          <LandingContact
+            scrollElem={elem => {
+              this.scrollContact = elem;
+            }}
+          />
+        </VisibilitySensor>
       </div>
     );
   }
