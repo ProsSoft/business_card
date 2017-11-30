@@ -1,5 +1,4 @@
 .header {
-
   &__block {
     height: 101px;
   }
@@ -21,31 +20,16 @@
     padding: 0 70px;
   }
 
+  &__logo-link {
+    display: inline-block;
+  }
+
   &__bar-button {
     display: none;
   }
 
   &__aside {
-    background-color: #fff;
-    box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
-    font-size: 1.2rem;
-    height: 100%;
-    opacity: 0.9;
-    position: fixed;
-    right: -31%;
-    top: 0;
-    transition: right 0.5s ease-out;
-    width: 30%;
-    z-index: 10;
-
-    @media only screen and (max-width: 600px) {
-      right: -50%;
-      width: 50%;
-    }
-
-    &--open {
-      right: 0;
-    }
+    display: none;
   }
 
   @media only screen and (max-width: 768px) {
@@ -76,7 +60,31 @@
     &__bar-button:hover {
       background-color: $color-white-two;
     }
+
+    &__aside {
+      background-color: #fff;
+      box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+      display: block;
+      font-size: 1.2rem;
+      height: 100%;
+      opacity: 0.9;
+      position: fixed;
+      right: -31%;
+      top: 0;
+      transition: right 0.5s ease-out;
+      width: 30%;
+      z-index: 10;
+
+      &--open {
+        right: 0;
+      }
+    }
   }
 
-
+  @media only screen and (max-width: 600px) {
+    &__aside {
+      right: -50%;
+      width: 50%;
+    }
+  }
 }

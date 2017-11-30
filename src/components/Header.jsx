@@ -55,7 +55,7 @@ class Header extends Component {
           <header className="header">
             <div className="container header__wrapper">
               <div className="header__logo">
-                <Link to="/">
+                <Link className="header__logo-link" to="/">
                   <img className="header__logo-picture" src="/dist/assets/images/logo.png" alt="logo" />
                 </Link>
               </div>

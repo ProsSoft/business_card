@@ -8,7 +8,7 @@
     font-size: 4.4rem;
     font-weight: 100;
     letter-spacing: -1.4px;
-    margin: 0 0 25px;
+    margin: 0 0 10px;
     text-align: center;
   }
 
@@ -26,18 +26,22 @@
     font-size: 1.125rem;
     font-weight: 300;
     line-height: 2.4rem;
-    margin-bottom: 20px;
     text-indent: 10px;
+    /*
+    transition: box-shadow linear 0.6s;
+    */
   }
 
-  &__form-input:last-of-type {
+  &__form-input:nth-last-child(2) {
+    margin-bottom: 20px;
     resize: none;
   }
 
   &__form-error {
     color: #ff4d4d;
     font-size: 0.875rem;
-    margin-bottom: 5px;
+    height: 18px;
+    margin: 6px 0;
     text-indent: 10px;
   }
 

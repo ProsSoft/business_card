@@ -18,23 +18,21 @@ const LandingContact = (props) => (
         const errors = {};
         if (!values.email) {
           errors.email = 'Required';
-        } else if (!emailValid.test(values.email)) {
-          console.log({emailValid});
-          console.log('email', values.email);
+        }
+
+        if (values.email && !emailValid.test(values.email)) {
           errors.email = 'Invalid email address';
         }
-        if (!values.phone) {
-          errors.phone = 'Required';
+
+        if (!values.message) {
+          errors.message = 'Required';
         }
         return errors;
       }}
-      onSubmit={values => {
-        // eslint-disable-next-line no-console
-        console.log(values);
-      }}
+      onSubmit={values => (values)}
       render={({ values, errors, touched, handleChange, handleBlur, handleSubmit, isSubmitting }) => (
         <form onSubmit={handleSubmit} className="contact__form">
-          {touched.email && errors.email && <div className="contact__form-error">{errors.email}</div>}
+          <div className="contact__form-error">{(touched.email && errors.email) ? errors.email : ""}</div>
           <input
             type="email"
             className="contact__form-input"
@@ -44,7 +42,7 @@ const LandingContact = (props) => (
             placeholder="Email"
             value={values.email}
           />
-          {touched.phone && errors.phone && <div className="contact__form-error">{errors.phone}</div>}
+          <div className="contact__form-error">{(touched.phone && errors.phone) ? errors.phone : ""}</div>
           <input
             type="phone"
             className="contact__form-input"
@@ -54,6 +52,7 @@ const LandingContact = (props) => (
             placeholder="Phone"
             value={values.phone}
           />
+          <div className="contact__form-error">{(touched.message && errors.message) ? errors.message : ""}</div>
           <textarea
             rows="3"
             cols="50"
@@ -63,7 +62,6 @@ const LandingContact = (props) => (
             onBlur={handleBlur}
             placeholder="Your Message"
             value={values.message}
-            required
           />
           <button type="submit" className="landing-green-btn landing-green-btn--center" disabled={isSubmitting}>
             Send
