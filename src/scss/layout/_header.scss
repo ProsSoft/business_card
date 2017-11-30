@@ -67,7 +67,7 @@
       display: block;
       font-size: 1.2rem;
       height: 100%;
-      opacity: 0.9;
+      opacity: 0.85;
       position: fixed;
       right: -31%;
       top: 0;
@@ -85,6 +85,10 @@
     &__aside {
       right: -50%;
       width: 50%;
+
+      &--open {
+        right: 0;
+      }
     }
   }
 }

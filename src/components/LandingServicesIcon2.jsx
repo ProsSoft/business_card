@@ -1,7 +1,7 @@
 import React from 'react';
 
 const LandingServicesIcon2 = () => (
-  <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 250" width="142px">
+  <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 250" width="58%">
     <path
       className="services__svg-icon2"
       d="M120.9,196.8c-8.5,0-15.4,6.9-15.4,15.4c0,8.5,6.9,15.4,15.4,15.4c8.5,0,15.4-6.9,15.4-15.4 C136.3,203.7,129.4,196.8,120.9,196.8L120.9,196.8z M120.9,220c-4.3,0-7.7-3.5-7.7-7.7c0-4.2,3.5-7.7,7.7-7.7 c4.2,0,7.7,3.5,7.7,7.7C128.6,216.5,125.2,220,120.9,220L120.9,220z"

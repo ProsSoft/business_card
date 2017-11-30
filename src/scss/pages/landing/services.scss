@@ -87,20 +87,46 @@
   }
 
   @media only screen and (max-width: 768px) {
+    &__title {
+      margin: 24px 0;
+    }
+
+
     &__item {
+      margin-bottom: 30px;
       width: 75%;
+    }
+
+    &__item-icon {
+    height: 200px;
+    width: 200px;    
     }
   }
 
   @media only screen and (max-width: 600px) {
+    &__title {
+      font-size: 3.5rem;
+    }
+
     &__item {
+      margin-bottom: 20px;
       width: 80%;
     }
   }
 
   @media only screen and (max-width: 500px) {
+    &__title {
+      font-size: 3.2rem;
+    }  
+
     &__item {
+      margin-bottom: 10px;
       width: 90%;
     }
+
+    &__item-icon {
+      height: 175px;
+      width: 175px;    
+      }
   }
 }

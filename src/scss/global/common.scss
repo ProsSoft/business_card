@@ -25,3 +25,7 @@ textarea:focus {
   box-shadow: 0 0 6px darken($color-light-blue-grey, 20%);
   outline: none !important;
 }
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 30px white inset;
+}

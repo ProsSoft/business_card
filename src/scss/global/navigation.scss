@@ -45,7 +45,8 @@
     transition: 0.4s;
   }
 
-  &__footer-link:link {
+  &__footer-link:link,
+  &__footer-link:visited {
     color: inherit;
   }
 
