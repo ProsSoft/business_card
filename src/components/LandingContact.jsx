@@ -63,9 +63,11 @@ const LandingContact = (props) => (
             placeholder="Your Message"
             value={values.message}
           />
-          <button type="submit" className="landing-green-btn landing-green-btn--center" disabled={isSubmitting}>
-            Send
-          </button>
+          <div className="contact__form-button-wrapper">
+            <button type="submit" className="landing-green-btn landing-green-btn--center" disabled={isSubmitting}>
+              Send
+            </button>
+          </div>
         </form>
       )}
     />
