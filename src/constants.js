@@ -7,7 +7,7 @@ const fixedHeaderHeight = 101;
 const nav = [
   { title: 'Company', path: '/#company', activeHash: '' },
   { title: 'Services', path: '/#services', activeHash: 'services' },
-  { title: 'Portfolio', path: '#portfolio', activeHash: '' },
+  { title: 'Portfolio', path: 'portfolio', activeHash: '' },
   { title: 'Careers', path: '/#careers', activeHash: '' },
   { title: 'Contacts us', path: '/#contacts', activeHash: 'contacts' }
 ];

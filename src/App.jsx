@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 import Landing from './components/Landing';
+import Portfolio from './components/Portfolio/index'
 import Header from './components/Header';
 import Footer from './components/Footer';
 
@@ -13,6 +14,7 @@ const App = () => (
       <Header />
       <Switch>
         <Route exact path="/" component={Landing} />
+        <Route path="/portfolio" component={Portfolio} />
         <Route component={FourOhFour} />
       </Switch>
       <Footer />
