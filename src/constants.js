@@ -5,9 +5,9 @@ const formRegex = {
 const fixedHeaderHeight = 101;
 
 const nav = [
-  { title: 'Company', path: '/#company', activeHash: '' },
   { title: 'Services', path: '/#services', activeHash: 'services' },
-  { title: 'Portfolio', path: 'portfolio', activeHash: '' },
+  { title: 'Products', path: '/products', activeHash: '' },
+  { title: 'Company', path: '/#company', activeHash: '' },
   { title: 'Careers', path: '/#careers', activeHash: '' },
   { title: 'Contacts us', path: '/#contacts', activeHash: 'contacts' }
 ];
@@ -55,6 +55,19 @@ const landing = {
   ]
 };
 
+const imagesUrl = '/dist/assets/images/';
+
+const productsImgFileName = 'portf';
+
+const products = [
+  { name: 'Product1', description: 'product description' },
+  { name: 'Product2', description: 'product description' },
+  { name: 'Product3', description: 'product description' },
+  { name: 'Product4', description: 'product description' },
+  { name: 'Product5', description: 'product description' },
+  { name: 'Product6', description: 'product description' }
+];
+
 const footer = {
   contact: [
     'United Kingdom',
@@ -63,4 +76,4 @@ const footer = {
   ]
 };
 
-export { formRegex, fixedHeaderHeight, landing, footer, nav };
+export { imagesUrl, formRegex, fixedHeaderHeight, products, productsImgFileName, landing, footer, nav };

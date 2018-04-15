@@ -1,10 +1,10 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
 
-import LandingServicesIcon1 from './LandingServicesIcon1';
-import LandingServicesIcon2 from './LandingServicesIcon2';
-import LandingServicesIcon3 from './LandingServicesIcon3';
-import { landing } from '../constants';
+import LandingServicesIcon1 from './Icon1';
+import LandingServicesIcon2 from './Icon2';
+import LandingServicesIcon3 from './Icon3';
+import { landing } from '../../../constants';
 
 const LandingServices = (props) => {
   const svgIcon = index => {

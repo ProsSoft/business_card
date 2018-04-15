@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
 import { Formik } from 'formik';
-import {formRegex} from '../constants'
+import {formRegex} from '../../constants'
 
 const LandingContact = (props) => (
   <section className="contact" id="contacts" ref={props.scrollElem}>

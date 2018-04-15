@@ -23,10 +23,10 @@ const Navigation = ({type}) => (
         </NavLink>
       ))}
     </nav>
-  )
+  );
 
 Navigation.propTypes = {
   type: PropTypes.string.isRequired,
-}
+};
 
-export default Navigation
+export default Navigation;

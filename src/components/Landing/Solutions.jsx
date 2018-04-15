@@ -1,5 +1,5 @@
 import React from 'react';
-import { landing } from '../constants';
+import { landing } from '../../constants';
 
 const LandingSolutions = () => {
   const { solutions } = landing;

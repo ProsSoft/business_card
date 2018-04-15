@@ -2,12 +2,12 @@
 import React from 'react';
 import VisibilitySensor from 'react-visibility-sensor';
 
-import scrollIt from '../utils';
-import { fixedHeaderHeight } from '../constants';
-import LandingHero from './LandingHero';
-import LandingServices from './LandingServices';
-import LandingSolutions from './LandingSolutions';
-import LandingContact from './LandingContact';
+import scrollIt from '../../utils';
+import { fixedHeaderHeight } from '../../constants';
+import LandingHero from './Hero';
+import LandingServices from './Services/index';
+import LandingSolutions from './Solutions';
+import LandingContact from './Contacts';
 
 class Landing extends React.Component {
   componentWillReceiveProps(nextProps) {
