@@ -1,71 +1,30 @@
 /* eslint-disable react/prop-types,react/jsx-no-bind,no-return-assign,no-param-reassign,prefer-destructuring,consistent-return */
 import React from 'react';
-import VisibilitySensor from 'react-visibility-sensor';
 
-import scrollIt from '../../utils';
-import { fixedHeaderHeight } from '../../constants';
-import LandingHero from './Hero';
-import LandingServices from './Services/index';
-import LandingSolutions from './Solutions';
-import LandingContact from './Contacts';
+import { scrollTo } from './util';
+import Hero from './Hero';
+import Services from './Services';
+import Solutions from './Solutions';
+import Contacts from './Contacts';
 
 class Landing extends React.Component {
-  componentWillReceiveProps(nextProps) {
-    const { hash } = this.props.location;
-    const { hash: nextHash } = nextProps.location;
-    if (hash !== nextHash) {
-      switch (nextHash) {
-        case '':
-          scrollIt(this.scrollTop, 300, 'easeOutQuad', fixedHeaderHeight);
-          break;
-        case '#services':
-          scrollIt(this.scrollServices, 300, 'easeOutQuad', fixedHeaderHeight);
-          break;
-        case '#contacts':
-          scrollIt(this.scrollContact, 300, 'easeOutQuad', fixedHeaderHeight);
-          break;
-        default:
-          break;
-      }
-    }
+  componentWillReceiveProps({ match: { params: { section } } }){
+    scrollTo(section);
   }
-
-  onChange = (elem, isVisible) => {
-    if (isVisible) {
-      document.querySelectorAll(`[href="/#${elem}"]`).forEach(item => {
-        item.className = `${item.className} ${item.className}--active`;
-      });
-    } else {
-      document.querySelectorAll(`[href="/#${elem}"]`).forEach(item => {
-        item.className = item.className.split(' ')[0];
-      });
-    }
-  };
+  componentDidMount() {
+    const { match: { params: { section } } } = this.props;
+    scrollTo(section);
+  }
+  componentWillUnmount() {
+    window.scrollTo(0, 0);
+  }
   render() {
     return (
       <div className="landing">
-        <VisibilitySensor partialVisibility>
-          <LandingHero
-            scrollElem={el => {
-              this.scrollTop = el;
-            }}
-          />
-        </VisibilitySensor>
-        <VisibilitySensor partialVisibility onChange={this.onChange.bind(null, 'services')}>
-          <LandingServices
-            scrollElem={el => {
-              this.scrollServices = el;
-            }}
-          />
-        </VisibilitySensor>
-        <LandingSolutions />
-        <VisibilitySensor partialVisibility onChange={this.onChange.bind(null, 'contacts')}>
-          <LandingContact
-            scrollElem={elem => {
-              this.scrollContact = elem;
-            }}
-          />
-        </VisibilitySensor>
+        <Hero />
+        <Services />
+        <Solutions />
+        <Contacts />
       </div>
     );
   }

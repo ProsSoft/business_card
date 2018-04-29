@@ -3,8 +3,8 @@ import React from 'react';
 import { Formik } from 'formik';
 import {formRegex} from '../../constants'
 
-const LandingContact = (props) => (
-  <section className="contact" id="contacts" ref={props.scrollElem}>
+const ContactUs = (props) => (
+  <section className="contact" id="contact-us">
     <h3 className="contact__title">Contact us</h3>
     <Formik
       initialValues={{
@@ -74,4 +74,4 @@ const LandingContact = (props) => (
   </section>
 );
 
-export default LandingContact;
+export default ContactUs;

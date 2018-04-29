@@ -1,9 +1,10 @@
 import React from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
 
 import Landing from './components/Landing';
-import Products from './components/Products'
-import Product from './components/Product'
+import Service from './components/Service';
+import Products from './components/Products';
+import Product from './components/Product';
 import Header from './components/Header';
 import Footer from './components/Footer';
 
@@ -14,7 +15,11 @@ const App = () => (
     <div className="app">
       <Header />
       <Switch>
-        <Route exact path="/" component={Landing} />
+        <Route exact path="/">
+          <Redirect to="/home" />
+        </Route>
+        <Route path="/home/:section?" component={Landing} />
+        <Route path="/services/:type" component={Service} />
         <Route path="/products" component={Products} />
         <Route path="/product/:name" component={Product} />
         <Route path="/*" component={FourOhFour} />

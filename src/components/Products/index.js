@@ -5,7 +5,7 @@ import { imagesUrl, products, productsImgFileName } from '../../constants';
 
 export default () =>
   <div>
-    <section key={1} id="section_main_portfolio">
+    <section id="section_main_portfolio">
       <div>
         <div className="head_portfolio">
           <h2>Products</h2>
@@ -21,7 +21,7 @@ export default () =>
         </div>
       </div>
     </section>
-    <section key={2} id="portfolio_txt_content">
+    <section id="portfolio_txt_content">
       <div className="box-width">
         <p>Responsive. Localized. Dynamic.</p>
         <span>The site seemlessly adapts to any screen size.

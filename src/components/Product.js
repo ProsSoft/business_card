@@ -1,8 +1,6 @@
 import React from 'react';
 import { Redirect } from 'react-router-dom';
 
-import { FourOhFour } from '../App';
-
 import { products } from '../constants';
 
 const Product = ({ match }) => {
@@ -31,7 +29,7 @@ const Product = ({ match }) => {
       </div>
       <div className="solution_block">
         <div className="box-width-x">
-          <img src="/dist/assets/images/mac.png" alt />
+          <img src="/dist/assets/images/mac.png" />
           <div className="info_solution_block">
             <h2>Our Solution</h2>
             <p>Database optimization</p>

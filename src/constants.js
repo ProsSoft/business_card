@@ -5,16 +5,17 @@ const formRegex = {
 const fixedHeaderHeight = 101;
 
 const nav = [
-  { title: 'Services', path: '/#services', activeHash: 'services' },
-  { title: 'Products', path: '/products', activeHash: '' },
-  { title: 'Company', path: '/#company', activeHash: '' },
-  { title: 'Careers', path: '/#careers', activeHash: '' },
-  { title: 'Contacts us', path: '/#contacts', activeHash: 'contacts' }
+  { title: 'Services', path: '/home/services', id: 'services' },
+  { title: 'Products', path: '/products' },
+  { title: 'Company', path: '/company' },
+  { title: 'Careers', path: '/careers' },
+  { title: 'Contact us', path: '/home/contact-us', id: 'contact-us' }
 ];
 
 const landing = {
   services: [
     {
+      link: '/product-development',
       title: 'Product development',
       imgSrc: 'landingIcon1.svg',
       description:
@@ -22,12 +23,14 @@ const landing = {
     },
     {
       title: 'Mobile application development',
+      link: '/mobile-application-development',
       imgSrc: 'landingIcon2.svg',
       description:
         'As the whole World goes mobile take the advantages of your business to make it mobile or develop your own mobile app as a standalone application for users.'
     },
     {
       title: 'Websites development',
+      link: '/websites-development',
       imgSrc: 'landingIcon3.svg',
       description:
         'Landing pages, e-shops, blogs - bring your ideas of the website to reality. Explore, how Relevant Software team makes it possible.'
