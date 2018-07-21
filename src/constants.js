@@ -85,6 +85,8 @@ const products = [
 const company = {
   hero: {
     slides: [{ src: `${imagesUrl}sliderCompany.jpg` }],
+    title1: 'Along we can do so little,',
+    title2: 'together we can do so much.'
   }
 };
 
