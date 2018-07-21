@@ -20,7 +20,7 @@ const config = {
     hot: true,
     publicPath: '/dist/',
     historyApiFallback: true,
-    overlay: false,
+    overlay: false
   },
   resolve: {
     modules: ['node_modules', 'src'],

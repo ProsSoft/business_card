@@ -1,7 +1,7 @@
 /* eslint-disable no-console */
 import React from 'react'
-import { NavLink } from 'react-router-dom'
 import PropTypes from 'prop-types'
+import { NavLink } from 'react-router-dom'
 import { nav } from '../constants'
 
 const Navigation = ({ type }) => (

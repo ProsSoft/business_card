@@ -1,3 +1,6 @@
+const assetsPath = '/dist/assets/';
+const imagesUrl = `${assetsPath}images/`;
+
 const formRegex = {
   emailValid: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i
 };
@@ -13,6 +16,16 @@ const nav = [
 ];
 
 const landing = {
+  hero: {
+    slides: [
+      { src: `${imagesUrl}sliderDay.png`,
+        className: 'hero__background1' },
+      { src: `${imagesUrl}sliderNight.jpg`,
+        className: 'hero__background2' }
+    ],
+    title1: 'Developing software',
+    title2: 'for business'
+  },
   services: [
     {
       link: '/product-development',
@@ -58,8 +71,6 @@ const landing = {
   ]
 };
 
-const imagesUrl = '/dist/assets/images/';
-
 const productsImgFileName = 'portf';
 
 const products = [
@@ -71,6 +82,12 @@ const products = [
   { name: 'Product6', description: 'product description' }
 ];
 
+const company = {
+  hero: {
+    slides: [{ src: `${imagesUrl}sliderCompany.jpg` }],
+  }
+};
+
 const footer = {
   contact: [
     'United Kingdom',
@@ -79,4 +96,4 @@ const footer = {
   ]
 };
 
-export { imagesUrl, formRegex, fixedHeaderHeight, products, productsImgFileName, landing, footer, nav };
+export { imagesUrl, formRegex, fixedHeaderHeight, products, productsImgFileName, landing, company, footer, nav };

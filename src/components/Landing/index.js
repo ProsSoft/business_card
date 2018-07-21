@@ -1,11 +1,12 @@
 /* eslint-disable react/prop-types,react/jsx-no-bind,no-return-assign,no-param-reassign,prefer-destructuring,consistent-return */
 import React from 'react';
 
-import { scrollTo } from './util';
-import Hero from './Hero';
+import Hero from '../common/Hero';
 import Services from './Services';
 import Solutions from './Solutions';
 import Contacts from './Contacts';
+import { scrollTo } from './util';
+import { landing } from '../../constants';
 
 class Landing extends React.Component {
   componentWillReceiveProps({ match: { params: { section } } }){
@@ -21,7 +22,7 @@ class Landing extends React.Component {
   render() {
     return (
       <div className="landing">
-        <Hero />
+        <Hero {...landing.hero} />
         <Services />
         <Solutions />
         <Contacts />
