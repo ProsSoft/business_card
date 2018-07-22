@@ -6,7 +6,9 @@ import './scss/main.scss';
 
 const renderApp = () => {
   render(<App />, document.getElementById('app'));
+  // render() //todo: 404
 };
+
 renderApp();
 
 if (module.hot) {
