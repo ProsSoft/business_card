@@ -2,18 +2,23 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { NavLink } from 'react-router-dom'
-import { nav } from '../constants'
+import { nav } from '../../constants'
 
-const Navigation = ({ type }) => (
+const Navigation = ({ type }) =>
     <nav className={`nav nav__${type}`}>
       {type === 'aside' && (
-        <NavLink className={`nav__${type}-link`} to="/home">
+        <NavLink
+          className={`nav__${type}-link`} to="/home"
+          activeClassName={`nav__${type}-link--active`}
+          isActive={(match, location) => match && match.path === '/home'}
+        >
           Home
         </NavLink>
       )}
 
-      {nav.map(({ title, path }) => (
+      {nav.map(({ title, path, isActive }) => (
         <NavLink
+          {...{ isActive }}
           className={`nav__${type}-link`}
           activeClassName={`nav__${type}-link--active`}
           key={title}
@@ -22,8 +27,7 @@ const Navigation = ({ type }) => (
           {title}
         </NavLink>
       ))}
-    </nav>
-  );
+    </nav>;
 
 Navigation.propTypes = {
   type: PropTypes.string.isRequired

@@ -9,12 +9,12 @@ import { scrollTo } from './util';
 import { landing } from '../../constants';
 
 class Landing extends React.Component {
-  componentWillReceiveProps({ match: { params: { section } } }){
+  componentWillReceiveProps({ match: { params: { section } } }) {
     scrollTo(section);
   }
   componentDidMount() {
     const { match: { params: { section } } } = this.props;
-    scrollTo(section);
+    scrollTo(section, true);
   }
   componentWillUnmount() {
     window.scrollTo(0, 0);

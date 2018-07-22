@@ -7,9 +7,15 @@ const formRegex = {
 
 const fixedHeaderHeight = 101;
 
+const PRODUCTS_PATH = '/products';
+const PRODUCT_PATH = '/product';
+
+const isNavItemProductsActive = (match, location) => match ?
+  PRODUCTS_PATH === match.path : `/${location.pathname.split('/')[1]}` === PRODUCT_PATH;
+
 const nav = [
   { title: 'Services', path: '/home/services', id: 'services' },
-  { title: 'Products', path: '/products' },
+  { title: 'Products', path: PRODUCTS_PATH, isActive: isNavItemProductsActive },
   { title: 'Company', path: '/company' },
   { title: 'Careers', path: '/careers' },
   { title: 'Contact us', path: '/home/contact-us', id: 'contact-us' }
