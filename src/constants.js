@@ -93,7 +93,40 @@ const company = {
     slides: [{ src: `${imagesUrl}sliderCompany.jpg` }],
     title1: 'Along we can do so little,',
     title2: 'together we can do so much.'
-  }
+  },
+  title: 'Our Team',
+  members: [
+    {
+      src: `${imagesUrl}andrew.jpeg`,
+      firstName: 'Andrij',
+      lastName: 'Vasylenko',
+      about: 'Co-founder. Research Fellow in Theory Group, Department of Physics.'
+    },
+    {
+      src: `${imagesUrl}ruslan.jpg`,
+      firstName: 'Ruslan',
+      lastName: 'Vasylenko',
+      about: 'Co-founder. Senior Software JavaScript Engineer'
+    },
+    {
+      src: `${imagesUrl}andrew.jpeg`,
+      firstName: 'Andrij',
+      lastName: 'Vasylenko',
+      about: 'Co-founder. Research Fellow in Theory Group, Department of Physics.'
+    },
+    // {
+    //   src: `${imagesUrl}ivan.jpg`,
+    //   firstName: 'Ivan',
+    //   lastName: 'Tymtsiv',
+    //   about: 'Disigner'
+    // },
+    {
+      src: `${imagesUrl}andrew.jpeg`,
+      firstName: 'Andrij',
+      lastName: 'Vasylenko',
+      about: 'Co-founder. Research Fellow in Theory Group, Department of Physics.'
+    },
+  ]
 };
 
 const footer = {
