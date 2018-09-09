@@ -47,6 +47,9 @@
     position: absolute;
     top: 0;
     width: 100%;
+    &.no-back {
+      background: none
+    }
   }
 
   &__title {
@@ -56,6 +59,16 @@
     font-weight: 300;
     letter-spacing: -1.2px;
     margin: 0 0 50px;
+  }
+
+  &__quote_author {
+    margin: -45px 0 47px;
+    font-size: 35.3px;
+    font-weight: 100;
+    font-style: italic;
+    letter-spacing: -0.7px;
+    text-align: left;
+    color: #9a9a9a;
   }
 
   @media only screen and (max-width: 600px) {

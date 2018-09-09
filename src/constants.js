@@ -129,6 +129,35 @@ const company = {
   ]
 };
 
+const careers = {
+  hero: {
+    slides: [{ src: `${imagesUrl}slider_career.jpg` }],
+    title1: 'The best way to predict',
+    title2: 'the future is to create it.',
+    quoteAuthor: '(Abraham Lincoln)',
+    buttonText: 'Get a job'
+  },
+  offers: [
+    { position: 'Middle JavaScript Software Engineer',
+      description: '',
+      typicalDuties: '',
+      weOffer: '',
+    },
+    { position: 'Sales Manager/Marketer',
+      description: '',
+      typicalDuties: '',
+      weOffer: '',
+    },
+  ]
+};
+
+const service = {
+  hero: {
+    slides: [{ src: `${imagesUrl}stage_slider.png` }],
+    title1: 'Stages of Creation',
+  }
+};
+
 const footer = {
   contact: [
     'United Kingdom',
@@ -137,4 +166,16 @@ const footer = {
   ]
 };
 
-export { imagesUrl, formRegex, fixedHeaderHeight, products, productsImgFileName, landing, company, footer, nav };
+export {
+  imagesUrl,
+  formRegex,
+  fixedHeaderHeight,
+  products,
+  productsImgFileName,
+  landing,
+  company,
+  footer,
+  nav,
+  careers,
+  service
+};

@@ -13,6 +13,6 @@ export default () =>
       textAlign: 'center',
       margin: '16px auto'
     }}>
-      {members.map((props) => <TeamMember {...props} />)}
+      {members.map((props, key) => <TeamMember {...{ ...props, key }}/>)}
     </div>
   </div>

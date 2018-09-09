@@ -4,6 +4,7 @@ import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
 import Landing from './components/Landing';
 import Service from './components/Service';
 import Company from './components/Company';
+import Careers from './components/Careers';
 import Products from './components/Products';
 import Product from './components/Product';
 import Header from './components/Header';
@@ -24,6 +25,7 @@ const App = () => (
         <Route path="/products" component={Products} />
         <Route path="/product/:name" component={Product} />
         <Route path="/company" component={Company} />
+        <Route path="/careers" component={Careers} />
         <Route path="/*" component={FourOhFour} />
       </Switch>
       <Footer />
