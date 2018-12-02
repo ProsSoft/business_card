@@ -6,7 +6,7 @@ const LandingSolutions = () => {
   return (
     <section className="solutions">
       <div className="container">
-        <h3 className="section__title">Our Solution</h3>
+        <h3 className="section__title">Solutions</h3>
         <div className="solutions__wrapper">
           <div className="solutions__icon" />
           <ul className="solutions__list">
