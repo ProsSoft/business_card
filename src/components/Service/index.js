@@ -1,16 +1,29 @@
-import React from 'react';
+import React, { Component } from 'react';
 import Hero from '../common/Hero';
-import TreeSVG from './TreeSVG';
 
-import { service } from '../../constants';
+import { service, landing } from '../../constants';
+
+const { services } = landing;
 
 const { hero } = service;
 
-const Service = ({ match: { params: { type }} }) =>
-  <div>
-    <Hero {...hero} noBack />
-    <h3 className="section__title">Stages</h3>
-    <TreeSVG />
-  </div>;
+class Service extends Component {
+  state = {
+    src: ''
+  };
+  render() {
+    const { match: { params: { type }} } = this.props;
+    const { title } = services.find(({link}) => link === `/${type}`);
+    return (
+      <div>
+        <Hero
+          {...hero}
+          noBack
+          title1={title}
+        />
+        <img src={this.state.src} />
+      </div>);
+  }
+}
 
 export default Service;

@@ -35,20 +35,20 @@ const landing = {
   services: [
     {
       link: '/product-development',
-      title: 'Product development',
+      title: 'Product Development',
       imgSrc: 'landingIcon1.svg',
       description:
         'From the simplest to the most sophisticated applications, Relevant Software team can provide you with the solution of various complexity degree.'
     },
     {
-      title: 'Mobile application development',
+      title: 'Mobile Application Development',
       link: '/mobile-application-development',
       imgSrc: 'landingIcon2.svg',
       description:
         'As the whole World goes mobile take the advantages of your business to make it mobile or develop your own mobile app as a standalone application for users.'
     },
     {
-      title: 'Websites development',
+      title: 'Websites Development',
       link: '/websites-development',
       imgSrc: 'landingIcon3.svg',
       description:
@@ -153,9 +153,9 @@ const careers = {
 
 const service = {
   hero: {
-    slides: [{ src: `${imagesUrl}stage_slider.png` }],
-    title1: 'Stages of Creation',
-  }
+    slides: [{src: `${imagesUrl}stage_slider.png`}],
+    title2: 'Stages of Creation',
+  },
 };
 
 const footer = {
