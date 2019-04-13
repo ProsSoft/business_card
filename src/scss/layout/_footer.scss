@@ -30,6 +30,9 @@
 
   &__contacts {
     max-width: 270px;
+    .footer__contacts-address-element {
+      min-height: 15px;
+    }
   }
 
   &__contacts-address {

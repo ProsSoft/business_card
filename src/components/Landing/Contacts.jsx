@@ -6,7 +6,8 @@ import {formRegex} from '../../constants'
 const ContactUs = (props) => (
   <section className="contact" id="contact-us">
     <h3 className="contact__title">Contact us</h3>
-    <Formik
+    <a href="mailto:contacts@prossoft.com"><h4>contacts@prossoft.com</h4></a>
+    {/*<Formik
       initialValues={{
         email: '',
         phone: '',
@@ -70,7 +71,7 @@ const ContactUs = (props) => (
           </div>
         </form>
       )}
-    />
+    />*/}
   </section>
 );
 

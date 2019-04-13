@@ -37,42 +37,41 @@ const landing = {
       link: '/product-development',
       title: 'Product Development',
       imgSrc: 'landingIcon1.svg',
-      description:
-        'From the simplest to the most sophisticated applications, Relevant Software team can provide you with the solution of various complexity degree.'
+      description: 'The most ambitious ideas can be realised with ProsSoft engineering. ' +
+      'With cutting-edge technologies, we ensure the potential of your business is maximised.'
     },
     {
       title: 'Mobile Application Development',
       link: '/mobile-application-development',
       imgSrc: 'landingIcon2.svg',
-      description:
-        'As the whole World goes mobile take the advantages of your business to make it mobile or develop your own mobile app as a standalone application for users.'
+      description: 'Let your business go ‘Mobile’ along with the whole World.' +
+      'With a mobile application, your ideas come ' +
+      'to fruition on the fly and reach out for millions of users at instance.'
     },
     {
       title: 'Websites Development',
       link: '/websites-development',
       imgSrc: 'landingIcon3.svg',
-      description:
-        'Landing pages, e-shops, blogs - bring your ideas of the website to reality. Explore, how Relevant Software team makes it possible.'
+      description: 'Introduce your business to the World Wide Web. A website or a blog can become a face of your' +
+      'business in the Internet - the realm now inseparable from reality for billions of people.'
     }
   ],
   solutions: [
     {
-      title: 'Database optimization',
-      description: 'In order to store big amount of data and display it quickly to the service we used NoSQL database.'
+      title: 'Individual approach',
+      description: 'We consider peculiarities of your business case, its requirements as well as needs of your clients  for optimal pragmatic solutions and effective and user friendly application development.'
     },
     {
-      title: 'Deep technical research',
-      description:
-        'We investigated advertising networks’ APIs, calculated additional indicators configuration and tested to ensure accuracy of information.'
+      title: 'Optimal technologies',
+      description: 'Software technologies are being developed and becoming redundant every day. New more effective technologies come in place of the older ones, however not all flashy novelties can substitute well proven techniques. Being at the forefront of the technological battles, we choose the most fit technologies for the needs your application.'
     },
     {
-      title: 'Billing and Payment',
-      description: 'Stripe system allows to create various billing plans and manage payments easily.'
+      title: 'Best practice',
+      description: 'Developing applications for a variety of business applications we have amassed experience to tackle the software tasks from a broad range of algorithmic complexity. We offer your business to build upon our expertise that can yield a pragmatic and effective software solution.'
     },
     {
-      title: 'Effective communication',
-      description:
-        'We avoided possible ban from advertising networks thanks to effective communication between the team an Google.'
+      title: 'Openness, support and active communication',
+      description: 'The key feature of our work ethics is to ensure reciprocal communication with our clients and product support is maintained at all times. This enables us to build the long lasting partnership with our clients, which we value so much.'
     }
   ]
 };
@@ -161,8 +160,14 @@ const service = {
 const footer = {
   contact: [
     'United Kingdom',
-    '5 Mitchell Street, Edinburgh, Scotland, EH6 7DB Ukraine',
-    '7 Zaliznychna, Lviv, Ukraine, 79039'
+    '10 Marmion Road, Liverpool',
+    'L17 8TU',
+    'tel. +44 746 632 6384',
+    ' ',
+    'Ukraine',
+    '18 Dnistrovska Street',
+    '76018',
+    'tel. +38 066 024 5488'
   ]
 };
 
