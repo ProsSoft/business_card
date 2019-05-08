@@ -20,12 +20,13 @@ class Landing extends React.Component {
     window.scrollTo(0, 0);
   }
   render() {
+    const { hero, contactUs } = landing;
     return (
       <div className="landing">
-        <Hero {...landing.hero} />
+        <Hero {...hero} />
         <Services />
         <Solutions />
-        <Contacts />
+        <Contacts {...contactUs} />
       </div>
     );
   }

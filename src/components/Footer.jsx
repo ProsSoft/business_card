@@ -21,7 +21,7 @@ const Footer = () => (
         <div className="footer__contacts">
           <span className="footer__title">contact us</span>
           <address className="footer__contacts-address">
-            {footer.contact.map(elem => (
+            {footer.contacts.map(elem => (
               <span className="footer__contacts-address-element" key={elem}>
                 {elem}
               </span>

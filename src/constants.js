@@ -21,6 +21,18 @@ const nav = [
   { title: 'Contact us', path: '/home/contact-us', id: 'contact-us' }
 ];
 
+const contacts = {
+  title: 'Contact us',
+  email: 'contacts@prossoft.com',
+  UK: {
+    tel: '+44 746 632 6384'
+  },
+  UA: {
+    tel: '+38 066 024 5488'
+  }
+};
+
+
 const landing = {
   hero: {
     slides: [
@@ -73,7 +85,8 @@ const landing = {
       title: 'Openness, support and active communication',
       description: 'The key feature of our work ethics is to ensure reciprocal communication with our clients and product support is maintained at all times. This enables us to build the long lasting partnership with our clients, which we value so much.'
     }
-  ]
+  ],
+  contactUs: contacts,
 };
 
 const productsImgFileName = 'portf';
@@ -158,16 +171,16 @@ const service = {
 };
 
 const footer = {
-  contact: [
+  contacts: [
     'United Kingdom',
     '10 Marmion Road, Liverpool',
     'L17 8TU',
-    'tel. +44 746 632 6384',
+    `tel. ${contacts.UK.tel}`,
     ' ',
     'Ukraine',
     '18 Dnistrovska Street',
     '76018',
-    'tel. +38 066 024 5488'
+    `tel. ${contacts.UA.tel}`
   ]
 };
 

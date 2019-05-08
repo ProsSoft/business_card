@@ -3,10 +3,17 @@ import React from 'react';
 import { Formik } from 'formik';
 import {formRegex} from '../../constants'
 
-const ContactUs = (props) => (
+const ContactUs = ({
+                     title,
+                     email,
+  UK: { tel: telUK },
+  UA: { tel: telUA }
+}) => (
   <section className="contact" id="contact-us">
-    <h3 className="contact__title">Contact us</h3>
-    <a href="mailto:contacts@prossoft.com"><h4>contacts@prossoft.com</h4></a>
+    <h3 className="contact__title">{title}</h3>
+    <a className="contact__item" href={`mailto:${email}`}><h2>{email}</h2></a>
+    <a className="contact__item" href={`tel:${telUK}`}><h2>{telUK}</h2></a>
+    <a className="contact__item" href={`tel:${telUA}`}><h2>{telUA}</h2></a>
     {/*<Formik
       initialValues={{
         email: '',
