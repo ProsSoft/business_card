@@ -29,7 +29,7 @@
   }
 
   &__contacts {
-    max-width: 270px;
+    //max-width: 270px;
     .footer__contacts-address-element {
       min-height: 15px;
     }
@@ -38,11 +38,16 @@
   &__contacts-address {
     color: $color-denim;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     font-size: 0.8125rem;
     font-style: normal;
     height: 90px;
-    justify-content: space-between;
+    .footer__contacts-place {
+      min-width: 140px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
   }
 
   &__bottom {
@@ -84,6 +89,10 @@
     background-color: #dd4b39;
     color: #fff;
   }
+  &__social-link[href*='linkedin']:hover {
+    background-color: #0077B5;
+    color: #fff;
+  }
 
   @media only screen and (max-width: 768px) {
     padding: 25px 0 0;
@@ -101,9 +110,9 @@
       margin: 0 40px 0 0;
     }
 
-    &__contacts {
-      text-align: center;
-    }
+    //&__contacts {
+    //  //text-align: center;
+    //}
 
     &__title {
       display: inline-block;

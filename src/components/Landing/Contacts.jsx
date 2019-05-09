@@ -1,19 +1,34 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
-import { Formik } from 'formik';
-import {formRegex} from '../../constants'
+// import { Formik } from 'formik';
+// import {formRegex} from '../../constants'
+import FaEnvelope from "react-icons/lib/fa/envelope";
+import FaPhone from "react-icons/lib/fa/phone";
 
 const ContactUs = ({
                      title,
                      email,
-  UK: { tel: telUK },
-  UA: { tel: telUA }
-}) => (
+                     UK: { tel: telUK },
+                     UA: { tel: telUA }
+                   }) => (
   <section className="contact" id="contact-us">
     <h3 className="contact__title">{title}</h3>
-    <a className="contact__item" href={`mailto:${email}`}><h2>{email}</h2></a>
-    <a className="contact__item" href={`tel:${telUK}`}><h2>{telUK}</h2></a>
-    <a className="contact__item" href={`tel:${telUA}`}><h2>{telUA}</h2></a>
+    <div className="contact__block">
+      <a className="contact__block__item" href={`mailto:${email}`}>
+        <FaEnvelope className="item__icon" />
+        <span className="text">{email}</span>
+      </a>
+      <a className="contact__block__item" href={`tel:${telUK}`}>
+        <FaPhone className="item__icon" />
+        <span className="text">{telUK}</span>
+        <img className="flag" src="/dist/assets/images/gb.png" alt="UK" />
+      </a>
+      <a className="contact__block__item" href={`tel:${telUA}`}>
+        <FaPhone className="item__icon" />
+        <span className="text">{telUA}</span>
+        <img className="flag" src="/dist/assets/images/ua.png" alt="UA" />
+      </a>
+    </div>
     {/*<Formik
       initialValues={{
         email: '',

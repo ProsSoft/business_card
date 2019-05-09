@@ -5,25 +5,28 @@ import Hero from '../common/Hero';
 import Services from './Services';
 import Solutions from './Solutions';
 import Contacts from './Contacts';
-import { scrollTo } from './util';
+import { scrollTo } from '../../util';
 import { landing } from '../../constants';
 
 class Landing extends React.Component {
+  state = {};
   componentWillReceiveProps({ match: { params: { section } } }) {
     scrollTo(section);
   }
   componentDidMount() {
     const { match: { params: { section } } } = this.props;
     scrollTo(section, true);
+    this.setState({ didNotMount: false })
   }
   componentWillUnmount() {
     window.scrollTo(0, 0);
   }
   render() {
+    const { didNotMount } = this.state;
     const { hero, contactUs } = landing;
     return (
       <div className="landing">
-        <Hero {...hero} />
+        <Hero {...{ ...hero, didNotMount }} />
         <Services />
         <Solutions />
         <Contacts {...contactUs} />

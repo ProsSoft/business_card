@@ -15,9 +15,10 @@ const isNavItemProductsActive = (match, location) => match ?
 
 const nav = [
   { title: 'Services', path: '/home/services', id: 'services' },
-  { title: 'Products', path: PRODUCTS_PATH, isActive: isNavItemProductsActive },
-  { title: 'Company', path: '/company' },
-  { title: 'Careers', path: '/careers' },
+  { title: 'Solutions', path: '/home/solutions', id: 'solutions' },
+  // { title: 'Products', path: PRODUCTS_PATH, isActive: isNavItemProductsActive },
+  // { title: 'Company', path: '/company' },
+  // { title: 'Careers', path: '/careers' },
   { title: 'Contact us', path: '/home/contact-us', id: 'contact-us' }
 ];
 
@@ -171,16 +172,19 @@ const service = {
 };
 
 const footer = {
-  contacts: [
+  contacts: [[
     'United Kingdom',
-    '10 Marmion Road, Liverpool',
+    '10 Marmion Road',
+    'Liverpool',
     'L17 8TU',
-    `tel. ${contacts.UK.tel}`,
-    ' ',
-    'Ukraine',
-    '18 Dnistrovska Street',
+    `tel. ${contacts.UK.tel}`
+  ],
+    ['Ukraine',
+    '18 Dnistrovska Str',
+    'Ivano-Frankivsk',
     '76018',
     `tel. ${contacts.UA.tel}`
+    ]
   ]
 };
 
