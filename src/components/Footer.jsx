@@ -53,7 +53,7 @@ const Footer = () => (
           <a className="footer__social-link" target="_blank" href="https://twitter.com/Prossoft1?s=03">
             <FaTwitter size="28" />
           </a>
-          <a className="footer__social-link" target="_blank" href="#https://www.linkedin.com/in/prossoft-com-b10852186/">
+          <a className="footer__social-link" target="_blank" href="https://www.linkedin.com/in/prossoft-com-b10852186/">
             <FaLinkedIn size="28" />
           </a>
         </div>

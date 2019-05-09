@@ -19,6 +19,7 @@ const nav = [
   // { title: 'Products', path: PRODUCTS_PATH, isActive: isNavItemProductsActive },
   // { title: 'Company', path: '/company' },
   // { title: 'Careers', path: '/careers' },
+  { title: 'Portfolio', path: '/portfolio', id: 'contact-us' },
   { title: 'Contact us', path: '/home/contact-us', id: 'contact-us' }
 ];
 
