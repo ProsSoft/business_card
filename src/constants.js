@@ -1,17 +1,17 @@
 const assetsPath = '/dist/assets/';
 const imagesUrl = `${assetsPath}images/`;
 
-const formRegex = {
-  emailValid: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i
-};
+// const formRegex = {
+//   emailValid: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i
+// };
 
 const fixedHeaderHeight = 101;
 
-const PRODUCTS_PATH = '/products';
-const PRODUCT_PATH = '/product';
+// const PRODUCTS_PATH = '/products';
+// const PRODUCT_PATH = '/product';
 
-const isNavItemProductsActive = (match, location) => match ?
-  PRODUCTS_PATH === match.path : `/${location.pathname.split('/')[1]}` === PRODUCT_PATH;
+// const isNavItemProductsActive = (match, location) => match ?
+//   PRODUCTS_PATH === match.path : `/${location.pathname.split('/')[1]}` === PRODUCT_PATH;
 
 const nav = [
   { title: 'Services', path: '/home/services', id: 'services' },
@@ -191,7 +191,7 @@ const footer = {
 
 export {
   imagesUrl,
-  formRegex,
+  // formRegex,
   fixedHeaderHeight,
   products,
   productsImgFileName,

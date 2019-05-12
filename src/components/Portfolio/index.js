@@ -1,4 +1,7 @@
 import React from 'react';
+import { imagesUrl } from '../../constants'
+
+const imgs = new Array(9).fill(0);
 
 export default () =>
   <div>
@@ -7,11 +10,14 @@ export default () =>
         <h2>Portfolio</h2>
       </div>
       <div className="resp_container">
-        <iframe
-          src="http://offstyle.com.ua/portfolio/web_1.html?fbclid=IwAR3Fuqxcwxts-Pa3ViszqIubwujeMJ68LtY6l3v9jeHlvgldnP8riBH05y0"
-          // width="100%"
-          // height="20000px"
-        />
+        {console.log(imgs) || imgs.map((el, i) =>
+          <img
+            key={i}
+            className="portfolio_img"
+            src={console.log(i) || `${imagesUrl}portfolio/${i + 1}.png`}
+            alt={`Project${i + 1}`}
+          />
+        )}
       </div>
     </section>
   </div>;
