@@ -10,11 +10,11 @@ export default () =>
         <h2>Portfolio</h2>
       </div>
       <div className="resp_container">
-        {console.log(imgs) || imgs.map((el, i) =>
+        {imgs.map((el, i) =>
           <img
             key={i}
             className="portfolio_img"
-            src={console.log(i) || `${imagesUrl}portfolio/${i + 1}.png`}
+            src={`${imagesUrl}portfolio/${i + 1}.png`}
             alt={`Project${i + 1}`}
           />
         )}
