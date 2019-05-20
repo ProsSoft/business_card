@@ -14,7 +14,7 @@ export default () =>
           <img
             key={i}
             className="portfolio_img"
-            src={`${imagesUrl}portfolio/${i + 1}.png`}
+            src={`${imagesUrl}portfolio/${i + 1}a.png`}
             alt={`Project${i + 1}`}
           />
         )}
