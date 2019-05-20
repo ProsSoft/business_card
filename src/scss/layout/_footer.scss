@@ -58,12 +58,18 @@
   }
 
   @media only screen and (max-width: 930px) {
-    &__rights {
-      //float: none;
-
+    .container {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
     }
+    //&__rights {
+    //  //float: none;
+    //
+    //}
     &__social {
-      //bottom: 46px;
+      position: initial;
+      margin-bottom: 20px;
     }
   }
 
