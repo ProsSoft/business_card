@@ -4,7 +4,7 @@ import { /*BrowserRouter,*/ HashRouter, Route, Switch, Redirect } from 'react-ro
 import Landing from './components/Landing';
 // import Service from './components/Service';
 // import Company from './components/Company';
-// import Careers from './components/Careers';
+import Careers from './components/Careers';
 import Portfolio from './components/Portfolio';
 // import Product from './components/Product';
 import Header from './components/Header';
@@ -26,7 +26,7 @@ const App = () => (
         {/*<Route path="/products" component={Products} />*/}
         {/*<Route path="/product/:name" component={Product} />*/}
         {/*<Route path="/company" component={Company} />*/}
-        {/*<Route path="/careers" component={Careers} />*/}
+        <Route path="/careers" component={Careers} />
         <Route path="/*" component={FourOhFour} />
       </Switch>
       <Footer />

@@ -18,8 +18,8 @@ const nav = [
   { title: 'Solutions', path: '/home/solutions', id: 'solutions' },
   // { title: 'Products', path: PRODUCTS_PATH, isActive: isNavItemProductsActive },
   // { title: 'Company', path: '/company' },
-  // { title: 'Careers', path: '/careers' },
   { title: 'Portfolio', path: '/portfolio', id: 'contact-us' },
+  { title: 'Careers', path: '/careers' },
   { title: 'Contact us', path: '/home/contact-us', id: 'contact-us' }
 ];
 

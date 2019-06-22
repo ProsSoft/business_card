@@ -1,0 +1,23 @@
+.page.careers {
+  .item {
+    button {
+      /*todo*/
+      h3 { /*todo*/ }
+    }
+    .description {
+      .wrapper {
+        position: relative;
+        .collapsible {
+          position: absolute;
+          transition-property: top;
+          top: -500px;
+
+          .opened {
+            top: 0;
+          }
+        }
+      }
+
+    }
+  }
+}
