@@ -24,18 +24,20 @@ export default class VacancyGroupButton extends PureComponent {
       <div className="page careers">
         <Hero {...hero} />
         <h3 className="section__title">Careers</h3>
-        {offers.map(({ vacancy, description, duties }, index) =>
-          <div className="item" key={index}>
-            <button
-              id={index}
-              onClick={this.onClick}
-            >
-              {vacancy}
-            </button>
-            <div className={`description ${this.state[getStateKey(index)] ? 'opened' : ''}`}>
-              {description}
-            </div>
-          </div>)}
+        <section className="content">
+          {offers.map(({ vacancy, description, duties }, index) =>
+            <div className="item" key={index}>
+              <button
+                id={index}
+                onClick={this.onClick}
+              >
+                {vacancy}
+              </button>
+              <div className={`description ${this.state[getStateKey(index)] ? 'opened' : ''}`}>
+                {description}
+              </div>
+            </div>)}
+        </section>
       </div>);
   }
 };
