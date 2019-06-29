@@ -19,6 +19,26 @@
         letter-spacing: .7px;
         color: #4f5075;
         text-transform: uppercase;
+        border-radius: 8px;
+        transition: all 0.5s;
+        position: relative;
+        &:hover {
+          background: #81bc15;
+          color: #fff;
+          font-size: 26px;
+          font-weight: 500;
+          svg {
+            color: #fff;
+          }
+        }
+        svg {
+          position: absolute;
+          right: 30px;
+          color: #a0a0b4;
+          //&:hover {
+          //  :
+          //}
+        }
       }
 
       .description {

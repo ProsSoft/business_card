@@ -11,7 +11,8 @@ const Hero = ({
                 quoteAuthor = '',
                 buttonText = 'Get a free consultation',
                 noBack,
-                didNotMount
+                didNotMount,
+                scrollToElemId,
               }) =>
   <section className="hero" id="top" ref={scrollElem}>
     {/*todo: why is scrollElem needed as it's empty*/}
@@ -29,7 +30,7 @@ const Hero = ({
       <h2 className="hero__quote_author">{quoteAuthor}</h2>
       <button
         className="landing-green-btn"
-        onClick={() => scrollTo('contact-us', didNotMount)}
+        onClick={() => scrollTo(scrollToElemId, didNotMount)}
       >
         {buttonText}
       </button>
