@@ -152,13 +152,57 @@ const careers = {
     buttonText: 'Get a job'
   },
   offers: [
-    { position: 'Middle JavaScript Software Engineer',
+    {
+      vacancy: 'Middle JavaScript Software Engineer',
+      description: 'The UK investment software enterprise is looking for motivated candidates for the positions of the marketing specialist and sales manager. The ideal candidates will have experience in e-commerce, marketing and web-sales as well as excellent skills in creative writing and communication.\n' +
+        'Our mission:\n' +
+        'Improved efficiency of technological procedures in business, improved quality of life via forefront applications we bring into life.\n' +
+        'We offer:\n' +
+        'highly competitive salaries\n' +
+        'additional payment bonuses in products\' equities\n' +
+        'a comfortable workplace with flexible work hours\n' +
+        'growth-stimulating environment\n' +
+        'development trainings and courses\n' +
+        'travels for conferences\n' +
+        'Interested candidates are invited to send resumes and cover letters outlining the candidate\'s motivation to Отправить резюме, reference letters sent directly from the referees would be an advantage.',
+      typicalDuties: '',
+      weOffer: '',
+    },
+    {
+      vacancy: 'Sales Manager/Marketer',
       description: '',
       typicalDuties: '',
       weOffer: '',
     },
-    { position: 'Sales Manager/Marketer',
-      description: '',
+    {
+      vacancy: 'Middle JavaScript Software Engineer',
+      description: 'The UK investment software enterprise is looking for motivated candidates for the positions of the marketing specialist and sales manager. The ideal candidates will have experience in e-commerce, marketing and web-sales as well as excellent skills in creative writing and communication.\n' +
+        'Our mission:\n' +
+        'Improved efficiency of technological procedures in business, improved quality of life via forefront applications we bring into life.\n' +
+        'We offer:\n' +
+        'highly competitive salaries\n' +
+        'additional payment bonuses in products\' equities\n' +
+        'a comfortable workplace with flexible work hours\n' +
+        'growth-stimulating environment\n' +
+        'development trainings and courses\n' +
+        'travels for conferences\n' +
+        'Interested candidates are invited to send resumes and cover letters outlining the candidate\'s motivation to Отправить резюме, reference letters sent directly from the referees would be an advantage.',
+      typicalDuties: '',
+      weOffer: '',
+    },
+    {
+      vacancy: 'Middle JavaScript Software Engineer',
+      description: 'The UK investment software enterprise is looking for motivated candidates for the positions of the marketing specialist and sales manager. The ideal candidates will have experience in e-commerce, marketing and web-sales as well as excellent skills in creative writing and communication.\n' +
+        'Our mission:\n' +
+        'Improved efficiency of technological procedures in business, improved quality of life via forefront applications we bring into life.\n' +
+        'We offer:\n' +
+        'highly competitive salaries\n' +
+        'additional payment bonuses in products\' equities\n' +
+        'a comfortable workplace with flexible work hours\n' +
+        'growth-stimulating environment\n' +
+        'development trainings and courses\n' +
+        'travels for conferences\n' +
+        'Interested candidates are invited to send resumes and cover letters outlining the candidate\'s motivation to Отправить резюме, reference letters sent directly from the referees would be an advantage.',
       typicalDuties: '',
       weOffer: '',
     },

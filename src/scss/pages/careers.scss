@@ -5,19 +5,12 @@
       h3 { /*todo*/ }
     }
     .description {
-      .wrapper {
-        position: relative;
-        .collapsible {
-          position: absolute;
-          transition-property: top;
-          top: -500px;
-
-          .opened {
-            top: 0;
-          }
-        }
+      overflow: hidden;
+      transition: max-height 1s;
+      max-height: 0;
+      &.opened {
+        max-height: 500px;
       }
-
     }
   }
 }
