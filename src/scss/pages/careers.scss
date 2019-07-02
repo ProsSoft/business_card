@@ -22,7 +22,7 @@
         border-radius: 8px;
         transition: all 0.5s;
         position: relative;
-        &:hover {
+        &:hover, &.selected {
           background: #81bc15;
           color: #fff;
           font-size: 26px;
@@ -35,9 +35,7 @@
           position: absolute;
           right: 30px;
           color: #a0a0b4;
-          //&:hover {
-          //  :
-          //}
+          transition: color .5s;
         }
       }
 

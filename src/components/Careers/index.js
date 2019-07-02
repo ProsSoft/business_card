@@ -47,6 +47,7 @@ export default class VacancyGroupButton extends PureComponent {
               <div className="item" key={index}>
                 <button
                   id={index}
+                  className={isOpen ? 'selected' : ''}
                   onClick={this.onClick}
                 >
                   {vacancy}
