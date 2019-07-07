@@ -42,6 +42,11 @@ export default class VacancyGroupButton extends PureComponent {
           Careers
         </h3>
         <section className="content">
+          <div className="page__description">
+            Join the team of the top-rank motivated professionals
+            and
+            engage with the most exciting projects in the field today!
+          </div>
           {offers.map(({ vacancy, ...offerProps }, index) => {
             const isOpen = this.state[getStateKey(index)];
             return (
@@ -68,23 +73,40 @@ export default class VacancyGroupButton extends PureComponent {
   }
 };
 
-const OfferContent = ({ isOpen, agenda, requirements, stack, mission, offering }) => (
+const OfferContent = ({ isOpen, agenda, requirements, stack, mission, offering, conclusion }) => (
   <div className={`description ${isOpen ? 'opened' : ''}`}>
     {agenda}
-    <p className="title">{requirements.title}</p>
     <div className="flex-container">
-      <ul>
-        {requirements.list.map((item, i, list) =>
-          <li key={item}>
-            {list.length - 1 === i ? <Plus /> : <Check />}
-            {item}
-          </li>
-        )}
-      </ul>
-      <p className="title">{stack.title}</p>
-      <p>{stack.text}</p>
+      <div className="flex-box">
+        <p className="title">{offering.title}</p>
+        <ul>
+          {offering.list.map(item =>
+            <li key={item}>
+              <Check />
+              {item}
+            </li>
+          )}
+        </ul>
+      </div>
+      <div className="flex-box">
+        <p className="title">{requirements.title}</p>
+        <ul>
+          {requirements.list.map((item, i, list) =>
+            <li key={item}>
+              {list.length - 1 === i ? <Plus /> : <Check />}
+              {item}
+            </li>
+          )}
+        </ul>
+      </div>
     </div>
+    <p className="title">{stack.title}</p>
+    <p>{stack.text}</p>
+
     <p className="title">{mission.title}</p>
     <p>{mission.text}</p>
+
+    <p className="title">{conclusion.title}</p>
+    <p>{conclusion.text}</p>
   </div>
 );

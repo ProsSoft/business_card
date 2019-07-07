@@ -2,6 +2,16 @@
   .section__title {
     margin-top: 50px;
   }
+  .page__description {
+    color: $color-denim;
+    font-weight: 300;
+    //color: rgb(56, 108, 145);
+    font-size: 1.5rem;
+    font-style: italic;
+    margin: 0 auto 28px;
+    width: 50vw;
+    text-align: center;
+  }
   .content {
     padding: 25px 0 50px;
     .item {
@@ -54,13 +64,21 @@
           margin-bottom: -10px;
         }
         .flex-container {
-          li svg {
-            color: #81bc15;
-            margin-right: 30px;
+          .flex-box {
+            display: inline-block;
+            vertical-align: top;
+            li svg {
+              color: #81bc15;
+              margin-right: 30px;
+            }
           }
         }
+        .email {
+          //font-w
+          color: #00bfff;
+        }
         &.opened {
-          max-height: 600px;
+          max-height: 1000px;
         }
       }
     }

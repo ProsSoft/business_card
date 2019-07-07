@@ -14,7 +14,7 @@ const ContactUs = ({
   <section className="contact" id="contact-us">
     <h3 className="contact__title">{title}</h3>
     <div className="contact__block">
-      <a className="contact__block__item" href={`mailto:${email}`}>
+      <a target="_blank" className="contact__block__item" href={`mailto:${email}`}>
         <FaEnvelope className="item__icon" />
         <span className="text">{email}</span>
       </a>

@@ -60,8 +60,7 @@ const landing = {
       title: 'Mobile Application Development',
       link: '/mobile-application-development',
       imgSrc: 'landingIcon2.svg',
-      description: 'Let your business go ‘Mobile’ along with the whole World.' +
-        'With a mobile application, your ideas come ' +
+      description: 'Let your business go ‘Mobile’ along with the whole World. With a mobile application, your ideas come ' +
         'to fruition on the fly and reach out for millions of users at instance.'
     },
     {
@@ -155,11 +154,10 @@ const careers = {
   },
   offers: [
     {
-      vacancy: 'JavaScript Software Engineer',
-      agenda: <p>The UK investment software enterprise is looking for exceptionally talented candidates for the positions of a
-        &nbsp;<b>trainee</b>, <b>junior</b> and <b>middle</b> level software engineers for <b>Web</b> and <b>Mobile Applications</b> development.</p>,
+      vacancy: 'JavaScript Software Engineers',
+      agenda: <p>We are looking for a highly-motivated <b>trainee</b>, <b>junior</b> and <b>middle</b> level software engineers for <b>Web</b> and <b>Mobile Applications</b> development.</p>,
       requirements: {
-        title: 'The ideal candidates will have:',
+        title: 'The successful candidates will have:',
         list: [
           'excellent abilities for problem solving',
           'knowledge of JavaScript',
@@ -183,27 +181,54 @@ const careers = {
           'additional payment bonuses in products’ equities',
           'a comfortable workplace and flexible work hours in hometown',
           'growth-stimulating environment (including unlimited access to coffee and sweets :)',
-          'development trainings and courses',
+          'professional development trainings and courses',
           'travels for conferences and work meetings with clients abroad'
         ],
       },
-      conclusion: 'Interested candidates are invited to send resumes and cover letters outlining the candidate’s motivation to contacts@prossoft.com, reference letters sent directly from the referees would be an advantage.'
+      conclusion: {
+        title: 'Contact us',
+        text: <p>Interested candidates are invited to send resumes and cover letters outlining the candidate’s motivation to
+          &nbsp;<a target="_blank" href="mailto:contacts@prossoft.com"><b>contacts@prossoft.com</b></a>,
+          &nbsp;reference letters sent directly from the referees would be an advantage.</p>
+      },
     },
     {
-      vacancy: 'Sales Manager/Marketer',
+      vacancy: 'Marketing and Sales Managers',
       agenda: '',
       requirements: {
-        title: '',
-        list: [],
+        title: 'The ideal candidates will be motivated and success oriented individuals that have:',
+        list: [
+          'good command of English is essential',
+          'experience in e-commerce, digital marketing and web-sales',
+          'excellent skills in creative writing and communication',
+          'experience in tech related copy-writing would be a plus',
+        ],
       },
       stack: {
         title: '',
         text: ''
       },
       mission: {
-        title: '',
-        text: ''
-      }
+        title: 'Our mission',
+        text: 'Improved efficiency of technological face of business, improved quality of life via applications we create.',
+      },
+      offering: {
+        title: 'We offer:',
+        list: [
+          'highly competitive, regularly reviewed salaries',
+          'additional payment bonuses in products’ equities',
+          'a comfortable workplace and flexible work hours in hometown',
+          'growth-stimulating environment (including unlimited access to coffee and sweets :)',
+          'professional development trainings and courses',
+          'travels for conferences and work meetings with clients abroad'
+        ],
+      },
+      conclusion: {
+        title: 'Contact us',
+        text: <p>Interested candidates are invited to send resumes and cover letters outlining the candidate’s motivation to
+          &nbsp;<a target="_blank" href="mailto:contacts@prossoft.com"><b>contacts@prossoft.com</b></a>,
+          &nbsp;reference letters sent directly from the referees would be an advantage.</p>
+      },
     },
   ]
 };
@@ -215,22 +240,22 @@ const service = {
   },
 };
 
-const footer = {
-  contacts: [[
-    'United Kingdom',
-    '10 Marmion Road',
-    'Liverpool',
-    'L17 8TU',
-    `tel. ${contacts.UK.tel}`
-  ],
-    ['Ukraine',
-      '18 Dnistrovska Str',
-      'Ivano-Frankivsk',
-      '76018',
-      `tel. ${contacts.UA.tel}`
-    ]
-  ]
-};
+// const footer = {
+//   contacts: [[
+//     'United Kingdom',
+//     '10 Marmion Road',
+//     'Liverpool',
+//     'L17 8TU',
+//     `tel. ${contacts.UK.tel}`
+//   ],
+//     ['Ukraine',
+//       '18 Dnistrovska Str',
+//       'Ivano-Frankivsk',
+//       '76018',
+//       `tel. ${contacts.UA.tel}`
+//     ]
+//   ]
+// };
 
 export {
   imagesUrl,
@@ -240,7 +265,7 @@ export {
   productsImgFileName,
   landing,
   company,
-  footer,
+  // footer,
   nav,
   careers,
   service
