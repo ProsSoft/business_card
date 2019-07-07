@@ -1,6 +1,8 @@
 import React, { PureComponent } from 'react';
-import FaChevronCircleDown from "react-icons/lib/fa/chevron-circle-down";
-import FaChevronCircleUp from "react-icons/lib/fa/chevron-circle-up";
+import FaChevronCircleDown from 'react-icons/lib/fa/chevron-circle-down';
+import FaChevronCircleUp from 'react-icons/lib/fa/chevron-circle-up';
+import Check from 'react-icons/lib/fa/check';
+import Plus from 'react-icons/lib/fa/plus';
 
 import Hero from '../common/Hero';
 import { careers } from '../../constants';
@@ -40,9 +42,8 @@ export default class VacancyGroupButton extends PureComponent {
           Careers
         </h3>
         <section className="content">
-          {offers.map(({ vacancy, description, duties }, index) => {
+          {offers.map(({ vacancy, ...offerProps }, index) => {
             const isOpen = this.state[getStateKey(index)];
-            const icon = ()=>isOpen ? FaChevronCircleDown : FaChevronCircleDown
             return (
               <div className="item" key={index}>
                 <button
@@ -55,11 +56,9 @@ export default class VacancyGroupButton extends PureComponent {
                     <FaChevronCircleUp id={index} />
                     :
                     <FaChevronCircleDown id={index} />
-                  }}
+                  }
                 </button>
-                <div className={`description ${isOpen ? 'opened' : ''}`}>
-                  {description}
-                </div>
+                <OfferContent {...{ isOpen, ...offerProps }} />
               </div>
             )
           })
@@ -68,3 +67,24 @@ export default class VacancyGroupButton extends PureComponent {
       </div>);
   }
 };
+
+const OfferContent = ({ isOpen, agenda, requirements, stack, mission, offering }) => (
+  <div className={`description ${isOpen ? 'opened' : ''}`}>
+    {agenda}
+    <p className="title">{requirements.title}</p>
+    <div className="flex-container">
+      <ul>
+        {requirements.list.map((item, i, list) =>
+          <li key={item}>
+            {list.length - 1 === i ? <Plus /> : <Check />}
+            {item}
+          </li>
+        )}
+      </ul>
+      <p className="title">{stack.title}</p>
+      <p>{stack.text}</p>
+    </div>
+    <p className="title">{mission.title}</p>
+    <p>{mission.text}</p>
+  </div>
+);

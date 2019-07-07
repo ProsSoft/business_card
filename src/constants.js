@@ -1,3 +1,5 @@
+import React from 'react';
+
 const assetsPath = '/dist/assets/';
 const imagesUrl = `${assetsPath}images/`;
 
@@ -52,22 +54,22 @@ const landing = {
       title: 'Product Development',
       imgSrc: 'landingIcon1.svg',
       description: 'The most ambitious ideas can be realised with ProsSoft engineering. ' +
-      'With cutting-edge technologies, we ensure the potential of your business is maximised.'
+        'With cutting-edge technologies, we ensure the potential of your business is maximised.'
     },
     {
       title: 'Mobile Application Development',
       link: '/mobile-application-development',
       imgSrc: 'landingIcon2.svg',
       description: 'Let your business go ‘Mobile’ along with the whole World.' +
-      'With a mobile application, your ideas come ' +
-      'to fruition on the fly and reach out for millions of users at instance.'
+        'With a mobile application, your ideas come ' +
+        'to fruition on the fly and reach out for millions of users at instance.'
     },
     {
       title: 'Websites Development',
       link: '/websites-development',
       imgSrc: 'landingIcon3.svg',
       description: 'Introduce your business to the World Wide Web. A website or a blog can become a face of your' +
-      'business in the Internet - the realm now inseparable from reality for billions of people.'
+        'business in the Internet - the realm now inseparable from reality for billions of people.'
     }
   ],
   solutions: [
@@ -153,58 +155,55 @@ const careers = {
   },
   offers: [
     {
-      vacancy: 'Middle JavaScript Software Engineer',
-      description: 'The UK investment software enterprise is looking for motivated candidates for the positions of the marketing specialist and sales manager. The ideal candidates will have experience in e-commerce, marketing and web-sales as well as excellent skills in creative writing and communication.\n' +
-        'Our mission:\n' +
-        'Improved efficiency of technological procedures in business, improved quality of life via forefront applications we bring into life.\n' +
-        'We offer:\n' +
-        'highly competitive salaries\n' +
-        'additional payment bonuses in products\' equities\n' +
-        'a comfortable workplace with flexible work hours\n' +
-        'growth-stimulating environment\n' +
-        'development trainings and courses\n' +
-        'travels for conferences\n' +
-        'Interested candidates are invited to send resumes and cover letters outlining the candidate\'s motivation to Отправить резюме, reference letters sent directly from the referees would be an advantage.',
-      typicalDuties: '',
-      weOffer: '',
+      vacancy: 'JavaScript Software Engineer',
+      agenda: <p>The UK investment software enterprise is looking for exceptionally talented candidates for the positions of a
+        &nbsp;<b>trainee</b>, <b>junior</b> and <b>middle</b> level software engineers for <b>Web</b> and <b>Mobile Applications</b> development.</p>,
+      requirements: {
+        title: 'The ideal candidates will have:',
+        list: [
+          'excellent abilities for problem solving',
+          'knowledge of JavaScript',
+          'knowledge of HTML and CSS',
+          'knowledge of the one or more of the technologies we use*',
+          'prior experience in software development would be a plus'
+        ],
+      },
+      stack: {
+        title: '*Technologies we use:',
+        text: 'React, React Native, Redux, GraphQL, Node JS, Express, MongoDB and others.'
+      },
+      mission: {
+        title: 'Our mission',
+        text: 'Improved efficiency of technological face of business, improved quality of life via applications we create.',
+      },
+      offering: {
+        title: 'We offer:',
+        list: [
+          'highly competitive, regularly reviewed salaries',
+          'additional payment bonuses in products’ equities',
+          'a comfortable workplace and flexible work hours in hometown',
+          'growth-stimulating environment (including unlimited access to coffee and sweets :)',
+          'development trainings and courses',
+          'travels for conferences and work meetings with clients abroad'
+        ],
+      },
+      conclusion: 'Interested candidates are invited to send resumes and cover letters outlining the candidate’s motivation to contacts@prossoft.com, reference letters sent directly from the referees would be an advantage.'
     },
     {
       vacancy: 'Sales Manager/Marketer',
-      description: '',
-      typicalDuties: '',
-      weOffer: '',
-    },
-    {
-      vacancy: 'Middle JavaScript Software Engineer',
-      description: 'The UK investment software enterprise is looking for motivated candidates for the positions of the marketing specialist and sales manager. The ideal candidates will have experience in e-commerce, marketing and web-sales as well as excellent skills in creative writing and communication.\n' +
-        'Our mission:\n' +
-        'Improved efficiency of technological procedures in business, improved quality of life via forefront applications we bring into life.\n' +
-        'We offer:\n' +
-        'highly competitive salaries\n' +
-        'additional payment bonuses in products\' equities\n' +
-        'a comfortable workplace with flexible work hours\n' +
-        'growth-stimulating environment\n' +
-        'development trainings and courses\n' +
-        'travels for conferences\n' +
-        'Interested candidates are invited to send resumes and cover letters outlining the candidate\'s motivation to Отправить резюме, reference letters sent directly from the referees would be an advantage.',
-      typicalDuties: '',
-      weOffer: '',
-    },
-    {
-      vacancy: 'Middle JavaScript Software Engineer',
-      description: 'The UK investment software enterprise is looking for motivated candidates for the positions of the marketing specialist and sales manager. The ideal candidates will have experience in e-commerce, marketing and web-sales as well as excellent skills in creative writing and communication.\n' +
-        'Our mission:\n' +
-        'Improved efficiency of technological procedures in business, improved quality of life via forefront applications we bring into life.\n' +
-        'We offer:\n' +
-        'highly competitive salaries\n' +
-        'additional payment bonuses in products\' equities\n' +
-        'a comfortable workplace with flexible work hours\n' +
-        'growth-stimulating environment\n' +
-        'development trainings and courses\n' +
-        'travels for conferences\n' +
-        'Interested candidates are invited to send resumes and cover letters outlining the candidate\'s motivation to Отправить резюме, reference letters sent directly from the referees would be an advantage.',
-      typicalDuties: '',
-      weOffer: '',
+      agenda: '',
+      requirements: {
+        title: '',
+        list: [],
+      },
+      stack: {
+        title: '',
+        text: ''
+      },
+      mission: {
+        title: '',
+        text: ''
+      }
     },
   ]
 };
@@ -225,10 +224,10 @@ const footer = {
     `tel. ${contacts.UK.tel}`
   ],
     ['Ukraine',
-    '18 Dnistrovska Str',
-    'Ivano-Frankivsk',
-    '76018',
-    `tel. ${contacts.UA.tel}`
+      '18 Dnistrovska Str',
+      'Ivano-Frankivsk',
+      '76018',
+      `tel. ${contacts.UA.tel}`
     ]
   ]
 };

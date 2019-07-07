@@ -13,7 +13,7 @@
         background: #f9f9f9;
         border: none;
         padding: 30px;
-        margin: 10px;
+        margin: 10px 0;
         font-size: 24px;
         font-weight: 300;
         letter-spacing: .7px;
@@ -43,9 +43,24 @@
         overflow: hidden;
         transition: max-height 1s;
         max-height: 0;
-
+        padding: 6px;
+        font-size: 17px;
+        line-height: 1.7;
+        b {
+          color: #386c91
+        }
+        .title {
+          font-weight: 600;
+          margin-bottom: -10px;
+        }
+        .flex-container {
+          li svg {
+            color: #81bc15;
+            margin-right: 30px;
+          }
+        }
         &.opened {
-          max-height: 500px;
+          max-height: 600px;
         }
       }
     }
