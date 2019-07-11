@@ -5,7 +5,6 @@
   .page__description {
     color: $color-denim;
     font-weight: 300;
-    //color: rgb(56, 108, 145);
     font-size: 1.5rem;
     font-style: italic;
     margin: 0 auto 28px;
@@ -22,7 +21,7 @@
         width: 100%;
         background: #f9f9f9;
         border: none;
-        padding: 30px;
+        padding: 30px 65px 30px 30px;
         margin: 10px 0;
         font-size: 24px;
         font-weight: 300;
@@ -32,6 +31,13 @@
         border-radius: 8px;
         transition: all 0.5s;
         position: relative;
+        svg {
+          position: absolute;
+          right: 30px;
+          top: calc(50% - 12px);
+          color: #a0a0b4;
+          transition: color .5s;
+        }
         &:hover, &.selected {
           background: #81bc15;
           color: #fff;
@@ -39,13 +45,8 @@
           font-weight: 500;
           svg {
             color: #fff;
+            top: calc(50% - 13px);
           }
-        }
-        svg {
-          position: absolute;
-          right: 30px;
-          color: #a0a0b4;
-          transition: color .5s;
         }
       }
 
@@ -63,14 +64,12 @@
           font-weight: 600;
           margin-bottom: -10px;
         }
-        .flex-container {
-          .flex-box {
-            display: inline-block;
-            vertical-align: top;
-            li svg {
-              color: #81bc15;
-              margin-right: 30px;
-            }
+        .flex-box {
+          display: inline-block;
+          vertical-align: top;
+          li svg {
+            color: #81bc15;
+            margin-right: 30px;
           }
         }
         .email {
@@ -83,4 +82,14 @@
       }
     }
   }
+  @media only screen and (max-width: 500px) {
+    .page__description {
+      width: 70vw;
+    }
+    //.content .item button {
+    //
+    //}
+  }
 }
+
+

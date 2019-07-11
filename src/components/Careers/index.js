@@ -82,29 +82,27 @@ export default class VacancyGroupButton extends PureComponent {
 const OfferContent = ({ isOpen, agenda, requirements, stack, mission, offering, conclusion }) => (
   <div className={`description ${isOpen ? 'opened' : ''}`}>
     {agenda}
-    <div className="flex-container">
-      <div className="flex-box">
-        <p className="title">{offering.title}</p>
-        <ul>
-          {offering.list.map(item =>
-            <li key={item}>
-              <Check />
-              {item}
-            </li>
-          )}
-        </ul>
-      </div>
-      <div className="flex-box">
-        <p className="title">{requirements.title}</p>
-        <ul>
-          {requirements.list.map((item, i, list) =>
-            <li key={item}>
-              {list.length - 1 === i ? <Plus /> : <Check />}
-              {item}
-            </li>
-          )}
-        </ul>
-      </div>
+    <div className="flex-box">
+      <p className="title">{offering.title}</p>
+      <ul>
+        {offering.list.map(item =>
+          <li key={item}>
+            <Check />
+            {item}
+          </li>
+        )}
+      </ul>
+    </div>
+    <div className="flex-box">
+      <p className="title">{requirements.title}</p>
+      <ul>
+        {requirements.list.map((item, i, list) =>
+          <li key={item}>
+            {list.length - 1 === i ? <Plus /> : <Check />}
+            {item}
+          </li>
+        )}
+      </ul>
     </div>
     <p className="title">{stack.title}</p>
     <p>{stack.text}</p>
