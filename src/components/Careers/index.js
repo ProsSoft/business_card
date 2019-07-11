@@ -6,6 +6,7 @@ import Plus from 'react-icons/lib/fa/plus';
 
 import Hero from '../common/Hero';
 import { careers } from '../../constants';
+import { scrollTo } from "../../util";
 
 const { hero, offers } = careers;
 
@@ -13,7 +14,7 @@ const getStateKey = i => `is${i}offerDescriptionOpened`;
 
 export default class VacancyGroupButton extends PureComponent {
 
-  state = offers.reduce((o, acc, i) => ({
+  state = offers.reduce((acc, o, i) => ({
     ...acc,
     [getStateKey(i)]: false,
   }), {});
@@ -21,8 +22,13 @@ export default class VacancyGroupButton extends PureComponent {
   onClick = (e) => {
     e.preventDefault();
     const { target: { id } } = e;
+    const { state } = this;
     const key = getStateKey(id);
-    this.setState({ [key]: !this.state[key] });
+    const newState = { ...state };
+    Object.keys(state).forEach((oKey) => {
+      newState[oKey] = oKey === key ? !state[key] : false;
+    });
+    this.setState(newState, () => scrollTo(0));
   };
 
   render() {

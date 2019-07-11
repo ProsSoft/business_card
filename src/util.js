@@ -6,7 +6,7 @@ export const scrollTo = (section = 'top', didNotMount) => {
     scrollTop: $(`#${section}`).offset().top - fixedHeaderHeight
   }, 1000);
   if (didNotMount) {
-    window.setTimeout(animate, 500);
+    setTimeout(animate, 500);
   } else {
     animate();
   }
