@@ -43,8 +43,8 @@ const landing = {
       { src: `${imagesUrl}sliderDay.png`,
         className: 'hero__background1' },
       { src: `${imagesUrl}sliderNight.jpg`,
-        className: 'hero__background2' }
-    ],
+        className: 'hero__background2' },
+            ],
     title1: 'Developing software',
     title2: 'for business'
   },
