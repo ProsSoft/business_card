@@ -6,7 +6,8 @@
   }
 
   &__background1 {
-    animation: changeImage1 12s infinite;
+    animation: changeImage1 12s   infinite;
+    
     @keyframes changeImage1 {
       0%,
       100% {
@@ -20,6 +21,7 @@
   }
 
   &__background2 {
+  
     animation: changeImage2 12s infinite;
     left: 0;
     position: absolute;
@@ -29,13 +31,54 @@
       100% {
         opacity: 0;
       }
-
       50% {
         opacity: 1;
       }
     }
   }
+  .tree{    
+    width: 215px;
+    height: 293px;
+    position: absolute;
+    top: 401px;
+    right: 426px;
+     
+    animation: changeImage3 12s   infinite;
+    @keyframes changeImage3 {
+      0%,
+      100% {
+        opacity: 0;        
+      }
+      50% {
+        opacity: 1;
+        transform: translateX(50)
+      }
+       
+    }
 
+  }
+
+  .treea{
+    width: 215px;
+    height: 293px;
+    position: absolute;
+    top: 401px;
+    right: 426px;
+    
+    animation: changeImage3 12s    infinite;
+    @keyframes changeImage3 {
+      0%,
+      100% {
+        opacity: 0;
+        
+      }
+
+      50% {
+        opacity: 1;
+           }
+        }
+
+  }
   &__wrapper {
     background: url('/dist/assets/images/sliderFilter.png') center/cover no-repeat;
     display: flex;

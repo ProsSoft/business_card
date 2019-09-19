@@ -12,3 +12,8 @@ export const scrollTo = (section = 'top', didNotMount) => {
   }
 };
 
+export const scrollToContactUs = () => {
+  $('html, body').animate({
+    scrollTop: $('.contact__title').offset().top
+  }, 2000);   
+};
