@@ -18,6 +18,7 @@
     "react": "15.6.2",
     "react-addons-css-transition-group": "15.6.2",
     "react-addons-transition-group": "15.6.2",
+    "react-alice-carousel": "^1.15.3",
     "react-dom": "15.6.2",
     "react-icons": "2.2.7",
     "react-meta-tags": "0.3.0",
