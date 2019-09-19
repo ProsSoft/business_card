@@ -36,49 +36,7 @@
       }
     }
   }
-  .tree{    
-    width: 215px;
-    height: 293px;
-    position: absolute;
-    top: 401px;
-    right: 426px;
-     
-    animation: changeImage3 12s   infinite;
-    @keyframes changeImage3 {
-      0%,
-      100% {
-        opacity: 0;        
-      }
-      50% {
-        opacity: 1;
-        transform: translateX(50)
-      }
-       
-    }
-
-  }
-
-  .treea{
-    width: 215px;
-    height: 293px;
-    position: absolute;
-    top: 401px;
-    right: 426px;
-    
-    animation: changeImage3 12s    infinite;
-    @keyframes changeImage3 {
-      0%,
-      100% {
-        opacity: 0;
-        
-      }
-
-      50% {
-        opacity: 1;
-           }
-        }
-
-  }
+ 
   &__wrapper {
     background: url('/dist/assets/images/sliderFilter.png') center/cover no-repeat;
     display: flex;

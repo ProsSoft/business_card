@@ -1,10 +1,10 @@
 import React from 'react';
 import { landing } from '../../constants';
 
-const LandingSolutions = (props) => {
+const LandingSolutions = () => {
   const { solutions } = landing;
   return (
-    <section className="solutions" id="solutions" ref={props.scrollElem}>
+    <section className="solutions" id="solutions" >
       <div className="container">
         <h3 className="section__title">Solutions</h3>
         <div className="solutions__wrapper">

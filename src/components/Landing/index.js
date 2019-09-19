@@ -29,21 +29,15 @@ class Landing extends React.Component {
       let service = '';
       let solutions ='';
       let contact = '';
-      let lending = '';
       let serviceDOMNode = '';
       let solutionDOMNode = '';
       let contactDOMNode = '';
-      let lendingComp      = document.getElementsByClassName('landing');
       let servComp     = document.getElementsByClassName('nav__header-link');
       let sectionTitle = document.getElementsByClassName('section__title');
       let contactTitle = document.getElementsByClassName('contact__title');
-      // console.log(lastScrollY);
-      // for (let i in lendingComp){
-      //   lending  = lendingComp[0].offsetHeight;
-      //     }
+      
       for (let i in contactTitle){
         contact  = contactTitle[0].offsetTop;
-      //  console.log('Contact'+contact);
           }
       for (let i in sectionTitle){
         service  = sectionTitle[0].offsetTop - 200;
@@ -96,5 +90,4 @@ class Landing extends React.Component {
 
 export default Landing;
 
-//this.inputLand.offsetHeight-1000
-//(contact-service)
+ 
