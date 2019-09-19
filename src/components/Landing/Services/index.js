@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
- import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 
 import LandingServicesIcon1 from './Icon1';
 import LandingServicesIcon2 from './Icon2';
@@ -28,12 +28,12 @@ const LandingServices = (props) => {
           {landing.services.map(({ title, description, link}, index) => (
             <span className="services__item" key={title}>
               <span className="services__item-title">{title}</span>
-              <Link   to={`/services${link}`}
-                 //
+              <div
+                // to={`/services${link}`}
                 className="services__item-icon"
               >
                 {svgIcon(index)}
-              </Link>
+              </div>
               <span className="services__item-description">{description}</span>
             </span>
           ))}

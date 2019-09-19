@@ -30,12 +30,9 @@ class Service extends Component {
           id="service-stage-img"
           src={`${imagesUrl}service_stages/stage${src}.jpg`}
           onWheel={({ deltaY }) => {
-            console.log("Weel"+deltaY);
-            console.log("scrollX"+scrollX);
             const x = window.scrollX;
             const y = window.scrollY;
             window.onscroll = () => window.scrollTo(x, y);
-            
             const newTimestamp = performance.now();
             this.setState({ timestamp: newTimestamp, deltaY: deltaY + prevDeltaY });
             if (newTimestamp - timestamp > 170) {
