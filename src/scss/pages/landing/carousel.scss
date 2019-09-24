@@ -1,7 +1,10 @@
 .carousel-container{
     height: 200px;
     padding-left: 7%;
+    background: red;
+    
   }
+ 
  .alice-carousel__stage-item img{
    height: 120px;
    width: 200px;
@@ -44,6 +47,10 @@
    overflow: hidden;
  }
  
+ .alice-carousel__wrapper .alice-carousel__stage_item:hover{
+  cursor: pointer;
+  opacity: 0.1;
+ } 
  .alice-carousel__stage {
    position: relative;
    width: 100%;
@@ -65,13 +72,17 @@
      * {
        line-height: initial;
      }
- 
+     &:hover{
+      cursor: pointer;
+      background-color: red;
+   }  
      &.__cloned {
        opacity: 0;
        visibility: hidden;
      }
    }
- 
+   
+
    &:after {
      content: ".";
      display: block;
@@ -81,7 +92,7 @@
      height: 0;
    }
  }
- 
+
  .alice-carousel__prev-btn,
  .alice-carousel__next-btn {
    display: inline-block;
@@ -227,11 +238,17 @@
  }
 
 
+
 @media (max-width: 1024px) {
   .alice-carousel__stage-item img {
    position: relative;
    right: -58px;
+   &:hover{
+    cursor: pointer;
+    background-color: red;
   }
+  }
+
 }
 @media (max-width: 768px) {
   .alice-carousel__stage-item img {
@@ -274,6 +291,5 @@
 }
 }
 .alice-carousel__stage-item img:hover{
- cursor: pointer;
+  cursor: pointer;
 }
-

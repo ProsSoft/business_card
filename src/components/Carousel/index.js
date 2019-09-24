@@ -1,10 +1,12 @@
+/* eslint-disable react/jsx-filename-extension */
 import React from 'react';
+import AliceCarousel from 'react-alice-carousel';
 import '../../scss/pages/carousel.scss';
 import {imagesUrl} from '../../constants';
-import AliceCarousel from 'react-alice-carousel';
+
 
 const galleryItems = (() => Array(20).fill(null).map((img, index) => {
-  const src = `${imagesUrl}imcar/${index}.png`;
+  const src = `${imagesUrl}carousel/${index}.png`;
 
   return (
     <img
