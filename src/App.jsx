@@ -2,7 +2,7 @@ import React from 'react';
 import { /*BrowserRouter,*/ HashRouter, Route, Switch, Redirect } from 'react-router-dom';
 
 import Landing from './components/Landing';
-// import Service from './components/Service';
+import Service from './components/Service';
 // import Company from './components/Company';
 import Careers from './components/Careers';
 import Portfolio from './components/Portfolio';
@@ -22,7 +22,7 @@ const App = () => (
         </Route>
         <Route path="/home/:section?" component={Landing} />
         <Route path="/portfolio" component={Portfolio} />
-        {/*<Route path="/services/:type" component={Service} />*/}
+        {<Route path="/services/:type" component={Service} />}
         {/*<Route path="/products" component={Products} />*/}
         {/*<Route path="/product/:name" component={Product} />*/}
         {/*<Route path="/company" component={Company} />*/}

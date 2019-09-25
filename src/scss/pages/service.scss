@@ -1,3 +1,347 @@
 .service {
   background: #e2e3e5;
+  
+}
+#service-stage-img{
+ position: relative;
+ height: 273px;
+ bottom: -68px;
+ left: 452px;
+ width: 182px
+}
+
+.service-image0{
+  background-image: url('/dist/assets/images/sliderNight.jpg');
+  background-repeat: no-repeat;
+  height:732px;
+  display: flex;
+  align-items: center;
+  background-size: 100%;
+  color: #fff;
+    font-size: 1.75rem;
+    font-style: italic;
+    font-weight: 300;
+    letter-spacing: -1.2px;
+    margin: 0 0 50px;
+}
+
+.service-image0::before{
+  animation: appear  3s ease-in-out;
+  width: 500px;
+  position: relative;
+  left: 100px;
+  @keyframes appear {
+    0%,
+    20%{
+      opacity: 0.2;
+    }
+   
+    40%{
+      opacity: 0.4;
+    }
+    50% {
+      opacity: 0.5;
+       
+    } 
+    70%{
+      opacity: 0.7;
+    }
+    100% {
+       
+      opacity: 1;
+    }
+  }
+   
+  color: #fff;
+  font-size: 1.75rem;
+  font-style: italic;
+  font-weight: 300;
+  letter-spacing: -1.2px;
+  margin: 0 0 50px;      
+  content: '1. Describe your dream project
+  as a fully functional successful product.
+  Detail all the desired features,
+  user experience and expected outcome.
+  This ensures both effective communication
+  with a developing team and
+  a clear vision of a project.';
+  
+}
+
+.service-image1{
+  background-image: url('/dist/assets/images/sliderNight.jpg');
+  background-repeat: no-repeat;
+  height:732px;
+  display: flex;
+  align-items: center;
+  background-size: 100%;
+}
+
+.service-image1::before{
+  animation: appear  3s ease-in-out;
+  width: 500px;
+  position: relative;
+  left: 100px;
+  @keyframes appear {
+    0%,
+    20%{
+      opacity: 0.2;
+    }
+   
+    40%{
+      opacity: 0.4;
+    }
+    50% {
+      opacity: 0.5;
+       
+    } 
+    70%{
+      opacity: 0.7;
+    }
+    100% {
+       
+      opacity: 1;
+    }
+  }
+   
+  color: #fff;
+  font-size: 1.75rem;
+  font-style: italic;
+  font-weight: 300;
+  letter-spacing: -1.2px;
+  margin: 0 0 50px;      
+  content: '2. Sketches
+  Based on your ideas our designers visualise
+  a functioning product.
+  This further establishes a plan for development
+  and ensures that a result meets your expectations.';
+  
+}
+
+
+.service-image2{
+  background-image: url('/dist/assets/images/sliderNight.jpg');
+  background-repeat: no-repeat;
+  height:732px;
+  display: flex;
+  align-items: center;
+  background-size: 100%;
+}
+
+.service-image2::before{
+  animation: appear  3s ease-in-out;
+  width: 500px;
+  position: relative;
+  left: 100px;
+  @keyframes appear {
+    0%,
+    20%{
+      opacity: 0.2;
+    }
+   
+    40%{
+      opacity: 0.4;
+    }
+    50% {
+      opacity: 0.5;
+       
+    } 
+    70%{
+      opacity: 0.7;
+    }
+    100% {
+       
+      opacity: 1;
+    }
+  }
+   
+  color: #fff;
+  font-size: 1.75rem;
+  font-style: italic;
+  font-weight: 300;
+  letter-spacing: -1.2px;
+  margin: 0 0 50px;     
+  content: '3. Estimation
+  We describe your project as
+  a well-detailed compound of functional features,
+  each with required time for implementation.
+  At this stage your project can be evaluated
+  in terms of time and finance.';
+  
+}
+.service-image3{
+  background-image: url('/dist/assets/images/sliderNight.jpg');
+  background-repeat: no-repeat;
+  height:732px;
+  display: flex;
+  align-items: center;
+  background-size: 100%;
+}
+
+.service-image3::before{
+  animation: appear  3s ease-in-out;
+  width: 500px;
+  position: relative;
+  left: 100px;
+  @keyframes appear {
+    0%,
+    20%{
+      opacity: 0.2;
+    }
+   
+    40%{
+      opacity: 0.4;
+    }
+    50% {
+      opacity: 0.5;
+       
+    } 
+    70%{
+      opacity: 0.7;
+    }
+    100% {
+       
+      opacity: 1;
+    }
+  }
+  color: #fff;
+  font-size: 1.75rem;
+  font-style: italic;
+  font-weight: 300;
+  letter-spacing: -1.2px;
+  margin: 0 0 50px;      
+  content: '4. Software development';
+  
+}
+.service-image4{
+  background-image: url('/dist/assets/images/sliderNight.jpg');
+  background-repeat: no-repeat;
+  height: 732px;
+  display: flex;
+  align-items: center;
+  background-size: 100%;
+}
+.service-image4::before{
+  animation: appear  3s ease-in-out;
+  width: 500px;
+  position: relative;
+  left: 100px;
+  @keyframes appear {
+    0%,
+    20%{
+      opacity: 0.2;
+    }
+   
+    40%{
+      opacity: 0.4;
+    }
+    50% {
+      opacity: 0.5;
+       
+    } 
+    70%{
+      opacity: 0.7;
+    }
+    100% {
+       
+      opacity: 1;
+    }
+  }   
+   color: #fff;
+    font-size: 1.75rem;
+    font-style: italic;
+    font-weight: 300;
+    letter-spacing: -1.2px;
+    margin: 0 0 50px;     
+  content: '5. Testing';  
+}
+.service-image5{
+  background-image: url('/dist/assets/images/sliderNight.jpg');
+  background-repeat: no-repeat;
+  height:732px;
+  display: flex;
+  align-items: center;
+  background-size: 100%;
+}
+.service-image5::before{
+  animation: appear  6s ease-in-out;
+  width: 500px;
+  position: relative;
+  left: 100px;
+  @keyframes appear {
+    0%,
+    20%{
+      opacity: 0.2;
+    }
+   
+    40%{
+      opacity: 0.4;
+    }
+    50% {
+      opacity: 0.5;
+       
+    } 
+    70%{
+      opacity: 0.7;
+    }
+    100% {       
+      opacity: 1;
+    }
+  }   
+  color: white;  
+  font-size: 1.75rem;
+    font-style: italic;
+    font-weight: 300;
+    letter-spacing: -1.2px;
+    margin: 0 0 50px;    
+  content: '6. Demo
+  We apply the cutting-edge technologies 
+  as yara, yara, yara, yara, yara 
+  for development and testing of your software.
+  Upon a demo release this development cycle 
+  repeats till the finest version is built.';
+  }
+.service-image6{
+  background-image: url('/dist/assets/images/sliderNight.jpg');
+  background-repeat: no-repeat;
+  height:732px;
+  display: flex;
+  align-items: center;
+  background-size: 100%;
+}
+.service-image6::before{
+  animation: appear  3s ease-in-out;
+  width: 500px;
+  position: relative;
+  left: 100px;
+  @keyframes appear {
+    0%,
+    20%{
+      opacity: 0.2;
+    }   
+    40%{
+      opacity: 0.4;
+    }
+    50% {
+      opacity: 0.5;       
+    } 
+    70%{
+      opacity: 0.7;
+    }
+    100% {
+       
+      opacity: 1;
+    }
+  }
+    color: white;  
+   font-size: 1.75rem;
+    font-style: italic;
+    font-weight: 300;
+    letter-spacing: -1.2px;
+    margin: 0 0 50px;    
+  content: '7. Production
+  We release your product
+  to sail gloriously in a world-wide web,
+  deploying it on a server of choice.';
+  
 }
