@@ -22,8 +22,9 @@ const responsive = {
   320: { items: 2},
   375: { items: 2 },
   425: { items: 2 },
-  768: { items: 3 },
-  1024: { items: 5 },
+  768: { items: 3 },   
+  1024: { items: 4 },
+  1290: { items: 5 },
 };
 
 const autoPlayInterval = 4000;
