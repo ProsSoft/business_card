@@ -192,44 +192,45 @@ const careers = {
           &nbsp;reference letters sent directly from the referees would be an advantage.</p>
       },
     },
-    {
-      vacancy: 'Marketing and Sales Managers',
-      agenda: '',
-      requirements: {
-        title: 'The ideal candidates will be motivated and success oriented individuals that have:',
-        list: [
-          'good command of English is essential',
-          'experience in e-commerce, digital marketing and web-sales',
-          'excellent skills in creative writing and communication',
-          'experience in tech related copy-writing would be a plus',
-        ],
-      },
-      stack: {
-        title: '',
-        text: ''
-      },
-      mission: {
-        title: 'Our mission',
-        text: 'Improved efficiency of technological face of business, improved quality of life via applications we create.',
-      },
-      offering: {
-        title: 'We offer:',
-        list: [
-          'highly competitive, regularly reviewed salaries',
-          'additional payment bonuses in products’ equities',
-          'a comfortable workplace and flexible work hours in hometown',
-          'growth-stimulating environment (including unlimited access to coffee and sweets :)',
-          'professional development trainings and courses',
-          'travels for conferences and work meetings with clients abroad'
-        ],
-      },
-      conclusion: {
-        title: 'Contact us',
-        text: <p>Interested candidates are invited to send resumes and cover letters outlining the candidate’s motivation to
-          &nbsp;<a target="_blank" href="mailto:contacts@prossoft.com"><b>contacts@prossoft.com</b></a>,
-          &nbsp;reference letters sent directly from the referees would be an advantage.</p>
-      },
-    },
+
+    // {
+    //   vacancy: 'Marketing and Sales Managers',
+    //   agenda: '',
+    //   requirements: {
+    //     title: 'The ideal candidates will be motivated and success oriented individuals that have:',
+    //     list: [
+    //       'good command of English is essential',
+    //       'experience in e-commerce, digital marketing and web-sales',
+    //       'excellent skills in creative writing and communication',
+    //       'experience in tech related copy-writing would be a plus',
+    //     ],
+    //   },
+    //   stack: {
+    //     title: '',
+    //     text: ''
+    //   },
+    //   mission: {
+    //     title: 'Our mission',
+    //     text: 'Improved efficiency of technological face of business, improved quality of life via applications we create.',
+    //   },
+    //   offering: {
+    //     title: 'We offer:',
+    //     list: [
+    //       'highly competitive, regularly reviewed salaries',
+    //       'additional payment bonuses in products’ equities',
+    //       'a comfortable workplace and flexible work hours in hometown',
+    //       'growth-stimulating environment (including unlimited access to coffee and sweets :)',
+    //       'professional development trainings and courses',
+    //       'travels for conferences and work meetings with clients abroad'
+    //     ],
+    //   },
+    //   conclusion: {
+    //     title: 'Contact us',
+    //     text: <p>Interested candidates are invited to send resumes and cover letters outlining the candidate’s motivation to
+    //       &nbsp;<a target="_blank" href="mailto:contacts@prossoft.com"><b>contacts@prossoft.com</b></a>,
+    //       &nbsp;reference letters sent directly from the referees would be an advantage.</p>
+    //   },
+  //  },
   ]
 };
 

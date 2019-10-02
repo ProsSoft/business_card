@@ -3,7 +3,6 @@ import FaChevronCircleDown from 'react-icons/lib/fa/chevron-circle-down';
 import FaChevronCircleUp from 'react-icons/lib/fa/chevron-circle-up';
 import Check from 'react-icons/lib/fa/check';
 import Plus from 'react-icons/lib/fa/plus';
-
 import Hero from '../common/Hero';
 import { careers } from '../../constants';
 import { scrollTo } from "../../util";
@@ -34,6 +33,7 @@ export default class VacancyGroupButton extends PureComponent {
   render() {
     const scrollToElemId = 'header';
     return (
+      // eslint-disable-next-line react/jsx-filename-extension
       <div className="page careers">
         <Hero
           {...{
@@ -74,6 +74,9 @@ export default class VacancyGroupButton extends PureComponent {
             )
           })
           }
+          <div className="item">
+            <div className="itemCLosed">Marketing and Sales Managers - CLOSED</div>
+           </div>
         </section>
       </div>);
   }
