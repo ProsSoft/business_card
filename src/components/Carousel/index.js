@@ -36,7 +36,7 @@ const Carousel = () => (
         responsive,
         autoPlayInterval,
       }}
-      duration="4000"
+      duration={4000}
       items={galleryItems}
       autoPlayDirection="ltl"
       playButtonEnabled={false}
