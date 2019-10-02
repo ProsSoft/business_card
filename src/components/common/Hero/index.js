@@ -31,7 +31,7 @@ const Hero = ({
       <button
         className="landing-green-btn"
        // onClick={() => scrollTo(scrollToElemId, didNotMount)}
-       onClick={() => scrollToContactUs()}
+       onClick={scrollToContactUs}
       >
         {buttonText}
       </button>

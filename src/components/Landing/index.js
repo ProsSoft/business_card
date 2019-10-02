@@ -1,22 +1,22 @@
+/* eslint-disable class-methods-use-this */
+/* eslint-disable react/sort-comp */
 /* eslint-disable react/prop-types,react/jsx-no-bind,no-return-assign,no-param-reassign,prefer-destructuring,consistent-return */
 import React from 'react';
-import ReactDOM from 'react-dom';
 import Hero from '../common/Hero';
 import Services from './Services';
 import Solutions from './Solutions';
 import Contacts from './Contacts';
 import { scrollTo } from '../../util';
-import { landing, service } from '../../constants';
+import { landing } from '../../constants';
 import Carousel from '../Carousel/index';
 
 class Landing extends React.Component {
   state = {}; 
   componentWillReceiveProps({ match: { params: { section } } }) {
-   
-    scrollTo(section);
+      scrollTo(section);
   }
   componentDidMount() {
-    console.log(this.props);
+    
     const { match: { params: { section } } } = this.props;
     scrollTo(section, true);
     this.setState({ didNotMount: false })
@@ -24,29 +24,34 @@ class Landing extends React.Component {
 
   }
   handleScroll() {
-         let lastScrollY = 0;
-      lastScrollY = window.scrollY;
-      let service = '';
-      let solutions ='';
-      let contact = '';
-      let serviceDOMNode = '';
-      let solutionDOMNode = '';
-      let contactDOMNode = '';
-      let servComp     = document.getElementsByClassName('nav__header-link');
-      let sectionTitle = document.getElementsByClassName('section__title');
-      let contactTitle = document.getElementsByClassName('contact__title');
+      const lastScrollY = window.scrollY;
+      let service;
+      let solutions;
+      let contact;
+      let serviceDOMNode;
+      let solutionDOMNode;
+      let contactDOMNode;
+      const serviceComponentNavMenu     = document.getElementsByClassName('nav__header-link');
+      const ServiceComponent = document.getElementsByClassName('services');
+      const SolutionsComponent = document.getElementsByClassName('solutions');
+      const ContactComponent = document.getElementsByClassName('contact');
+   
+      Object.values(ServiceComponent).forEach( value => {
+        service = value.offsetTop-200;
+           });
       
-      for (let i in contactTitle){
-        contact  = contactTitle[0].offsetTop;
-          }
-      for (let i in sectionTitle){
-        service  = sectionTitle[0].offsetTop - 200;
-        solutions = sectionTitle[1].offsetTop - 200; 
-           }
-      for(let i in servComp){
-         serviceDOMNode  = servComp[0];
-         solutionDOMNode = servComp[1];
-         contactDOMNode =  servComp[4];   
+      Object.values(SolutionsComponent).forEach( value => {
+        solutions = value.offsetTop-200;
+           });
+      
+      Object.values(ContactComponent).forEach( value => {
+        contact  = value.offsetTop;
+            });
+          
+      for(let {} in serviceComponentNavMenu){
+         serviceDOMNode  = serviceComponentNavMenu[0];
+         solutionDOMNode = serviceComponentNavMenu[1];
+         contactDOMNode =  serviceComponentNavMenu[4];   
       }   
     //Service
       if(lastScrollY > service  ){
@@ -77,7 +82,8 @@ class Landing extends React.Component {
     const { didNotMount } = this.state;
     const { hero, contactUs } = landing;
     return (
-      <div className="landing" ref ={(input) => {this.inputLand = input}} >
+      // eslint-disable-next-line react/jsx-filename-extension
+      <div className="landing" >
         <Hero {...{ ...hero, didNotMount }} />
         <Services  />
         <Solutions />
