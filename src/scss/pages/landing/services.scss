@@ -1,13 +1,4 @@
 .services {
-  &__title {
-    color: $color-denim;
-    font-size: 4.4rem;
-    font-weight: 100;
-    letter-spacing: -1.4px;
-    margin: 36px 0;
-    text-align: center;
-  }
-
   &__list {
     display: flex;
     justify-content: space-between;
@@ -44,10 +35,10 @@
     width: 243px;
   }
 
-  &__item-icon:hover {
-    background-color: $color-pea-green;
-    fill: #f6f6f6;
-  }
+  //&__item-icon:hover {
+  //  background-color: $color-pea-green;
+  //  fill: #f6f6f6;
+  //}
 
   &__item-description {
     color: $color-denim;
@@ -99,7 +90,7 @@
 
     &__item-icon {
       height: 200px;
-      width: 200px;    
+      width: 200px;
     }
   }
 
@@ -117,7 +108,7 @@
   @media only screen and (max-width: 500px) {
     &__title {
       font-size: 3.2rem;
-    }  
+    }
 
     &__item {
       margin-bottom: 10px;
@@ -126,7 +117,7 @@
 
     &__item-icon {
       height: 175px;
-      width: 175px;    
+      width: 175px;
     }
   }
 }

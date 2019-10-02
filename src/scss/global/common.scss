@@ -14,9 +14,7 @@
 
 
 *:focus {
-  box-shadow: 0 0 6px darken($color-light-blue-grey, 20%);
-  outline: 1px solid darken($color-light-blue-grey, 7%) !important;
-
+  outline: none;
 }
 
 input:focus,
@@ -24,7 +22,6 @@ textarea:focus {
   border: 1px solid darken($color-light-blue-grey, 7%) !important;
   box-shadow: 0 0 6px darken($color-light-blue-grey, 20%);
   margin: -1px;
-  outline: none !important;
 }
 
 input:-webkit-autofill {

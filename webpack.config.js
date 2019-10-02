@@ -20,7 +20,7 @@ const config = {
     hot: true,
     publicPath: '/dist/',
     historyApiFallback: true,
-    overlay: false,
+    overlay: false
   },
   resolve: {
     modules: ['node_modules', 'src'],
@@ -38,12 +38,12 @@ const config = {
   ],
   module: {
     rules: [
-      {
-        enforce: 'pre',
-        test: /\.jsx?$/,
-        loader: 'eslint-loader',
-        exclude: /node_modules/
-      },
+      // {
+      //   enforce: 'pre',
+      //   test: /\.jsx?$/,
+      //   loader: 'eslint-loader',
+      //   exclude: /node_modules/
+      // },
       {
         test: /\.jsx?$/,
         loader: 'babel-loader',

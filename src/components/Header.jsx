@@ -7,9 +7,7 @@ import Navigation from './Navigation';
 import AsideNav from './AsideNav';
 
 class Header extends Component {
-  state = {
-    asideOpen: false
-  };
+  state = { asideOpen: false };
 
   componentWillReceiveProps(nextProps) {
     const { pathname, hash } = this.props.location;
