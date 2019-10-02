@@ -5,7 +5,6 @@
 		"prettier/react"
 	],
   "rules": {
-    "linebreak-style": 0,
     "jsx-a11y/anchor-is-valid": [ "error", {
       "components": [ "Link" ],
       "specialLink": [ "hrefLeft", "hrefRight", "to" ],
