@@ -18,10 +18,10 @@
     font-size: 0.8125rem;
     line-height: 4.5;
   }
-
+//with twitter left = calc(50% - 150px)
   &__social {
     position: absolute;
-    left: calc(50% - 150px);
+    left: calc(50% - 100px);
     bottom: 30px;
     &-link {
       background-color: #fff;
