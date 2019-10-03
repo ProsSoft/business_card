@@ -53,8 +53,14 @@
   }
 
   @media only screen and (max-width: 1024px) {
+    .section__title{
+      font-size: 3.7em;
+      padding-bottom: 4%;
+    }
+
     &__item-title {
       height: auto;
+       font-size: 1.5em;
     }
 
     &__list {
@@ -78,9 +84,13 @@
   }
 
   @media only screen and (max-width: 768px) {
+    .section__title{
+      font-size: 3em;
+      padding-bottom: 4%;
+    }
     &__title {
       margin: 24px 0;
-    }
+          }
 
 
     &__item {
@@ -92,11 +102,12 @@
       height: 200px;
       width: 200px;
     }
+
   }
 
   @media only screen and (max-width: 600px) {
     &__title {
-      font-size: 3.5rem;
+      font-size: 2.9rem;
     }
 
     &__item {
@@ -107,7 +118,7 @@
 
   @media only screen and (max-width: 500px) {
     &__title {
-      font-size: 3.2rem;
+      font-size: 2.8rem;
     }
 
     &__item {
@@ -121,3 +132,20 @@
     }
   }
 }
+
+@media only screen and (max-width: 425px) {
+  .services  .section__title{
+    font-size: 2.5em;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .services  .section__title{
+     font-size: 2.2em;
+   }
+ }
+
+@media only screen and (max-width: 320px) {
+  .services  .section__title{
+     font-size: 2.0em;
+   }
+ }
