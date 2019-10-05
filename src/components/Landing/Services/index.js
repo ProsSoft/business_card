@@ -23,7 +23,7 @@ const LandingServices = (props) => {
   return (
     <section className="services" id="services" ref={props.scrollElem}>
       <div className="container">
-        <h3 className="section__title">Services</h3>
+        <h3 className="section__title" >Services</h3>
         <div className="services__list">
           {landing.services.map(({ title, description, link}, index) => (
             <span className="services__item" key={title}>

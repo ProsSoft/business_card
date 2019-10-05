@@ -1,7 +1,8 @@
-.services {
-  &__list {
+ .services {
+   &__list {
     display: flex;
     justify-content: space-between;
+    padding-top: 30px;
   }
 
   &__item {
@@ -46,6 +47,7 @@
     font-weight: 300;
   }
 
+
   @media only screen and (max-width: 1280px) {
     &__item {
       padding: 30px 40px;
@@ -78,9 +80,12 @@
   }
 
   @media only screen and (max-width: 768px) {
+    .section__title{
+      font-size: 3em;
+      }
     &__title {
       margin: 24px 0;
-    }
+     }
 
 
     &__item {
@@ -96,7 +101,7 @@
 
   @media only screen and (max-width: 600px) {
     &__title {
-      font-size: 3.5rem;
+      font-size: 3.0rem;
     }
 
     &__item {
@@ -105,9 +110,11 @@
     }
   }
 
+
+
   @media only screen and (max-width: 500px) {
     &__title {
-      font-size: 3.2rem;
+      font-size: 3.0rem;
     }
 
     &__item {
