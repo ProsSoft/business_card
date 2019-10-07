@@ -53,15 +53,18 @@ export default class VacancyGroupButton extends PureComponent {
             and
             engage with the most exciting projects in the field today!
           </div>
-          {offers.map(({ vacancy, ...offerProps }, index) => {
+          {offers.map(({ vacancy, isVacancyOpen , ...offerProps }, index) => {
             const isOpen = this.state[getStateKey(index)];
+
             return (
               <div className="item" key={index}>
+
                 <button
                   id={index}
                   className={isOpen ? 'selected' : ''}
                   onClick={this.onClick}
                 >
+
                   {vacancy}
                   {isOpen ?
                     <FaChevronCircleUp id={index} />
@@ -69,51 +72,54 @@ export default class VacancyGroupButton extends PureComponent {
                     <FaChevronCircleDown id={index} />
                   }
                 </button>
-                <OfferContent {...{ isOpen, ...offerProps }} />
+                <OfferContent {...{ isOpen, isVacancyOpen, ...offerProps }} />
               </div>
             )
           })
           }
-          <div className="item">
+          {/* <div className="item">
             <div className="itemCLosed">Marketing and Sales Managers - CLOSED</div>
-           </div>
+           </div> */}
         </section>
       </div>);
   }
 };
 
-const OfferContent = ({ isOpen, agenda, requirements, stack, mission, offering, conclusion }) => (
-  <div className={`description ${isOpen ? 'opened' : ''}`}>
-    {agenda}
-    <div className="flex-box">
-      <p className="title">{offering.title}</p>
-      <ul>
-        {offering.list.map(item =>
-          <li key={item}>
-            <Check />
-            {item}
-          </li>
-        )}
-      </ul>
-    </div>
-    <div className="flex-box">
-      <p className="title">{requirements.title}</p>
-      <ul>
-        {requirements.list.map((item, i, list) =>
-          <li key={item}>
-            {list.length - 1 === i ? <Plus /> : <Check />}
-            {item}
-          </li>
-        )}
-      </ul>
-    </div>
-    <p className="title">{stack.title}</p>
-    <p>{stack.text}</p>
+const OfferContent = ({ isOpen, isVacancyOpen, agenda, requirements, stack, mission, offering, conclusion }) => (
+  <div>
+      {!isVacancyOpen? <div className="vacancy_closed">Closed</div> : null}
+      <div className={`description ${isOpen ? 'opened' : ''}`}>
+        {agenda}
+        <div className="flex-box">
+          <p className="title">{offering.title}</p>
+          <ul>
+            {offering.list.map(item =>
+              <li key={item}>
+                <Check />
+                {item}
+              </li>
+            )}
+          </ul>
+        </div>
+        <div className="flex-box">
+          <p className="title">{requirements.title}</p>
+          <ul>
+            {requirements.list.map((item, i, list) =>
+              <li key={item}>
+                {list.length - 1 === i ? <Plus /> : <Check />}
+                {item}
+              </li>
+            )}
+          </ul>
+        </div>
+        <p className="title">{stack.title}</p>
+        <p>{stack.text}</p>
 
-    <p className="title">{mission.title}</p>
-    <p>{mission.text}</p>
+        <p className="title">{mission.title}</p>
+        <p>{mission.text}</p>
 
-    <p className="title">{conclusion.title}</p>
-    <p>{conclusion.text}</p>
+        <p className="title">{conclusion.title}</p>
+        <p>{conclusion.text}</p>
+      </div>
   </div>
 );
