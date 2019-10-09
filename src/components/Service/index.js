@@ -16,6 +16,22 @@ class Service extends Component {
     classForText: 0,
     deltaY: 0
   };
+ downImage = () => {
+   console.log('downImage');
+   this.state.src == 6 ? this.state.src = 6 : this.setState({
+     src: this.state.src + 1,
+     classForText: this.state.classForText + 1
+   })
+ }
+ upImage = () => {
+   console.log('up');
+   this.state.src == 0 ? this.state.src = 0 : this.setState({
+     src: this.state.src - 1,
+     classForText: this.state.classForText - 1
+   })
+ }
+
+
   render() {
     const { match: { params: { type }} } = this.props;
     const { title } = services.find(({link}) => link === `/${type}`);
@@ -28,10 +44,10 @@ class Service extends Component {
           noBack
           title1={title}
         />
-        <div className={`service-image${classForText}`}>
+        <div className ="serviceImage-container">
               <img
                 id="service-stage-img"
-                src={`${imagesUrl}forWeb/stage${src}.png`}
+                src={`${imagesUrl}forWeb/stage${src}.jpg`}
                 onWheel={({ deltaY }) => {
                   const x = window.scrollX;
                   const y = window.scrollY;
@@ -55,11 +71,17 @@ class Service extends Component {
                     this.setState({ deltaY: 0 });
                   }
                 }}
-                onMouseOut={() => {
+                onMouseOut= {() => {
                   window.onscroll = () => {};
-                }}
-              
+                }}              
               /> 
+          <div className="serviceImage-chevron_down" onClick={this.downImage}>
+               <i className = "fa fa-chevron-down fa-2x"></i>
+          </div>
+          <div className="serviceImage-chevron_up" onClick={this.upImage}>
+              <i className="fa fa-chevron-up fa-2x"></i>
+          </div>
+ 
        </div> 
       </div>);
   }

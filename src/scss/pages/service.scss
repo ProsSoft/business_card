@@ -2,682 +2,175 @@
   background: #e2e3e5;
   
 }
-#service-stage-img{
- position: relative;
- height: 273px;
- bottom: -68px;
- left: 452px;
- width: 182px
+.serviceImage-container {
+ 
+}
+#service-stage-img{ 
+width: 100%;
+margin-top: -3px;
 }
 
-.service-image0{
-  background-image: url('/dist/assets/images/sliderNight.jpg');
-  background-repeat: no-repeat;
-  height:732px;
-  display: flex;
-  align-items: center;
-  background-size: 100%;
-  color: #fff;
-    font-size: 1.75rem;
-    font-style: italic;
-    font-weight: 300;
-    letter-spacing: -1.2px;
-    margin: 0 0 50px;
+.serviceImage-chevron_down {
+  position: absolute;
+  right: 50%;
+  bottom: -200px;
+  padding: 10px 20px;
+  opacity: 0.5;
+  // border-radius: 10px;
 }
 
-.service-image0::before{
-  animation: appear  3s ease-in-out;
-  width: 500px;
-  position: relative;
-  left: 100px;
-  @keyframes appear {
-    0%,
-    20%{
-      opacity: 0.2;
-    }
-   
-    40%{
-      opacity: 0.4;
-    }
-    50% {
-      opacity: 0.5;       
-    } 
-    70%{
-      opacity: 0.7;
-    }
-    100% {       
-      opacity: 1;
-    }
-  }
-   
-  color: #fff;
-  font-size: 1.75rem;
-  font-style: italic;
-  font-weight: 300;
-  letter-spacing: -1.2px;
-  margin: 0 0 50px;      
-  content: '1. Describe your dream project
-  as a fully functional successful product.
-  Detail all the desired features,
-  user experience and expected outcome.
-  This ensures both effective communication
-  with a developing team and
-  a clear vision of a project.';
-  
+.serviceImage-chevron_down:hover {
+  opacity: 1;
+  // border: 1px solid #e2e3e5;
+  transition: 1s;
 }
 
-.service-image1{
-  background-image: url('/dist/assets/images/sliderNight.jpg');
-  background-repeat: no-repeat;
-  height:732px;
-  display: flex;
-  align-items: center;
-  background-size: 100%;
+.fa-chevron-down {
+  color: white;
 }
 
-.service-image1::before{
-  animation: appear  3s ease-in-out;
-  width: 500px;
-  position: relative;
-  left: 100px;
-  @keyframes appear {
-    0%,
-    20%{
-      opacity: 0.2;
-    }
-   
-    40%{
-      opacity: 0.4;
-    }
-    50% {
-      opacity: 0.5;
-       
-    } 
-    70%{
-      opacity: 0.7;
-    }
-    100% {
-       
-      opacity: 1;
-    }
-  }
-   
-  color: #fff;
-  font-size: 1.75rem;
-  font-style: italic;
-  font-weight: 300;
-  letter-spacing: -1.2px;
-  margin: 0 0 50px;      
-  content: '2. Sketches
-  Based on your ideas our designers visualise
-  a functioning product.
-  This further establishes a plan for development
-  and ensures that a result meets your expectations.';
-  
+.serviceImage-chevron_up {
+  position: absolute;
+  right: 50%;
+  bottom: -530px;
+  padding: 10px 20px;
+  opacity: 0.5;
+//   border-radius: 10px;
+}
+
+.serviceImage-chevron_up:hover {
+  opacity: 1;
+//  border: 1px solid #e2e3e5;
+  transition: 1s;
+}
+
+.fa-chevron-up {
+  color: white;
 }
 
 
-.service-image2{
-  background-image: url('/dist/assets/images/sliderNight.jpg');
-  background-repeat: no-repeat;
-  height:732px;
-  display: flex;
-  align-items: center;
-  background-size: 100%;
-}
-
-.service-image2::before{
-  animation: appear  3s ease-in-out;
-  width: 500px;
-  position: relative;
-  left: 100px;
-  @keyframes appear {
-    0%,
-    20%{
-      opacity: 0.2;
-    }
-   
-    40%{
-      opacity: 0.4;
-    }
-    50% {
-      opacity: 0.5;
-       
-    } 
-    70%{
-      opacity: 0.7;
-    }
-    100% {
-       
-      opacity: 1;
-    }
-  }
-   
-  color: #fff;
-  font-size: 1.75rem;
-  font-style: italic;
-  font-weight: 300;
-  letter-spacing: -1.2px;
-  margin: 0 0 50px;     
-  content: '3. Estimation
-  We describe your project as
-  a well-detailed compound of functional features,
-  each with required time for implementation.
-  At this stage your project can be evaluated
-  in terms of time and finance.';  
-}
-.service-image3{
-  background-image: url('/dist/assets/images/sliderNight.jpg');
-  background-repeat: no-repeat;
-  height:732px;
-  display: flex;
-  align-items: center;
-  background-size: 100%;
-}
-
-.service-image3::before{
-  animation: appear  3s ease-in-out;
-  width: 500px;
-  position: relative;
-  left: 100px;
-  @keyframes appear {
-    0%,
-    20%{
-      opacity: 0.2;    }
-   
-    40%{
-      opacity: 0.4;
-    }
-    50% {
-      opacity: 0.5;       
-    } 
-    70%{
-      opacity: 0.7;
-    }
-    100% {       
-      opacity: 1;
-    }
-  }
-  color: #fff;
-  font-size: 1.75rem;
-  font-style: italic;
-  font-weight: 300;
-  letter-spacing: -1.2px;
-  margin: 0 0 50px;      
-  content: '4. Software development';
-  
-}
-.service-image4{
-  background-image: url('/dist/assets/images/sliderNight.jpg');
-  background-repeat: no-repeat;
-  height: 732px;
-  display: flex;
-  align-items: center;
-  background-size: 100%;
-}
-.service-image4::before{
-  animation: appear  3s ease-in-out;
-  width: 500px;
-  position: relative;
-  left: 100px;
-  @keyframes appear {
-    0%,
-    20%{
-      opacity: 0.2;
-    }
-   
-    40%{
-      opacity: 0.4;
-    }
-    50% {
-      opacity: 0.5;
-       
-    } 
-    70%{
-      opacity: 0.7;
-    }
-    100% {
-       
-      opacity: 1;
-    }
-  }   
-   color: #fff;
-    font-size: 1.75rem;
-    font-style: italic;
-    font-weight: 300;
-    letter-spacing: -1.2px;
-    margin: 0 0 50px;     
-  content: '5. Testing';  
-}
-.service-image5{
-  background-image: url('/dist/assets/images/sliderNight.jpg');
-  background-repeat: no-repeat;
-  height:732px;
-  display: flex;
-  align-items: center;
-  background-size: 100%;
-}
-.service-image5::before{
-  animation: appear  6s ease-in-out;
-  width: 500px;
-  position: relative;
-  left: 100px;
-  @keyframes appear {
-    0%,
-    20%{
-      opacity: 0.2;
-    }
-   
-    40%{
-      opacity: 0.4;
-    }
-    50% {
-      opacity: 0.5;
-       
-    } 
-    70%{
-      opacity: 0.7;
-    }
-    100% {       
-      opacity: 1;
-    }
-  }   
-  color: white;  
-  font-size: 1.75rem;
-    font-style: italic;
-    font-weight: 300;
-    letter-spacing: -1.2px;
-    margin: 0 0 50px;    
-  content: '6. Demo
-  We apply the cutting-edge technologies 
-  as yara, yara, yara, yara, yara 
-  for development and testing of your software.
-  Upon a demo release this development cycle 
-  repeats till the finest version is built.';
-  }
-.service-image6{
-  background-image: url('/dist/assets/images/sliderNight.jpg');
-  background-repeat: no-repeat;
-  height:732px;
-  display: flex;
-  align-items: center;
-  background-size: 100%;
-}
-.service-image6::before{
-  animation: appear  3s ease-in-out;
-  width: 500px;
-  position: relative;
-  left: 100px;
-  @keyframes appear {
-    0%,
-    20%{
-      opacity: 0.2;
-    }   
-    40%{
-      opacity: 0.4;
-    }
-    50% {
-      opacity: 0.5;       
-    } 
-    70%{
-      opacity: 0.7;
-    }
-    100% {
-       
-      opacity: 1;
-    }
-  }
-    color: white;  
-   font-size: 1.75rem;
-    font-style: italic;
-    font-weight: 300;
-    letter-spacing: -1.2px;
-    margin: 0 0 50px;    
-  content: '7. Production
-  We release your product
-  to sail gloriously in a world-wide web,
-  deploying it on a server of choice.';
- }
 
  @media (max-width: 1440px) {
   #service-stage-img {
-    left: 429px;
-    bottom: -62px;
+   // left: 429px;
+  //  bottom: -62px;
+  width: 100%;
   }
  }
  @media (max-width: 1024px) {
-  #service-stage-img {
-    left: 164px;
-    bottom: -46px;
-    height: 189px;
-    width: 124px;
+  
+  .serviceImage-chevron_down {
+    position: absolute;
+    right: 50%;
+    bottom: -53px;
+    padding: 10px 20px;
+    opacity: 0.5;
+    // border-radius: 10px;
   }
-  .service-image0{
-    height: 516px;
+  .serviceImage-chevron_up {
+    position: absolute;
+    right: 50%;
+    bottom: -277px;
+    padding: 10px 20px;
+    opacity: 0.5;
+    // border-radius: 10px;
   }
-  .service-image0::before {
-    font-size: 0.9em;
-  }
-  .service-image1{
-    height: 516px;
-  }
-  .service-image1::before {
-    font-size: 1.4em;
-  }
-  .service-image2{
-    height: 516px;
-  }
-  .service-image2::before {
-    font-size: 1.4em;
-  }
-  .service-image3{
-    height: 516px;
-  }
-  .service-image3::before {
-    font-size: 1.4em;
-  }
-  .service-image4{
-    height: 516px;
-  }
-  .service-image4::before {
-    font-size: 1.4em;
-  }
-  .service-image5{
-    height: 516px;
-  }
-  .service-image5::before {
-    font-size: 1.4em;
-  }
-  .service-image6{
-    height: 516px;
-  }
-  .service-image6::before {
-    font-size: 1.4em;
-  }
+  
  }
 
 
  @media (max-width: 768px) {
   #service-stage-img {
-    left: 197px;
-    bottom: -35px;
-    height: 145px;
-    width: 95px;
+    // left: 197px;
+    // bottom: -35px;
+    // height: 145px;
+    width: 100%;
   }
-  .service-image0{
-    height: 387px;
-    
-  }
-  .service-image0::before {
-    font-size: 0.4em;
-    width: 300px;
-    letter-spacing: 0.9px;
-  }
-  .service-image1{
-    height: 387px;
-  }
-  .service-image1::before {
-    font-size: 0.6em;
-    width: 300px;
-    letter-spacing: 0.9px;
-  }
-  .service-image2{
-    height: 387px;
-  }
-  .service-image2::before {
-    font-size: 0.6em;
-    width: 300px;
-    letter-spacing: 0.9px;
-  }
-  .service-image3{
-    height: 387px;
-  }
-  .service-image3::before {
-    font-size: 0.6em;
-    width: 300px;
-    letter-spacing: 0.9px;
-  }
-  .service-image4{
-    height: 387px;
-  }
-  .service-image4::before {
-    font-size: 0.6em;
-    width: 300px;
-    letter-spacing: 0.9px;
-  }
-  .service-image5{
-    height: 387px;
-  }
-  .service-image5::before {
-    font-size: 0.6em;
-    width: 300px;
-    letter-spacing: 0.9px;
-  }
-  .service-image6{
-    height: 387px;
-  }
-  .service-image6::before {
-    font-size: 0.6em;
-    width: 300px;
-    letter-spacing: 0.9px;
-  }
+  .serviceImage-chevron_down {
+     position: absolute;
+     right: 50%;
+     bottom: 84px;
+     padding: 10px 20px;
+     opacity: 0.5;
+    //  border-radius: 10px;
+   }
+
+  .serviceImage-chevron_up {
+     position: absolute;
+     right: 50%;
+     bottom: -81px;
+     padding: 10px 20px;
+     opacity: 0.5;
+    //  border-radius: 10px;
+   }
+  
  }
 
  @media (max-width: 425px) {
-  .service   #service-stage-img {
-    left: -25px;
-    bottom: -19px;
-    height: 80px;
-    width: 52px;
-  }
-  .service .service-image0{
-    height: 214px;    
-  }
-  .service-image0::before {
-    font-size: 0.1em;
-    width: 300px;
-    left: 50px;
-    letter-spacing: 0.9px;
-  }
-  .service .service-image1{
-    height: 214px;    
-  }
-  .service-image1::before {
-    font-size: 0.4em;
-    width: 300px;
-    left: 50px;
-    letter-spacing: 0.9px;
-  }
-  .service .service-image2{
-    height: 214px;    
-  }
-  .service-image2::before {
-    font-size: 0.4em;
-    width: 300px;
-    left: 50px;
-    letter-spacing: 0.9px;
-  }
-  .service .service-image3{
-    height: 214px;    
-  }
-  .service-image3::before {
-    font-size: 0.4em;
-    width: 300px;
-    left: 50px;
-    letter-spacing: 0.9px;
-  }
-  .service .service-image4{
-    height: 214px;    
-  }
-  .service-image4::before {
-    font-size: 0.4em;
-    width: 300px;
-    left: 50px;
-    letter-spacing: 0.9px;
-  }
-  .service .service-image5{
-    height: 214px;    
-  }
-  .service-image5::before {
-    font-size: 0.4em;
-    width: 300px;
-    left: 50px;
-    letter-spacing: 0.9px;
-  }
-  .service .service-image6{
-    height: 214px;    
-  }
-  .service-image6::before {
-    font-size: 0.4em;
-    width: 300px;
-    left: 50px;
-    letter-spacing: 0.9px;
-  }
+ 
+  .service .serviceImage-chevron_up {
+      position: absolute;
+      right: 50%;
+      bottom: 216px;
+    //  padding: 10px 20px;
+      opacity: 0.5;      
+    }
+  .serviceImage-chevron_down {
+      position: absolute;
+      right: 50%;
+      bottom: 297px;
+      padding: 10px 20px;
+      opacity: 0.5;
+      // border-radius: 10px;
+    }
+   .fa-2x {
+       font-size: 1em;
+
+     }
+
 }
 
 @media (max-width: 375px) {
-  .service   #service-stage-img {
-    left: 92px;
-    bottom: -16px;
-    height: 68px;
-    width: 49px;
+  .service   #service-stage-img {  
+    width: 100%;
   }
-  .service .service-image0{
-    height: 190px;    
+  .service .serviceImage-chevron_down { 
+    bottom: 297px;
   }
-  .service-image0::before {
-    font-size: 0.1em;
-    width: 150px;
-    left: 50px;
-    letter-spacing: 0.9px;
+
+  .service  .fa-2x {
+    font-size: 1em;    
   }
-  .service .service-image1{
-    height: 190px;    
-  }
-  .service-image1::before {
-    font-size: 0.1em;
-    width: 150px;
-    left: 50px;
-    letter-spacing: 0.9px;
-  }
-  .service .service-image2{
-    height: 190px;    
-  }
-  .service-image2::before {
-    font-size: 0.1em;
-    width: 150px;
-    left: 50px;
-    letter-spacing: 0.9px;
-  }
-  .service .service-image3{
-    height: 190px;    
-  }
-  .service-image3::before {
-    font-size: 0.1em;
-    width: 150px;
-    left: 50px;
-    letter-spacing: 0.9px;
-  }
-  .service .service-image4{
-    height: 190px;    
-  }
-  .service-image4::before {
-    font-size: 0.1em;
-    width: 150px;
-    left: 50px;
-    letter-spacing: 0.9px;
-  }
-  .service .service-image5{
-    height: 190px;    
-  }
-  .service-image5::before {
-    font-size: 0.1em;
-    width: 150px;
-    left: 50px;
-    letter-spacing: 0.9px;
-  }
-  .service .service-image6{
-    height: 190px;    
-  }
-  .service-image6::before {
-    font-size: 0.1em;
-    width: 150px;
-    left: 50px;
-    letter-spacing: 0.9px;
-  }
+
+  .service  .serviceImage-chevron_up {
+      position: absolute;
+      right: 50%;
+      bottom: 216px;
+      padding: 10px 20px;
+      opacity: 0.5;
+    }
 
 }
 
 
 @media (max-width: 320px) {
   .service   #service-stage-img {
-    left: 59px;
-    bottom: -13px;
-    height: 58px;
-    width: 36px;
+  //   width:100%;
   }
-  .service .service-image0{
-    height: 162px;    
-  }
-  .service-image0::before {
-    font-size: 0.1em;
-    width: 150px;
-    left: 50px;
-    letter-spacing: 0.9px;
-  }
-  .service .service-image1{
-    height: 162px;    
-  }
-  .service-image1::before {
-    font-size: 0.1em;
-    width: 150px;
-    left: 50px;
-    letter-spacing: 0.9px;
-  }
-  .service .service-image2{
-    height: 162px;    
-  }
-  .service-image2::before {
-    font-size: 0.1em;
-    width: 150px;
-    left: 50px;
-    letter-spacing: 0.9px;
-  }
-  .service .service-image3{
-    height: 162px;     
-  }
-  .service-image3::before {
-    font-size: 0.1em;
-    width: 150px;
-    left: 50px;
-    letter-spacing: 0.9px;
-  }
-  .service .service-image4{
-    height: 162px;    
-  }
-  .service-image4::before {
-    font-size: 0.1em;
-    width: 150px;
-    left: 50px;
-    letter-spacing: 0.9px;
-  }
-  .service .service-image5{
-    height: 162px;    
-  }
-  .service-image5::before {
-    font-size: 0.1em;
-    width: 150px;
-    left: 50px;
-    letter-spacing: 0.9px;
-  }
-  .service .service-image6{
-    height: 162px;    
-  }
-  .service-image6::before {
-    font-size: 0.1em;
-    width: 150px;
-    left: 50px;
-    letter-spacing: 0.9px;
-  }
-
+   .service .serviceImage-chevron_down {    
+     right: 50%;
+     bottom: 328px;
+     padding: 10px 20px;
+     opacity: 0.5;
+     border-radius: 10px;
+   }
+    .service .serviceImage-container .serviceImage-chevron_up {
+      position: absolute;
+      right: 50%;
+      bottom: 258px;
+      padding: 10px 20px;
+      opacity: 0.5;
+      border-radius: 10px;
+    }
+  
 }
