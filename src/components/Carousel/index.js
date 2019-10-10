@@ -31,6 +31,7 @@ const autoPlayInterval = 4000;
 
 const Carousel = () => (
   <div className='carousel-container'>
+    <h3 className="section__title">Our clients</h3>
     <AliceCarousel
       {...{
         responsive,
