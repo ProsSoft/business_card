@@ -6,9 +6,6 @@
       padding-bottom: 3%;
     }
   }
-  // .carousel-container .section__title{
-  //      color: red;
-  // }
  .alice-carousel__stage-item img{
    height: 97px;
    width: 140px;
@@ -30,12 +27,9 @@
  $clr-base: #e0e4fb !default;
  $clr-blue: #465798 !default;
  $clr-darkred: darkred !default;
-
  $transition-time: .3s !default;
  $play-btn-color: $clr-blue !default;
  $play-btn-size: 32px !default;
-
-
  .alice-carousel {
    box-sizing: border-box;
    position: relative;
@@ -252,9 +246,7 @@
   .alice-carousel__stage-item img {
    position: relative;
    right: -63px;
-  //  height: 97px;
-  //  width: 140px;
-  }
+    }
 }
 
 @media (max-width: 425px) {
