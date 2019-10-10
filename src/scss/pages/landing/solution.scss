@@ -1,5 +1,4 @@
 .solutions {
-
   &__wrapper {
     display: flex;
     margin-bottom: 80px;
@@ -48,9 +47,6 @@
   }
 
   @media only screen and (max-width: 768px) {
-    .section__title {
-      font-size: 3em;
-    }
     &__title {
       margin: 80px 0 20px;
     }
@@ -75,13 +71,13 @@
 
   @media only screen and (max-width: 600px) {
     &__title {
-      font-size: 3rem;
+      font-size: 3.5rem;
     }
   }
 
   @media only screen and (max-width: 500px) {
     &__title {
-      font-size: 3rem;
+      font-size: 3.2rem;
     }
   }
 
