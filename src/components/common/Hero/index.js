@@ -1,7 +1,6 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
-// import { Link } from 'react-router-dom';
-import { scrollTo ,scrollToContactUs } from "../../../util";
+import { scrollToContactUs } from "../../../util";
 
 const Hero = ({
                 scrollElem,
@@ -11,11 +10,9 @@ const Hero = ({
                 quoteAuthor = '',
                 buttonText = 'Get a free consultation',
                 noBack,
-                didNotMount,
-                scrollToElemId,
+                scrollToElemId = scrollToContactUs,
               }) =>
   <section className="hero" id="top" ref={scrollElem}>
-    {/*todo: why is scrollElem needed as it's empty*/}
     {slides.map(({ src, className = '' }, key) =>
       <img
         {...{ src, key }}
@@ -30,8 +27,7 @@ const Hero = ({
       <h2 className="hero__quote_author">{quoteAuthor}</h2>
       <button
         className="landing-green-btn"
-       // onClick={() => scrollTo(scrollToElemId, didNotMount)}
-       onClick={scrollToContactUs}
+       onClick={scrollToElemId}
       >
         {buttonText}
       </button>

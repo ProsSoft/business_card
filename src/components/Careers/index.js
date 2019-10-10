@@ -38,7 +38,7 @@ export default class VacancyGroupButton extends PureComponent {
         <Hero
           {...{
             ...hero,
-            scrollToElemId,
+            scrollToElemId: () => scrollTo(scrollToElemId),
           }}
         />
         <h3
@@ -77,9 +77,6 @@ export default class VacancyGroupButton extends PureComponent {
             )
           })
           }
-          {/* <div className="item">
-            <div className="itemCLosed">Marketing and Sales Managers - CLOSED</div>
-           </div> */}
         </section>
       </div>);
   }
