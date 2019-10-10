@@ -2,6 +2,23 @@
   .section__title {
     margin-top: 50px;
   }
+  .vacancy_closed{
+    color: #fff;
+    position: relative;
+    top: -101px;
+    left: -4%;
+    background-color: #dc3545;
+    display: inline-block;
+    padding: .25em .4em;
+    font-size: 125%;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  }
   .page__description {
     color: $color-denim;
     font-weight: 300;
@@ -41,7 +58,7 @@
         &:hover, &.selected {
           background: #81bc15;
           color: #fff;
-          font-size: 26px;
+          font-size: 24px;
           font-weight: 500;
           svg {
             color: #fff;
@@ -77,19 +94,90 @@
           color: #00bfff;
         }
         &.opened {
-          max-height: 1000px;
+          max-height: 1550px;
         }
       }
     }
   }
+
+  .itemCLosed{
+    color: red;
+    text-align: left;
+    width: 100%;
+    background: #f9f9f9;
+    border: none;
+    padding: 30px 65px 30px 30px;
+     margin: 10px 0;
+    font-size: 24px;
+    font-weight: 300;
+    letter-spacing: .7px;
+    color: #4f5075;
+    text-transform: uppercase;
+    border-radius: 8px;
+    transition: all 0.5s;
+    position: relative;
+  }
+  @media only screen and (max-width: 768px) {
+    .vacancy_closed{
+      top: -99px;
+      font-size: 110%;
+    }
+  }
   @media only screen and (max-width: 500px) {
     .page__description {
-      width: 70vw;
+      width: 100vw;
     }
     //.content .item button {
     //
     //}
   }
 }
+  @media only screen and (max-width: 425px) {
+  .section__title{
+      font-size: 3.0em;
+        }
+  .content .item button.selected {
+  font-size: 16px;
+        }
+   .page.careers .vacancy_closed{
+          top: -155px;
+          font-size: 90%;
+        }
+
+  .content .item button:hover{
+    padding-top: 50px;
+    font-size: 16px;
+       }
+  .content .item button{
+          font-size: 1em;
+        }
+  .itemCLosed{
+      font-size: 1em;
+    }
+
+  }
 
 
+
+@media only screen and (max-width: 320px) {
+  .section__title{
+      font-size: 2.5em;
+        }
+  .page.careers .vacancy_closed{
+          top: -182px;
+          font-size: 90%;
+        }
+
+  .content .item button.selected {
+  font-size: 12px;
+        }
+  .content .item button:hover{
+    font-size: 12px;
+       }
+  .content .item button{
+          font-size: 1em;
+        }
+  .itemCLosed{
+      font-size: 1em;
+    }
+  }

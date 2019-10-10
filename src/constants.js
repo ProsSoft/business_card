@@ -155,6 +155,7 @@ const careers = {
   offers: [
     {
       vacancy: 'JavaScript Software Engineers',
+      isVacancyOpen: true,
       agenda: <p>We are looking for a highly-motivated <b>trainee</b>, <b>junior</b> and <b>middle</b> level software engineers for <b>Web</b> and <b>Mobile Applications</b> development.</p>,
       requirements: {
         title: 'The successful candidates will have:',
@@ -194,6 +195,7 @@ const careers = {
     },
     {
       vacancy: 'Marketing and Sales Managers',
+      isVacancyOpen: false,
       agenda: '',
       requirements: {
         title: 'The ideal candidates will be motivated and success oriented individuals that have:',
@@ -226,10 +228,10 @@ const careers = {
       conclusion: {
         title: 'Contact us',
         text: <p>Interested candidates are invited to send resumes and cover letters outlining the candidate’s motivation to
-          &nbsp;<a target="_blank" href="mailto:contacts@prossoft.com"><b>contacts@prossoft.com</b></a>,
+          &nbsp;<a target ="_blank" href="mailto:contacts@prossoft.com"><b>contacts@prossoft.com</b></a>,
           &nbsp;reference letters sent directly from the referees would be an advantage.</p>
       },
-    },
+   },
   ]
 };
 
