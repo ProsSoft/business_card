@@ -2,7 +2,6 @@
   &__list {
     display: flex;
     justify-content: space-between;
-    padding-top: 30px;
   }
 
   &__item {
@@ -20,6 +19,7 @@
     font-size: 1.5rem;
     font-weight: 300;
     height: 80px;
+    /*margin-bottom: 18px;*/
     text-transform: uppercase;
   }
 
@@ -35,10 +35,10 @@
     width: 243px;
   }
 
-  &__item-icon:hover {
-   background-color: $color-pea-green;
-   fill: #f6f6f6;
-  }
+  //&__item-icon:hover {
+  //  background-color: $color-pea-green;
+  //  fill: #f6f6f6;
+  //}
 
   &__item-description {
     color: $color-denim;
@@ -78,12 +78,10 @@
   }
 
   @media only screen and (max-width: 768px) {
-    .section__title{
-      font-size: 3em;
-    }
     &__title {
       margin: 24px 0;
-     }
+    }
+
 
     &__item {
       margin-bottom: 30px;
@@ -97,6 +95,10 @@
   }
 
   @media only screen and (max-width: 600px) {
+    &__title {
+      font-size: 3.5rem;
+    }
+
     &__item {
       margin-bottom: 20px;
       width: 80%;
@@ -104,6 +106,10 @@
   }
 
   @media only screen and (max-width: 500px) {
+    &__title {
+      font-size: 3.2rem;
+    }
+
     &__item {
       margin-bottom: 10px;
       width: 90%;
