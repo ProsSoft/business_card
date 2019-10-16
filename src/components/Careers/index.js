@@ -4,7 +4,7 @@ import FaChevronCircleUp from 'react-icons/lib/fa/chevron-circle-up';
 import Check from 'react-icons/lib/fa/check';
 import Plus from 'react-icons/lib/fa/plus';
 import Hero from '../common/Hero';
-import { careers } from '../../constants';
+import { careers , vacancy} from '../../constants';
 import { scrollTo } from "../../util";
 
 const { hero, offers } = careers;
@@ -53,15 +53,14 @@ export default class VacancyGroupButton extends PureComponent {
             and
             engage with the most exciting projects in the field today!
           </div>
-          {offers.map(({ vacancy, isVacancyOpen , ...offerProps }, index) => {
+          {offers.map(({ vacancy, isVacancyOpen, ...offerProps }, index) => {
             const isOpen = this.state[getStateKey(index)];
 
             return (
-              <div className="item" key={index}>
-
+              <div className={ isVacancyOpen  ? 'item ' : 'closed_vacancyDescription'} key={index} >
                 <button
                   id={index}
-                  className={isOpen ? 'selected' : ''}
+                  className={ isOpen  ? 'selected' : ''}
                   onClick={this.onClick}
                 >
 
@@ -72,7 +71,7 @@ export default class VacancyGroupButton extends PureComponent {
                     <FaChevronCircleDown id={index} />
                   }
                 </button>
-                <OfferContent {...{ isOpen, isVacancyOpen, ...offerProps }} />
+                <OfferContent {...{ isOpen, isVacancyOpen, ...offerProps }}  />
               </div>
             )
           })
@@ -82,10 +81,17 @@ export default class VacancyGroupButton extends PureComponent {
   }
 };
 
-const OfferContent = ({ isOpen, isVacancyOpen, agenda, requirements, stack, mission, offering, conclusion }) => (
+const OfferContent = ({ isOpen,
+                        isVacancyOpen,
+                        agenda,
+                        requirements,
+                        stack,
+                        mission,
+                        offering,
+                        conclusion }) => (
   <div>
-      {!isVacancyOpen? <div className="vacancy_closed">Closed</div> : null}
-      <div className={`description ${isOpen ? 'opened' : ''}`}>
+      {!isVacancyOpen? <div className="closed_vacancy_badge">{ vacancy.closed}</div> : null}
+      <div className={`description ${isOpen ? 'opened' : ''  }`}>
         {agenda}
         <div className="flex-box">
           <p className="title">{offering.title}</p>

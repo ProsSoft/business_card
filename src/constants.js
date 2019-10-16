@@ -242,6 +242,9 @@ const service = {
   },
 };
 
+const vacancy ={
+  closed : 'Closed'
+}
 // const footer = {
 //   contacts: [[
 //     'United Kingdom',
@@ -270,5 +273,6 @@ export {
   // footer,
   nav,
   careers,
-  service
+  service,
+  vacancy
 };
