@@ -1,9 +1,10 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
-// import { Formik } from 'formik';
-// import {formRegex} from '../../constants'
+import { Formik } from 'formik';
 import FaEnvelope from "react-icons/lib/fa/envelope";
 import FaPhone from "react-icons/lib/fa/phone";
+import {formRegex} from '../../constants';
+
 
 const ContactUs = ({
                      title,
@@ -29,7 +30,7 @@ const ContactUs = ({
         <img className="flag" src="/dist/assets/images/ua.png" alt="UA" />
       </a>
     </div>
-    {/*<Formik
+    <Formik
       initialValues={{
         email: '',
         phone: '',
@@ -52,9 +53,49 @@ const ContactUs = ({
         }
         return errors;
       }}
-      onSubmit={values => (values)}
-      render={({ values, errors, touched, handleChange, handleBlur, handleSubmit, isSubmitting }) => (
-        <form onSubmit={handleSubmit} className="contact__form">
+     onSubmit={(values, actions) => {
+      const params = {
+        user_id: 'user_QUEl2Al0q48a36pqmlsCI',
+        service_id: 'gmail',
+        template_id: 'template_OJNVI9tD',
+        template_params: {
+          'email':   values.email,
+          'phone' :  values.phone,
+          'message': values.message
+        },
+    };
+    const headers = {
+        "Content-type": "application/json"
+    };
+
+    const options = {
+        method: 'POST',
+        headers,
+        body: JSON.stringify(params)
+    };
+
+    fetch('https://api.emailjs.com/api/v1.0/email/send', options )
+        // eslint-disable-next-line consistent-return
+        .then( httpResponse => {
+            if (httpResponse.ok) {
+                 actions.resetForm();
+            } else {
+                return httpResponse.text()
+                    .then(text => Promise.reject(text));
+            }
+        })
+        .catch((error) => {
+            console.log(`Oops... ${  error}`);
+        });
+    }}
+      render={({ values,
+                 errors,
+                 touched,
+                 handleChange,
+                 handleBlur,
+                 handleSubmit,
+                 isSubmitting }) => (
+        <form onSubmit={handleSubmit} className="contact__form" >
           <div className="contact__form-error">{(touched.email && errors.email) ? errors.email : ""}</div>
           <input
             type="email"
@@ -91,9 +132,10 @@ const ContactUs = ({
               Send
             </button>
           </div>
+
         </form>
       )}
-    />*/}
+    />
   </section>
 );
 
