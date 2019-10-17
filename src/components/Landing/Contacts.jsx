@@ -67,22 +67,20 @@ const ContactUs = ({
     const headers = {
         "Content-type": "application/json"
     };
-
     const options = {
         method: 'POST',
         headers,
         body: JSON.stringify(params)
     };
-
-    fetch('https://api.emailjs.com/api/v1.0/email/send', options )
-        // eslint-disable-next-line consistent-return
-        .then( httpResponse => {
+    fetch('https://api.emailjs.com/api/v1.0/email/send', options)
+          .then( httpResponse => {
             if (httpResponse.ok) {
-                 actions.resetForm();
+                actions.resetForm();
             } else {
                 return httpResponse.text()
                     .then(text => Promise.reject(text));
             }
+            return null
         })
         .catch((error) => {
             console.log(`Oops... ${  error}`);
