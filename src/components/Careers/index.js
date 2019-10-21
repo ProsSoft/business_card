@@ -55,7 +55,7 @@ export default class VacancyGroupButton extends PureComponent {
             const isOpen = this.state[getStateKey(index)];
 
             return (
-              <div className={ isVacancyOpen  ? 'item ' : 'closed_vacancyDescription'} key={index} >
+              <div className={isVacancyOpen ? 'item ' : 'closed_vacancyDescription'} key={index} >
                 <button
                   id={index}
                   className={ isOpen  ? 'selected' : ''}
@@ -69,7 +69,7 @@ export default class VacancyGroupButton extends PureComponent {
                     <FaChevronCircleDown id={index} />
                   }
                 </button>
-                <OfferContent {...{ isOpen, isVacancyOpen, ...offerProps }}  />
+                <OfferContent {...{ isOpen, isVacancyOpen, ...offerProps }} />
               </div>
             )
           })
