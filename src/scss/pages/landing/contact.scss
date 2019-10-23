@@ -80,5 +80,10 @@
     font-size: 3.0em;
   }
 }
+@media (max-width: 600px) {
+  .contact__form {
+    width: 90%;
+  }
+}
 
 
