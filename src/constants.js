@@ -3,9 +3,9 @@ import React from 'react';
 const assetsPath = '/dist/assets/';
 const imagesUrl = `${assetsPath}images/`;
 
-// const formRegex = {
-//   emailValid: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i
-// };
+const formRegex = {
+  emailValid: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i
+};
 
 const fixedHeaderHeight = 101;
 
@@ -261,7 +261,7 @@ const service = {
 
 export {
   imagesUrl,
-  // formRegex,
+  formRegex,
   fixedHeaderHeight,
   products,
   productsImgFileName,

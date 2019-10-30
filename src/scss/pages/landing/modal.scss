@@ -1,0 +1,60 @@
+.backdrop{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.1);
+    padding: 50;
+    .modal{
+      background-color: #fff;
+      border-radius: 5;
+      max-width:  400px;
+      min-height: 200px;
+      margin: 150px auto;
+      padding: 30px;
+    }
+    .close-block{
+      position: relative;
+      left: 44%;
+
+    }
+    .modal-font{
+      padding: 3%;
+    }
+    img{
+      width: 50px;
+      height: 50px;
+    }
+ @media only screen and (max-width: 1024px) {
+    .modal{
+        margin: 356px auto;
+     }
+  }
+  @media only screen and (max-width: 768px) {
+    .modal{
+        margin: 195px auto;
+     }
+     img{
+      width: 40px;
+      height: 40px;
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    .modal{
+      max-width: 358px;
+     }
+  }
+  @media only screen and (max-width: 375px) {
+    .modal{
+      max-width: 316px;
+     }
+  }
+  @media only screen and (max-width: 320px) {
+    .modal{
+      max-width: 300px;
+     }
+  }
+}
+
+

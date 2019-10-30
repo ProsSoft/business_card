@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/mouse-events-have-key-events */
 import React, { Component } from 'react';
 import $ from 'jquery';
 
@@ -28,6 +29,7 @@ class Service extends Component {
         />
         <img
           id="service-stage-img"
+          alt="tree-images"
           src={`${imagesUrl}service_stages/stage${src}.jpg`}
           onWheel={({ deltaY }) => {
             const x = window.scrollX;
