@@ -137,7 +137,7 @@ class ContactUs extends React.Component{
               name="phone"
               onChange={handleChange}
               onBlur={handleBlur}
-              placeholder="Your phone"
+              placeholder="Your phone or Skype Id, Messanger etc"
               value={values.phone}
             />
             <div className="contact__form-error">{(touched.message && errors.message) ? errors.message : ""}</div>
