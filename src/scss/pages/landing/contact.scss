@@ -2,7 +2,7 @@
   text-align: center;
   background-color: $color-light-blue-grey;
   opacity: 0.9;
-  padding: 25px 0 25px;
+  padding: 10px 0 10px;
   &__title {
     color: $color-denim;
     font-size: 3.7rem;
@@ -15,7 +15,7 @@
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    max-width: 572px;
+    max-width: 340px;
   }
   &__form-input {
     border-radius: 4px;
@@ -23,16 +23,17 @@
     color: $color-dark-grey;
     font-size: 1.125rem;
     font-weight: 300;
-    line-height: 2.4rem;
+    line-height: 1.5rem;
     text-indent: 10px;
+    padding-right: 1% 2%;
   }
   &__form-input:nth-last-child(2) {
     resize: none;
   }
   &__form-error {
     color: #ff4d4d;
-    font-size: 0.875rem;
-    height: 18px;
+    font-size: 0.675rem;
+    height: 15px;
     margin: 6px 0;
     text-indent: 10px;
   }
@@ -43,8 +44,8 @@
     font-size: 22px;
     font-weight: 500;
     background: #fff;
-    border-radius: 5%;
-    padding: 30px 5px 30px 30px;
+    border-radius: 3%;
+    padding: 20px 5px 30px 30px;
     display: inline-block;
     color: deepskyblue;
     max-width: 400px;
