@@ -5,9 +5,17 @@
 		"prettier/react"
 	],
   "rules": {
-    "linebreak-style": 0,
+	  "linebreak-style": 0,
+	  "global-require": 0,
+	   "react/jsx-filename-extension": [1, {
+	     "extensions": [".js", ".jsx"]
+	   }],
+	   "implicit-arrow-linebreak": "off",
+	   "comma-dangle": "off",
+	   "indent": "off",
+	   "no-trailing-spaces": "off",
     "jsx-a11y/anchor-is-valid": [ "error", {
-      "components": [ "Link" ],
+	  "components": [ "Link" ],	  
       "specialLink": [ "hrefLeft", "hrefRight", "to" ],
       "aspects": [ "noHref", "invalidHref", "preferButton" ]
     }]

@@ -13,7 +13,16 @@ export const scrollTo = (section = 'top', didNotMount) => {
 };
 
 export const scrollToContactUs = () => {
-  $('html, body').animate({
-    scrollTop: $('.contact__title').offset().top
-  }, 2000);   
+  const locationName = window.location.hash.slice(19, window.location.hash.length);
+  const patternProduct = 'development';
+  const patternMobile = '-development';
+  const patternWebsites = 'pplication-development';
+
+  if (locationName === patternProduct || locationName === patternMobile || locationName === patternWebsites) {
+    window.location.replace("http://localhost:8080/#/home/contact-us");
+  } else {
+    $('html, body').animate({
+      scrollTop: $('.contact__title').offset().top
+    }, 2000);
+  }
 };

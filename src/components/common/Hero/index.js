@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
 // import { Link } from 'react-router-dom';
-import { scrollTo ,scrollToContactUs } from "../../../util";
+import { scrollTo, scrollToContactUs} from "../../../util";
 
 const Hero = ({
                 scrollElem,
@@ -30,8 +30,9 @@ const Hero = ({
       <h2 className="hero__quote_author">{quoteAuthor}</h2>
       <button
         className="landing-green-btn"
-       // onClick={() => scrollTo(scrollToElemId, didNotMount)}
-       onClick={scrollToContactUs}
+        //onClick={() => scrollTo(scrollToElemId, didNotMount)}
+        onClick={scrollToContactUs}
+
       >
         {buttonText}
       </button>
