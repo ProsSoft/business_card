@@ -189,7 +189,7 @@ const careers = {
       conclusion: {
         title: 'Contact us',
         text: <p>Interested candidates are invited to send resumes and cover letters outlining the candidate’s motivation to
-          &nbsp;<a target="_blank" href="mailto:contacts@prossoft.com"><b>contacts@prossoft.com</b></a>,
+          &nbsp;<a target="blank" href="mailto:contacts@prossoft.com"><b>contacts@prossoft.com</b></a>,
           &nbsp;reference letters sent directly from the referees would be an advantage.</p>
       },
     },
@@ -228,7 +228,7 @@ const careers = {
       conclusion: {
         title: 'Contact us',
         text: <p>Interested candidates are invited to send resumes and cover letters outlining the candidate’s motivation to
-          &nbsp;<a target ="_blank" href="mailto:contacts@prossoft.com"><b>contacts@prossoft.com</b></a>,
+          &nbsp;<a target ="blank" href="mailto:contacts@prossoft.com"><b>contacts@prossoft.com</b></a>,
           &nbsp;reference letters sent directly from the referees would be an advantage.</p>
       },
    },
@@ -242,6 +242,9 @@ const service = {
   },
 };
 
+const vacancy ={
+  closed : 'Closed'
+}
 // const footer = {
 //   contacts: [[
 //     'United Kingdom',
@@ -270,5 +273,6 @@ export {
   // footer,
   nav,
   careers,
-  service
+  service,
+  vacancy
 };

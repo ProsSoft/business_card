@@ -2,7 +2,8 @@
   .section__title {
     margin-top: 50px;
   }
-  .vacancy_closed{
+
+  .closed_vacancy_badge {
     color: #fff;
     position: relative;
     top: -101px;
@@ -30,6 +31,72 @@
   }
   .content {
     padding: 25px 0 50px;
+    .closed_vacancyDescription {
+      width: 70vw;
+      margin: auto;
+      button {
+        text-align: left;
+        width: 100%;
+        background: #f9f9f9;
+        border: none;
+        padding: 30px 65px 30px 30px;
+        margin: 10px 0;
+        font-size: 24px;
+        font-weight: 300;
+        letter-spacing: .7px;
+        color: #4f5075;
+        text-transform: uppercase;
+        border-radius: 8px;
+        transition: all 0.5s;
+        position: relative;
+        svg {
+          position: absolute;
+          right: 30px;
+          top: calc(50% - 12px);
+          color: #a0a0b4;
+          transition: color .5s;
+        }
+        &:hover, &.selected {
+          background: #f9f9f9;
+          color: #a0a0b4;
+          font-size: 24px;
+          font-weight: 500;
+          svg {
+            color: #a0a0b4;
+            top: calc(50% - 13px);
+          }
+        }
+      }
+      .description {
+        overflow: hidden;
+        opacity: 0.6;
+        transition: max-height 1s;
+        max-height: 0;
+        padding: 6px;
+        font-size: 17px;
+        line-height: 1.7;
+        b {
+          color: #386c91
+        }
+        .title {
+          font-weight: 600;
+          margin-bottom: -10px;
+        }
+        .flex-box {
+          display: inline-block;
+          vertical-align: top;
+          li svg {
+           margin-right: 30px;
+          }
+        }
+        .email {
+           color: #00bfff;
+        }
+        &.opened {
+          max-height: 1550px;
+        }
+      }
+    }
     .item {
       width: 70vw;
       margin: auto;
@@ -66,7 +133,6 @@
           }
         }
       }
-
       .description {
         overflow: hidden;
         transition: max-height 1s;
@@ -90,8 +156,7 @@
           }
         }
         .email {
-          //font-w
-          color: #00bfff;
+           color: #00bfff;
         }
         &.opened {
           max-height: 1550px;
@@ -100,7 +165,7 @@
     }
   }
 
-  .itemCLosed{
+  .itemCLosed {
     color: red;
     text-align: left;
     width: 100%;
@@ -118,66 +183,75 @@
     position: relative;
   }
   @media only screen and (max-width: 768px) {
-    .vacancy_closed{
+    .closed_vacancy_badge {
       top: -99px;
       font-size: 110%;
+    }
+  }
+  @media only screen and (max-width: 736px) {
+    .closed_vacancy_badge{
+      top: -125px;
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    .closed_vacancy_badge{
+      top: -124px;
     }
   }
   @media only screen and (max-width: 500px) {
     .page__description {
       width: 100vw;
     }
-    //.content .item button {
-    //
-    //}
+    .closed_vacancy_badge {
+      top: -124px;
+      font-size: 100%;
+    }
   }
 }
   @media only screen and (max-width: 425px) {
   .section__title{
       font-size: 3.0em;
-        }
+    }
   .content .item button.selected {
-  font-size: 16px;
-        }
-   .page.careers .vacancy_closed{
-          top: -155px;
-          font-size: 90%;
-        }
-
-  .content .item button:hover{
-    padding-top: 50px;
-    font-size: 16px;
-       }
-  .content .item button{
-          font-size: 1em;
-        }
-  .itemCLosed{
-      font-size: 1em;
+      font-size: 16px;
+    }
+   .page.careers .closed_vacancy_badge {
+      top: -155px;
+      font-size: 90%;
     }
 
+  .content .item button:hover {
+      padding-top: 50px;
+      font-size: 16px;
+    }
+  .content .item button {
+      font-size: 1em;
+    }
+  .itemCLosed {
+      font-size: 1em;
+    }
   }
-
-
 
 @media only screen and (max-width: 320px) {
-  .section__title{
+  .section__title {
       font-size: 2.5em;
-        }
-  .page.careers .vacancy_closed{
-          top: -182px;
-          font-size: 90%;
-        }
+    }
+  .page.careers .closed_vacancy_badge {
+      top: -182px;
+      font-size: 90%;
+    }
 
   .content .item button.selected {
-  font-size: 12px;
-        }
-  .content .item button:hover{
-    font-size: 12px;
-       }
+      font-size: 12px;
+    }
+  .content .item button:hover {
+      font-size: 12px;
+    }
   .content .item button{
-          font-size: 1em;
-        }
+      font-size: 1em;
+    }
   .itemCLosed{
       font-size: 1em;
     }
-  }
+}
+
